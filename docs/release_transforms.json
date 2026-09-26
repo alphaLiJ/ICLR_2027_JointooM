@@ -1,0 +1,38 @@
+[
+  {
+    "path": "experiments/runners/run_s1_closed_loop_audit.py",
+    "source_sha256": "843829925922e88dd26c0d1af11cee71d32135fd245f949d27c70832dbd37fae",
+    "release_sha256": "b925453b3aea2fb189f6792c6df8a94c124f854955abc840f0a6985c34197505",
+    "change": "replace machine-local defaults with explicit bundle-relative artifact defaults"
+  },
+  {
+    "path": "experiments/runners/run_s2_lagat_guidance.py",
+    "source_sha256": "d5de2092bfee0690505bb041e81d28a51f424dd4f67423d0eb2d31be12011235",
+    "release_sha256": "725ca3814c53f977e02c9050c232b8a3fac979b4a570a79eac7eb1c4a3659834",
+    "change": "replace machine-local defaults with explicit bundle-relative artifact defaults"
+  },
+  {
+    "path": "experiments/runners/run_s2_multiseed_lagat_guidance.py",
+    "source_sha256": "4748248d5152211e244368611c84bbf804df8d11556c2ef68f5547593919bcb4",
+    "release_sha256": "29833820c21f7206da7648713c3a2cbfeb9ac3cbf18b0f4f0d5fa77bdaa3455e",
+    "change": "replace machine-local defaults with explicit bundle-relative artifact defaults"
+  },
+  {
+    "path": "experiments/runners/run_s3_memory_decomposition.py",
+    "source_sha256": "54db6de973870a31a764a4ada9bd2a843183b2cdaf33ee60f2eba963ffaa6641",
+    "release_sha256": "5a06cce1dfb5fe37ec7237d91514e66f94cd370a10c62e2b3de0fbe18ead1d51",
+    "change": "replace machine-local defaults with explicit bundle-relative artifact defaults"
+  },
+  {
+    "path": "experiments/configs/s3-formal.yaml",
+    "source_sha256": "97c9ac28c7206e0080a2c47d594643d645355a86137e224f82b3649d49a44efe",
+    "release_sha256": "c5c7dcc7b8a94d1df5dc41715cd43655b54824404ef3d71429f3749e7c90613d",
+    "change": "replace machine-local YAML paths with bundle-relative artifact paths"
+  },
+  {
+    "path": "experiments/runners/run_s2_equal_wall_magat_training.py",
+    "source_sha256": "9710ca77a969bd06337321ca55db0b75cb5d8e8c58511340e9904bf3915ed218",
+    "release_sha256": "aa1458d51f3432bbc5bd73a68987f9b4bf7cdb44917f10d1fbeab7cc993da901",
+    "change": "replace historical machine-local reference path with relative artifact identifier"
+  }
+]

@@ -1,0 +1,21 @@
+schema_version: 1
+experiment: s3-memory-decomposition
+manifest: artifacts/e2_matrix_manifest.json
+artifact_root: artifacts/memory-decomposition
+device: cuda:0
+seed: 20260806
+repetitions: 3
+execution_policy:
+  fresh_process_per_row: true
+  cuda_rows_sequential: true
+  nvml_enabled: false
+  validation_enabled: false
+  wall_time_is_diagnostic_only: true
+formal_order:
+  - S3-M1
+  - S3-G1
+  - S3-M2B
+  - S3-M2F
+  - S3-T1
+  - S3-M3
+  - S3-C1
