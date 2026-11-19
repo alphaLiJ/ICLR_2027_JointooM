@@ -1,7 +1,6 @@
 """Actual cross-episode shuffled MAGAT views and a real optimizer step."""
 import bootstrap
 from repository_paths import ARTIFACTS, input_path
-import bootstrap
 import argparse
 import json
 import os

@@ -1,7 +1,6 @@
 """E4 fixed-last-checkpoint quality for existing matched-wall training cohorts."""
 import bootstrap
 from repository_paths import ARTIFACTS, input_path
-import bootstrap
 import argparse
 import csv
 import json

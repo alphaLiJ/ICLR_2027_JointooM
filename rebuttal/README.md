@@ -66,7 +66,7 @@ The following variables select data and build inputs:
 | `JOINTLOOM_RL_ARTIFACTS` | RL task-bank, runs and checkpoint root |
 | `JOINTLOOM_COSTTRACER_REFERENCE` | Optional released CostTracer ONNX/C++ reference used by oracle checks |
 | `JOINTLOOM_LEGACY_ARTIFACTS` | Original training/validation artifact root used by retained diagnostic scripts |
-| `JOINTLOOM_ONLINE_ARTIFACTS` / `JOINTLOOM_GPU_ARTIFACTS` | Online IL / GPU diagnostic output roots |
+| `JOINTLOOM_ONLINE_ARTIFACTS` | Online IL diagnostic output root |
 | `JOINTLOOM_MAGAT_CPU_ARTIFACTS` | CPU online-input verification output root |
 | `JOINTLOOM_REPORT_DIR` | Experiment status/report output directory |
 

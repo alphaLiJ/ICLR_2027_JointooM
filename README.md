@@ -57,4 +57,6 @@ Recorded JSON paths identify experiment inputs and are retained as provenance;
 execution uses the configured local input locations. The full adaptation
 experiments start from released MAGAT+ checkpoint `195.pt`.
 
+[MANIFEST.json](MANIFEST.json) lists the released files and their sizes.
+
 Bundled third-party components retain their own notices and license files.

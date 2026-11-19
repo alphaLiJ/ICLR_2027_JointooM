@@ -1,14 +1,9 @@
 """Reference-kernel and policy parity for the optimized observation/input path."""
 import bootstrap
-from repository_paths import ARTIFACTS, input_path
-import os
-from pathlib import Path
-ARTIFACT=input_path('JOINTLOOM_GPU_ARTIFACTS', ARTIFACTS/'gpu-control')
-os.environ.setdefault('JOINTLOOM_NATIVE_DIR',str(ARTIFACT/'native'))
-import bootstrap
 import argparse
 import copy
 import json
+from pathlib import Path
 from types import SimpleNamespace
 
 import numpy as np

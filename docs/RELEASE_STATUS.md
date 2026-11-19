@@ -35,3 +35,7 @@ plans referenced by controllers. Captured controlled-learning source resolves
 its base modules through the inherited checkout path. Native source translation
 preserves executable text across all 77 bundled C++/CUDA/header files. The 58
 extracted measurement records match the accompanying archive byte for byte.
+
+The release manifest lists the current tracked source, configurations and data,
+excluding the manifest itself. GPU input diagnostics use the workflow-local native
+build selected by their bootstrap, including when spawning child processes.

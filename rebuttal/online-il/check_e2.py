@@ -1,7 +1,6 @@
 """Few real state/action checks for the added lifelong task source and CPU builder."""
 import bootstrap
 from repository_paths import ARTIFACTS, input_path
-import bootstrap
 import json
 import numpy as np
 import torch
