@@ -46,8 +46,8 @@ __device__ uint32_t generate_obstacle_row(curandState_t* local_state, float obst
     return row_bits;
 }
 
-// 待优化空间: 1. 利用 obstacle_prob 取特殊值时的逻辑
-//            2. 利用 自定义高效 rand 替代有状态的 curand
+// Possible optimization: specialize logic for particular obstacle_prob values
+//            2. Replace stateful curand with an efficient custom random generator
 __global__ void generate_random_map_kernel(
     uint32_t* d_grids,      
     curandState* states, 
@@ -71,7 +71,7 @@ __global__ void generate_random_map_kernel(
     uint32_t visited = 0;
     uint32_t frontier = seed_mask;
     
-    // 每个线程负责一行的扩展
+    // Each thread expands one row
     while (__any_sync(0xffffffff, frontier != 0)) {
         visited |= frontier;
         uint32_t spread_h = (frontier << 1) | (frontier >> 1);

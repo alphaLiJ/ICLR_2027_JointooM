@@ -1,22 +1,37 @@
-# Release status
+# Release contents and verification
 
-This is a **local review candidate**, not a published anonymous repository.
+The repository includes the original JointLoom CUDA simulation, input builders,
+expert streaming and model integrations, together with the discussion-period
+CPU baseline, optimized GPU adaptation, full MAGAT+ adaptation, identical-learning
+control, sampling-order study and native-SF/resident-PPO paths.
 
-Completed: source-only staging; exclusion of compiled files, logs, worktrees
-and Git metadata from the archive inputs; replacement of six local-path
-defaults in the review copy; Python syntax validation; and a text anonymity
-scan. The staged source and a fresh extraction both built the CUDA extension
-and LaCAM on Linux with CUDA 12.8/PyTorch 2.11. The focused smoke had 32
-passed and 1 skipped tests on both; 21 additional experiment-entry and
-wall-budget tests passed in staging. Generated build outputs are excluded
-from the ZIP. Original/release hashes for changed files are in
-`release_transforms.json`.
+[Implementation index](REBUTTAL_IMPLEMENTATION_INDEX.md) |
+[Experiment setup](../rebuttal/README.md) |
+[Measurements and configurations](../rebuttal/data/README.md)
 
-Before public upload, the authors need to settle project-owned code terms,
-verify notices and redistribution rights for forked/bundled dependencies and
-maps, add the accepted evidence bundle if paper-number reproduction is
-promised, and rerun the anonymization and build checks if the code ZIP changes.
+The integration checks exercise the cached MAGAT and MAPF-GPT CPU builders,
+unchanged-goal cache reuse, single-goal refresh and reference token agreement.
+The MAPF-GPT schema suite has six passing tests. Source and configuration
+files parse, and runner help/import checks cover the added entry points using
+their respective experiment dependencies. The new cached-token argument is
+ported from the executed cached-prefetch source. The official MAGAT+ parser
+reproduces all 118 non-path fields of its recorded configuration, and the native
+SF parser matches 16 checked rollout/PPO constants. Spawned workers preserve
+their workflow-specific installed Pogema version.
 
-The code's source snapshot contained uncommitted changes when staged.
-Re-export and rerun the checks if the implementation or manuscript changes.
-Do not attach a development repository's Git history to the anonymous host.
+The base CUDA build and GPU semantic checks remain available through
+`scripts/build_extension.sh` and `scripts/review_smoke.sh`. Added workflows
+build their separate native snapshots with `rebuttal/build_native.sh`.
+Large corpora, released pretrained checkpoints, generated task banks and full
+training logs are supplied as experiment inputs; compact measured records and
+configurations are included under `rebuttal/data/`.
+
+Build outputs, checkpoints and generated runs remain outside tracked source.
+Third-party source retains its original notices and license files.
+
+All repository documentation, comments and generated-report text use English.
+Integration includes default online-IL YAML settings and the auxiliary experiment
+plans referenced by controllers. Captured controlled-learning source resolves
+its base modules through the inherited checkout path. Native source translation
+preserves executable text across all 77 bundled C++/CUDA/header files. The 58
+extracted measurement records match the accompanying archive byte for byte.

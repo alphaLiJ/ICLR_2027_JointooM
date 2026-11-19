@@ -1,0 +1,7 @@
+device: cuda:0
+cpu_affinity: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+task_seed: 20261109
+tasks_per_map: 8
+agent_counts: [128, 512]
+horizon: 256
+policy_nodes_per_batch: 2048

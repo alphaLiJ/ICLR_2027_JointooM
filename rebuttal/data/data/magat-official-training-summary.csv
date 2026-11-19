@@ -1,0 +1,3 @@
+method,epochs,wall_seconds,optimizer_updates,learner_agent_samples,learner_joint_graphs,policy_rollouts,corrective_trajectories,validation_selected_epoch
+cpu_online,52,14515.18189048674,30136,120953600,1926528,6500,617,40
+jointloom,52,8848.06632156577,29124,116061312,1862096,6500,514,32

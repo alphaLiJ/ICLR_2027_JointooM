@@ -1,0 +1,10 @@
+map_name: mazes-s0_wc8_od55
+agents: 128
+envs: 16
+workers: 4
+seed: 20261108
+warmup_steps: 32
+measured_steps: 1024
+cpu_affinity: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+checkpoint: artifacts/rebuttal/legacy/s2-matched-wall-multiseed-20260812/formal/seed-0/proposed_async/checkpoints/ckpt_step00091184_valacc0.788994.pt
+device: cuda:0

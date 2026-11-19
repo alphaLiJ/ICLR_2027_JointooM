@@ -1,40 +1,36 @@
 # JointLoom: reconstructible input delivery for learned MAPF
 
-This is an anonymous-review **code candidate** for the JointLoom paper. It
-contains the GPU simulator and input builders, compact CPU-expert streaming,
-MAGAT and MAPF-GPT integrations, comparison paths, experiment runners, and
-focused tests. The implementation is organized around the paper's input
-boundary: complete joint state and policy context enter a backend builder;
-the resulting view is consumed by either a resident policy decision or an
-expert-supervised learner.
+JointLoom accelerates simulation, policy-input construction and delivery around
+neural computation. Complete joint configurations and required policy context
+feed GPU builders for graph, token and CNN inputs. The implementation supports
+resident execution, buffered expert learning and on-policy PPO.
 
-The candidate has not been published as a repository. See
-[`docs/RELEASE_STATUS.md`](docs/RELEASE_STATUS.md) before distributing it.
+## Implementation and experiment navigation
 
-## Find the implementation
+| Component | Implementation |
+| --- | --- |
+| CUDA MAPF simulation and input builders | [src/cuda_backend/](src/cuda_backend/) |
+| MAGAT graph integration | [src/expert/fixed_magat_plus_runtime.py](src/expert/fixed_magat_plus_runtime.py) |
+| MAPF-GPT tokens and history | [src/expert/mapf_gpt_online.py](src/expert/mapf_gpt_online.py), [mapf_gpt_schema.py](src/expert/mapf_gpt_schema.py) |
+| Cached CPU builder and bounded prefetch | [src/mapf_cuda/training/host_inputs.py](src/mapf_cuda/training/host_inputs.py) |
+| Frozen records and ring source | [src/mapf_cuda/training/frozen_stage_source.py](src/mapf_cuda/training/frozen_stage_source.py) |
+| Strong CPU / compact-stream runner | [experiments/runners/run_training_revision.py](experiments/runners/run_training_revision.py) |
+| Online selection and raw-trajectory consumption | [rebuttal/online-il/](rebuttal/online-il/) |
+| Optimized CAMAR-framework MAPF adaptation | [rebuttal/gpu-control/](rebuttal/gpu-control/) |
+| Full MAGAT+ adaptation, CPU online inputs / JointLoom | [rebuttal/official-finetuning/](rebuttal/official-finetuning/) |
+| Identical-learning execution and sampling order | [rebuttal/controlled-learning/](rebuttal/controlled-learning/), [fine-tuning-order/](rebuttal/fine-tuning-order/) |
+| Native Sample Factory and resident PPO | [rebuttal/online-rl/](rebuttal/online-rl/) |
+| Measurements, protocols, configurations and learning curves | [rebuttal/data/](rebuttal/data/README.md) |
 
-| Paper concept | Code location | Short check |
-| --- | --- | --- |
-| Complete joint state, transition, occupancy | `src/cuda_backend/grid_world_simulator.cpp`, `grid_world_cuda.cu`, `128_agents_map_step.cu` | `tests/expert/test_compact_state_api.py` |
-| Goal-derived cache and MAGAT graph view | `src/cuda_backend/energy_map.cu`, `grid_world_simulator.cpp`; `src/expert/fixed_magat_plus_runtime.py` | `tests/expert/test_compact_state_api.py` |
-| MAPF-GPT token/history view | `src/cuda_backend/mapf_gpt_builder.cpp`, `mapf_gpt_cuda.cu`; `src/expert/mapf_gpt_online.py` | `tests/expert/test_mapf_gpt_cuda.py` |
-| Resident complete decision | `src/expert/a4_runtime.py`; `src/mapf_cuda/evaluation/closed_loop.py` | `tests/expert/test_stateful_standard_mapf.py` |
-| Expert publication, bounded ring, transfer and replay | `src/expert/expert_running.py`; `src/mapf_cuda/training/topology_async.py` | `tests/expert/test_ring_fail_stop.py` |
-| CPU and GPU comparison paths | `src/expert/training_baseline_engines.py`; `src/baselines/jax_sim_baseline.py` | `tests/expert/test_training_wall_budget.py` |
+The [implementation index](docs/REBUTTAL_IMPLEMENTATION_INDEX.md) maps
+reviewer questions to source files. The [paper-to-code map](docs/PAPER_TO_CODE.md)
+covers the original simulator, builders, lifecycle and scaling experiments.
+[Rebuttal setup and entry points](rebuttal/README.md) describe the added workflows.
 
-The complete section-to-code and experiment-to-code map is in
-[`docs/PAPER_TO_CODE.md`](docs/PAPER_TO_CODE.md). Existing `expert.*` imports
-are retained because the tested experiment runners use them; this release
-adds a navigation layer rather than changing experimental behavior.
+## Build and check the base system
 
-## Requirements and quick check
-
-The evaluated system uses Linux, a CUDA-capable NVIDIA GPU, Python 3.10,
-CUDA 12.8, PyTorch, and JAX. The paper's measurements are for an RTX 5080;
-performance on another GPU should be measured anew. `environment.yml` lists
-the Python and CUDA dependencies. The LaCAM source is built locally.
-
-From the repository root:
+The evaluated system uses Linux, Python 3.10, CUDA 12.8, PyTorch and an RTX 5080.
+`environment.yml` records the base environment. From the repository root:
 
 ```bash
 conda env create -f environment.yml
@@ -43,43 +39,22 @@ conda run -n mapf-cuda bash scripts/build_lacam.sh
 conda run -n mapf-cuda bash scripts/review_smoke.sh
 ```
 
-`scripts/review_smoke.sh` runs focused compact-state, token-builder, and ring
-lifecycle tests in a fresh process. The broader suite is
-`conda run -n mapf-cuda bash scripts/run_tests.sh`; it can take considerably
-longer. The build script detects the visible GPU architecture by default;
-`MAPF_CUDA_ARCH` can override it.
+The base build script detects the visible GPU architecture; `MAPF_CUDA_ARCH`
+can override it. Added experiments retain separate native source snapshots
+and dependency profiles, documented in [rebuttal/README.md](rebuttal/README.md).
 
-## Reproduction map
+## Data and experiment inputs
 
-`experiments/runners/` contains experiment orchestration and
-`src/expert/minimal_*_runner.py` contains the retained formal command
-implementations. `experiments/renderers/` and `src/expert/render_*_report.py`
-consume experiment outputs. `experiments/configs/` and
-`experiments/manifests/` define input and protocol surfaces.
+[rebuttal/data/README.md](rebuttal/data/README.md) indexes Tables S1--S3,
+S4b, S5--S10 and Figures S1/S2. The same records are available as
+[JointLoom_Rebuttal_Data.zip](rebuttal/data/JointLoom_Rebuttal_Data.zip),
+including per-seed/per-task measurements, recorded configurations and curves.
 
-The full training registries, large frozen inputs, and checkpoints are not in
-this code ZIP. Paths in the release-specific runner defaults point under
-`artifacts/`; callers may supply their own artifact paths through the CLI.
-See [`evidence/README.md`](evidence/README.md) for the intended separation of
-code, compact summaries, and large optional rerun inputs. No timing claim in
-the paper should be treated as rerun from this code ZIP alone.
+Large raw expert corpora, pretrained checkpoints and generated task banks
+are separate experiment inputs. Supply these through the documented CLI
+arguments and `JOINTLOOM_*` variables; outputs default to `artifacts/rebuttal/`.
+Recorded JSON paths identify experiment inputs and are retained as provenance;
+execution uses the configured local input locations. The full adaptation
+experiments start from released MAGAT+ checkpoint `195.pt`.
 
-## Repository layout
-
-```text
-src/cuda_backend/           CUDA simulation and backend builders
-src/mapf_cuda/              reusable training, simulation and evaluation modules
-src/expert/                 expert supply, policy adapters and formal runners
-src/baselines/              same-workflow comparison implementation
-src/pogema/                 MAPF reference integration
-src/real_expert_alg/        LaCAM integration
-third_party/                retained upstream integration source
-experiments/                configs, manifests, runners and renderers
-tests/                      semantic, lifecycle and experiment checks
-docs/                       architecture, paper mapping and release audit
-evidence/                   evidence acquisition and provenance notes
-```
-
-Third-party components retain their own terms. Project-owned code terms and
-third-party provenance are still under review; see the release status before
-putting this candidate on a public host.
+Bundled third-party components retain their own notices and license files.

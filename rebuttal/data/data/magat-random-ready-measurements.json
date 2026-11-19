@@ -1,0 +1,75 @@
+{
+  "mode": "standard_mapf",
+  "producer_envs": 16,
+  "batch_envs": 4,
+  "agents": 512,
+  "batch": 2048,
+  "selection": "random_ready",
+  "cpu_host_workers": 8,
+  "cpu_prefetch_depth": 16,
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "seconds_per_run": 300,
+  "precision": "float32; TF32 disabled",
+  "pairs": [
+    {
+      "seed": 0,
+      "cpu_seconds": 300.0006002909504,
+      "jointloom_seconds": 300.02470575110056,
+      "cpu_updates": 5040,
+      "jointloom_updates": 11363,
+      "cpu_samples_per_second": 34406.331153969244,
+      "jointloom_samples_per_second": 77565.02565927317,
+      "speedup": 2.2543823493463346,
+      "cpu_ready_batches": 512,
+      "jointloom_ready_batches": 512
+    },
+    {
+      "seed": 1,
+      "cpu_seconds": 300.02579817711376,
+      "jointloom_seconds": 300.00970449321903,
+      "cpu_updates": 4967,
+      "jointloom_updates": 11309,
+      "cpu_samples_per_second": 33905.13769750871,
+      "jointloom_samples_per_second": 77200.2760348157,
+      "speedup": 2.276949196418932,
+      "cpu_ready_batches": 512,
+      "jointloom_ready_batches": 512
+    },
+    {
+      "seed": 2,
+      "cpu_seconds": 300.0129659571685,
+      "jointloom_seconds": 300.0324034669902,
+      "cpu_updates": 5051,
+      "jointloom_updates": 11346,
+      "cpu_samples_per_second": 34480.003112521576,
+      "jointloom_samples_per_second": 77446.99482953183,
+      "speedup": 2.246142338699691,
+      "cpu_ready_batches": 512,
+      "jointloom_ready_batches": 512
+    }
+  ],
+  "median_speedup": 2.2543823493463346,
+  "scope": "actual online LaCAM/Pogema, random-ready selection, input construction/transport, MAGAT CE/Adam; same per-worker FIFO; independent online traces; task quality not inferred"
+}

@@ -1,0 +1,43 @@
+table,experiment,metric,reference_value,jointloom_value,paired_ratio,unit,repetition,protocol_note
+S1,MAGAT E8,training speedup,,,1.98,x,3 seeds,H8/Q16;300s
+S1,MAGAT E16,training speedup,,,2.08,x,3 seeds,H8/Q16;300s
+S1,MAGAT matched8cores,training speedup,,,2.44,x,3 seeds,E8;batch4096;180s
+S1,MAGAT E8,exposed wait,50.4,2.5,,percent of loop,3 seeds,marginal medians
+S1,MAGAT E16,exposed wait,52.8,2.4,,percent of loop,3 seeds,marginal medians
+S1,MAGAT E8,wait/sample reduction,,97.5,,percent,3 seeds,within-pair reduction then median
+S1,MAGAT E16,wait/sample reduction,,97.9,,percent,3 seeds,within-pair reduction then median
+S1,MAGAT E8,Amdahl bound,,,2.02,x,3 seeds,fixed baseline non-wait cost
+S1,MAGAT E16,Amdahl bound,,,2.12,x,3 seeds,fixed baseline non-wait cost
+S1,online window128,training speedup,,,2.474,x,3 seeds,includes window filling and refresh
+S1,online random-ready,training speedup,,,2.254,x,3 seeds,16 sources;select4
+S1,lifelong inference N256 A256,complete inference speedup,,,6.179,x,separate inference workload,original Pogema/MAGAT;common GPU policy
+model-cost,MAPF-GPT,H2D/sample,1033,26,,bytes,seed42,eight-core affinity
+model-cost,MAPF-GPT,training speedup,,,1.043,x,seed42,Amdahl bound1.054
+S2,N256 A256 GPU input,ready input,2.873505,0.394535,7.2833,ms,3 process pairs,paired gain versus marginal median latencies
+S2,N256 A256 GPU decision,complete decision,156.127570,152.857963,1.0217,ms,3 process pairs,all runtime JIT variants warmed
+S2,N256 A256 GPU input,input-time reduction,,86.27,,percent,3 process pairs,within-pair reduction then median
+S5,one-hour PPO,learner samples,864354304,1204158464,1.393,agent samples,one paired training seed,process-launch 3600s budget
+S5,one-hour PPO,Adam steps,422048,587968,,steps,one paired training seed,within3600s
+S5,one-hour PPO,mean samples/s,240098.42,334488.46,,samples/s,one paired training seed,whole3600s budget
+S5,one-hour PPO,last16 complete training episodes return,27.443964,28.343035,,return,one paired training seed,complete512-step episodes
+S5,final common evaluation,mean agent return,23.820688,23.910824,,return,one paired training seed,two unseen mazes;16env;128agents;512steps
+S5,final common evaluation,completed goals,8730,8767,,goals,one paired training seed,same final evaluation tasks and RNG
+S6,16env A128,training throughput,248430,336469,1.3544,samples/s,3 seeds,SD925/1803;short-run completed batches
+S6,32env A128,training throughput,257277,323857,1.2588,samples/s,3 seeds,SD909/414;short-run completed batches
+S6,16env A128,CPU use,4.46,1.01,,core-equivalents,3 seeds,eight-core affinity
+S6,32env A128,CPU use,4.14,1.00,,core-equivalents,3 seeds,eight-core affinity
+S6,MAGAT N256 A256,full/microbatch peak allocation,8.532,2.073,,GiB,capacity measurement,persistent allocation1.630GiB in both modes
+S7,representation placement,throughput,1293,35779,27.7,samples/s,paired mechanism control,host-expanded versus compact;not H8 online headline
+S7,ring depth1to128,throughput,24500,72607,2.964,samples/s,paired mechanism control,reconstruction fixed
+S7,ring depth1to128,exposed wait,67.3,6.9,,percent,paired mechanism control,reconstruction fixed
+S7,sync prebuild/on-demand,relative throughput,,,0.995,x,same-stack control,same builder learner and records
+S7,ahead-one-batch/on-demand,relative throughput,,,1.021,x,same-stack control,same builder learner and records
+S7,expanded/compact,retained storage ratio,,,198,x,same-stack control,same measured shapes
+S7,IL model-free data path,ready input batch time,72.463993,0.556178,130.289,ms,3 data seeds,replayed states/labels;model excluded
+S7,RL model-free16env,data path time,136.146494,6.124197,22.2309,ms,3 seeds,synchronous replay;model outputs fixed
+S7,RL model-free32env,data path time,245.291211,7.494161,32.7310,ms,3 seeds,synchronous replay;not native async full-training speedup
+S8,complete52epoch adaptation,run wall time,14515.18,8848.07,1.6405,seconds,one paired training seed,actual work differs by policy feedback;full run ratio
+S9,identical learning1024updates,online speedup,,,2.0905,x,3 paired seeds,queries and final learning states match
+S9,identical learning1024updates,full-process speedup,,,2.0712,x,3 paired seeds,includes initialization
+FigureS1,shared maximum budget,final recorded agreement,76.49,78.57,,percent,3 training seeds,H2/Q4 logging cohort
+FigureS1,near20k updates,median agreement,76.74,75.81,,percent,3 training seeds,ranges53.32-76.95 /75.25-76.27

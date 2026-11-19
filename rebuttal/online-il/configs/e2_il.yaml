@@ -1,0 +1,13 @@
+map_name: mazes-s0_wc8_od55
+agents: 128
+envs: 16
+workers: 8
+prefetch_depth: 8
+task_seed: 20261108
+model_seed: 42
+device: cuda:0
+cpu_affinity: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+lacam_library: src/real_expert_alg/lacam/liblacam.so
+expert_timeouts: [1.0, 5.0, 10.0, 30.0]
+updates: 1000
+warmup_updates: 20

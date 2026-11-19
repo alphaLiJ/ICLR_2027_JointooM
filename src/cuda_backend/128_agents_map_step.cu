@@ -6,8 +6,8 @@
 #include <torch/extension.h>
 #include "grid_world_cuda.h"
 
-// 首先，保证 MAP_H 为 32 的倍数
-// 障碍物和观测智能体的存储方式:每连续 32 个状态信息被压缩为一个 uint32_t
+// First, ensure that MAP_H is a multiple of 32
+// Obstacle and observed-agent storage: pack each consecutive group of 32 state bits into one uint32_t
 
 __device__ bool is_wall(const uint32_t* __restrict__ s_map_static, int x, int y) {
     if (x < 0 || x >= MAP_W || y < 0 || y >= MAP_H) return true;
@@ -20,8 +20,8 @@ __device__ __forceinline__ float fast_sign_step(float x) {
     return copysignf(1.0f, x);
 }
 
-// Atmoic Grid 占位优化可用于更小的 grid_size
-// 因为在设计过程中进行了 kernel fusion, 所以显得很大
+// Atomic grid occupancy can be used for smaller grid_size values
+// This kernel is large because it fuses several operations
 __global__ void step_kernel(GridWorldContext ctx) {
     int env_id = blockIdx.x;
     int agent_count = ctx.n_agents;
@@ -42,8 +42,8 @@ __global__ void step_kernel(GridWorldContext ctx) {
     uint8_t* s_next_y = s_shared_mem + 3 * agent_count;
     uint8_t* s_was_arrived = s_shared_mem + 4 * agent_count;
 
-    __shared__ uint32_t s_map_static[MAP_OFFSET];  // 缓存 d_maps
-    __shared__ uint32_t s_map_dynamic[MAP_OFFSET]; // 缓存 d_grid_ocp
+    __shared__ uint32_t s_map_static[MAP_OFFSET];  // Cache d_maps
+    __shared__ uint32_t s_map_dynamic[MAP_OFFSET]; // Cache d_grid_ocp
 
     for (int i = tid; i < MAP_OFFSET; i += blockDim.x) {
         s_map_static[i] = ctx.d_maps[env_id * MAP_OFFSET + i];
@@ -87,7 +87,7 @@ __global__ void step_kernel(GridWorldContext ctx) {
     
     __syncthreads();
     
-    // 在每轮中，仅意图者需要被检测
+    // In each round, only agents intending to move need to be checked
     for (int iter = 0; iter < agent_count; ++iter) {
         
         if (tid == 0) s_collision_counter = 0;
@@ -110,27 +110,27 @@ __global__ void step_kernel(GridWorldContext ctx) {
                 for (int k = 0; k < agent_count; ++k) {
                     if (k == i) continue;
                     
-                    // 曼哈顿距离粗筛
+                    // Coarse filtering by Manhattan distance
                     if (abs((int)my_cx - s_curr_x[k]) + abs((int)my_cy - s_curr_y[k]) > 2) continue;
 
-                    // 读取对方的意图 (Input, 也是上一轮的结果)
+                    // Read the other agent's intent (Input, also the previous round's result)
                     uint8_t other_nx = s_next_x[k]; 
                     uint8_t other_ny = s_next_y[k];
                     uint8_t other_cx = s_curr_x[k];
                     uint8_t other_cy = s_curr_y[k];
 
-                    // 1. Swap Conflict (交换位置冲突)
+                    // 1. Swap conflict (exchanging positions)
                     if (my_nx == other_cx && my_ny == other_cy &&
                         other_nx == my_cx && other_ny == my_cy) {
                         collision = true; break;
                     }
 
-                    // 2. Vertex Conflict (同一目标冲突)
+                    // 2. Vertex conflict (same destination)
                     if (my_nx == other_nx && my_ny == other_ny) {
-                        if (i > k) { collision = true; break; } // ID 大的让路
+                        if (i > k) { collision = true; break; } // The agent with the larger ID yields
                     }
 
-                    // 3. Chain Conflict (依赖链冲突)
+                    // 3. Chain conflict (dependency chain)
                     if (my_nx == other_cx && my_ny == other_cy) {
                         if (other_nx == other_cx && other_ny == other_cy) {
                             collision = true; break;
@@ -145,8 +145,8 @@ __global__ void step_kernel(GridWorldContext ctx) {
                 }
             }
 
-            // 写入 Output Buffer (s_temp)
-            // 注意：此时绝对不能修改 s_next，因为其他线程可能还在读它
+            // Write to the output buffer (s_temp)
+            // Do not modify s_next here: other threads may still be reading it
             s_temp_result_x[i] = final_nx;
             s_temp_result_y[i] = final_ny;
 
@@ -156,11 +156,11 @@ __global__ void step_kernel(GridWorldContext ctx) {
         }
 
         __syncthreads();
-        // 快速退出机制：如果没有人改变决定，说明系统已达到稳态 (Fixed Point)
+        // Early exit: unchanged decisions indicate a fixed point
         if (s_collision_counter == 0) break;
 
-        // Buffer Swap: 将 s_temp (Output) 拷回 s_next (Input) 为下一轮做准备
-        // Shared Memory 内部拷贝，极快 (可以用乒乓搬运进行优化)
+        // Buffer swap: copy s_temp (Output) back to s_next (Input) for the next round
+        // Shared-memory copy; ping-pong buffers could further optimize it
         for (int i = tid; i < agent_count; i += blockDim.x) {
             s_next_x[i] = s_temp_result_x[i];
             s_next_y[i] = s_temp_result_y[i];
@@ -170,14 +170,14 @@ __global__ void step_kernel(GridWorldContext ctx) {
     
     uint8_t* s_goal_x = s_curr_x;
     uint8_t* s_goal_y = s_curr_y;
-    // --- 迭代结束，写入 Global Memory ---
-    // 此时 s_next 中存储的是最终收敛的无冲突状态
+    // --- Iteration complete: write to global memory ---
+    // s_next now contains the final converged conflict-free state
     
-    // 写入 Global Memory (最终状态)
+    // Write the final state to global memory
     for (int i = tid; i < agent_count; i += blockDim.x) {
         int global_idx = env_id * agent_count + i;
         
-        // 直接从 s_next 读取最终结果
+        // Read the final result directly from s_next
         uint8_t final_nx = s_next_x[i];
         uint8_t final_ny = s_next_y[i];
 
@@ -264,7 +264,7 @@ __global__ void step_kernel(GridWorldContext ctx) {
 
     uint32_t* s_goal_bitmap = s_map_dynamic; 
 
-    // 2. 初始化 Bitmap (清零)
+    // 2. Initialize the bitmap to zero
     for (int i = tid; i < MAP_OFFSET; i += blockDim.x) {
         s_goal_bitmap[i] = 0;
     }
@@ -273,7 +273,7 @@ __global__ void step_kernel(GridWorldContext ctx) {
     for (int i = tid; i < agent_count; i += blockDim.x) {
         int global_idx = env_id * agent_count + i;
         
-        // 未改变目标的智能体占据对应的空格
+        // Agents with unchanged goals occupy the corresponding free cells
         if (ctx.rewards[global_idx] <= 0.5f) {
             uint8_t gx = s_goal_x[i];
             uint8_t gy = s_goal_y[i];
@@ -337,7 +337,7 @@ __global__ void step_kernel(GridWorldContext ctx) {
                 s_goal_y[i] = static_cast<uint8_t>(valid_gy);
                 ctx.d_goal_changed_flags[global_idx] = 1;
             }
-            // 写回随机状态
+            // Write back the random state
             ctx.rng_states[global_idx] = local_state;
         }
     }

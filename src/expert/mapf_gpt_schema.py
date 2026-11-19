@@ -236,6 +236,7 @@ def tokenize_stage_reference(
     rows: np.ndarray,
     *,
     num_agents: int,
+    cost_maps_by_env=None,
 ) -> tuple[np.ndarray, np.ndarray]:
     """Slow, direct oracle matching the official closed-loop C++ semantics."""
 
@@ -256,9 +257,12 @@ def tokenize_stage_reference(
     for env_id in range(num_envs):
         grid = grids_array[env_id]
         block = blocks[env_id]
-        cost_maps = [
-            _bfs_cost_to_go(grid, (int(row[4]), int(row[5]))) for row in block
-        ]
+        cost_maps = (
+            [_bfs_cost_to_go(grid, (int(row[4]), int(row[5]))) for row in block]
+            if cost_maps_by_env is None else cost_maps_by_env[env_id]
+        )
+        if len(cost_maps) != num_agents or any(m.shape != grid.shape for m in cost_maps):
+            raise ValueError("cached cost-map shape mismatch")
         positions = [(int(row[2]), int(row[3])) for row in block]
         goals = [(int(row[4]), int(row[5])) for row in block]
 

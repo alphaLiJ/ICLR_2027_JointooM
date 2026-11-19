@@ -1,0 +1,4 @@
+GPU-resident PPO and native Sample Factory experiment entry points
+The recorded protocol is in configs/ and formal-one-hour-arguments.json.
+Complete learning measurements: data/README.md -> Tables S5/S6.
+Model-free replays: Table S7, a separate synchronous timing scope.

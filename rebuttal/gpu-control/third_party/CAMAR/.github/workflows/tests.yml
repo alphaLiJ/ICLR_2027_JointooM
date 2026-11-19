@@ -1,0 +1,94 @@
+# This workflow will install Python dependencies, run tests with a variety of Python versions
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+
+name: Run tests
+
+on:
+  push:
+    paths:
+      - "src/**"
+      - "tests/**"
+      - "uv.lock"
+      - "pyproject.toml"
+    branches: [ "main" ]
+
+  pull_request:
+    paths:
+      - "src/**"
+      - "tests/**"
+      - "uv.lock"
+      - "pyproject.toml"
+    branches: [ "main" ]
+
+  workflow_dispatch: # manually trigger the workflow
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: # python 3.13 does not support labmaze - separate job build-py313 is below
+          - "3.10"
+          - "3.11"
+          - "3.12"
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install uv and set up python=${{ matrix.python-version }}
+      uses: astral-sh/setup-uv@v5
+      with:
+        version: "0.7.8"
+        python-version: ${{ matrix.python-version }}
+        enable-cache: true
+        cache-dependency-glob: "**/pyproject.toml"
+
+    # use cached movingai maps
+    - name: Cache .cache/movingai
+      id: cache-movingai
+      uses: actions/cache@v4
+      with:
+        path: .cache/movingai
+        key: ${{ runner.os }}-movingai
+
+    # test only environment logic, without torchrl integrations
+    - name: Install the project
+      run: uv sync --locked --dev --extra labmaze --extra movingai
+
+    - name: Log python version
+      run: uv run -- python --version
+
+    - name: Run tests
+      run: uv run pytest tests/ -vv --durations=0
+
+  # job for python 3.13 (for testing without labmaze)
+  build-py313:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install uv and set up python=3.13
+      uses: astral-sh/setup-uv@v5
+      with:
+        version: "0.7.8"
+        python-version: "3.13"
+        enable-cache: true
+        cache-dependency-glob: "**/pyproject.toml"
+
+    # use cached movingai maps
+    - name: Cache .cache/movingai
+      id: cache-movingai
+      uses: actions/cache@v4
+      with:
+        path: .cache/movingai
+        key: ${{ runner.os }}-movingai
+
+    - name: Install the project
+      run: uv sync --locked --dev --extra movingai
+
+    - name: Run tests
+      run: uv run pytest tests/ --ignore=tests/maps/test_labmaze_grid.py -vv --durations=0

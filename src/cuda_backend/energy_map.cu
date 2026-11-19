@@ -5,7 +5,7 @@
 #include <string>
 #include "grid_world_cuda.h"
 #include <torch/extension.h>
-// 根据最大可能周长设定，256x256地图最大波前通常不超过 4000
+// Size for the maximum expected frontier; a 256x256 map typically requires fewer than 4000 entries
 #define MAX_QUEUE_SIZE 4096
 
 namespace {
@@ -73,10 +73,10 @@ void configure_energy_map_dynamic_smem_if_needed(int shared_mem_size) {
 }  // namespace
 
 /**
- * 高性能 BFS 能量图生成 Kernel
- * Grid配置: <<< n_agents, 128或256, dynamic_smem_size >>>
+ * BFS energy-map generation kernel
+ * Launch configuration: <<< n_agents, 128 or 256, dynamic_smem_size >>>
  */
- // 输入只需要地图和目标位置，输出每个智能体的能量图
+ // Inputs: map and goal positions; output: an energy map for each agent
 __global__ void generate_energy_map_kernel(
     EnergyMapContext ctx,
     int num_agents,
@@ -96,15 +96,15 @@ __global__ void generate_energy_map_kernel(
 
     extern __shared__ uint8_t smem[];
     
-    // 1. 距离/能量数组
+    // 1. Distance/energy array
     uint8_t* s_dist = smem; 
     
-    // 2. 访问标记位图 (用 bitmask 压缩，避免 queue 重复入队，大幅降低内存冲突)
-    // 256x256 只需要 8KB shared memory; 128x128 只需要 2KB
+    // 2. Visited bitmap: bitmask compression avoids duplicate enqueues and reduces memory contention
+    // 256x256 requires 8 KB of shared memory; 128x128 requires 2 KB
     uint32_t* s_visited_bits = (uint32_t*)(s_dist + GRID_SIZE); 
     int num_bit_words = (GRID_SIZE + 31) / 32;
 
-    // 3. 技术 1: 双队列波前推进 (Two-Queue Frontier)
+    // 3. Technique 1: two-queue frontier expansion
     uint16_t* s_q_curr = (uint16_t*)(s_visited_bits + num_bit_words);
     uint16_t* s_q_next = s_q_curr + MAX_QUEUE_SIZE;
 
@@ -114,27 +114,27 @@ __global__ void generate_energy_map_kernel(
     __shared__ int curr_queue_id;
 
     int tid = threadIdx.x;
-    int lane_id = tid % 32; // Warp 内部通道 ID
+    int lane_id = tid % 32; // Lane ID within the warp
 
-    // --- 初始化 Shared Memory ---
+    // --- Initialize shared memory ---
     for (int i = tid; i < GRID_SIZE; i += blockDim.x) {
-        s_dist[i] = 255; // 255 表示不可达
+        s_dist[i] = 255; // 255 indicates an unreachable cell
     }
     for (int i = tid; i < num_bit_words; i += blockDim.x) {
         s_visited_bits[i] = 0;
     }
     __syncthreads();
 
-    // --- 线程 0 初始化起点 (以 Goal 作为 BFS 起点) ---
+    // --- Thread 0 initializes the starting point (the BFS starts at the goal) ---
     if (tid == 0) {
         int gx = d_states[block_id].target_x;
         int gy = d_states[block_id].target_y;
 
-        // 与现有项目一致: x 是行索引, y 是列索引
+        // Project convention: x is the row index and y is the column index
         int start_idx = gx * MAP_H + gy;
         
         s_dist[start_idx] = 0;
-        // 标记起点已访问
+        // Mark the starting point as visited
         s_visited_bits[start_idx / 32] |= (1u << (start_idx % 32));
         
         s_q_curr[0] = start_idx;
@@ -146,19 +146,19 @@ __global__ void generate_energy_map_kernel(
     __syncthreads();
 
     // ==========================================================
-    // 技术 4: 混合粒度策略 (通过 grid-stride loop 自适应波前大小)
-    // 当 q_curr_sz 很小时，只有少数 warp 活跃，避免了过早分支导致的性能惩罚
+    // Technique 4: adapt to frontier size with a grid-stride loop
+    // When q_curr_sz is small, only a few warps are active, avoiding premature divergence
     // ==========================================================
     while (q_curr_sz > 0 && current_dist < 254) {
         uint16_t* read_queue = (curr_queue_id == 0) ? s_q_curr : s_q_next;
         uint16_t* write_queue = (curr_queue_id == 0) ? s_q_next : s_q_curr;
         
-        // --- 核心 BFS 扩展循环 ---
-        // 注意：为了使用 Warp Primitives，即使部分线程没有任务，也要让整个 Warp 进入循环体以参与同步
+        // --- Main BFS expansion loop ---
+        // All lanes must enter the loop for warp-primitive synchronization, including lanes without work
         for (int i = tid; i < ((q_curr_sz + 31) & ~31); i += blockDim.x) {
             
             int num_valid_neighbors = 0;
-            int valid_nodes[4]; // 本地暂存合法的邻居节点
+            int valid_nodes[4]; // Temporarily store valid neighbors locally
             
             if (i < q_curr_sz) {
                 int node_idx = read_queue[i];
@@ -175,7 +175,7 @@ __global__ void generate_energy_map_kernel(
                     if (nnx >= 0 && nnx < MAP_W && nny >= 0 && nny < MAP_H) {
                         int n_idx = nnx * MAP_H + nny;
                         
-                        // 1. 检查障碍物 (直接读取位图)
+                        // 1. Check obstacles by reading the bitmap directly
                         int word_idx = n_idx / 32;
                         int bit_offset = n_idx % 32;
                         uint32_t mask = 1u << bit_offset;
@@ -183,10 +183,10 @@ __global__ void generate_energy_map_kernel(
                         bool is_static_obs = (ctx.d_maps[map_word_offset + word_idx] & mask) != 0;
 
                         if (!is_static_obs) {
-                            // 2. 原子的 Bitmask 访问标记 (极大减少 shared memory 的写入冲突)
+                            // 2. Mark visits with atomic bitmask operations to reduce shared-memory write contention
                             uint32_t old_visited = atomicOr(&s_visited_bits[word_idx], mask);
                             
-                            // 只有当这一位原来是 0，说明当前线程抢到了这个节点的首次访问权
+                            // A previously unset bit means this thread obtained the first visit to this node
                             if ((old_visited & mask) == 0) {
                                 s_dist[n_idx] = current_dist + 1;
                                 valid_nodes[num_valid_neighbors++] = n_idx;
@@ -197,42 +197,42 @@ __global__ void generate_energy_map_kernel(
             }
 
             // ==========================================================
-            // 技术 3: Warp 级原语优化 (Warp-Level Queue Allocation)
-            // 不使用频繁的 atomicAdd，而是在 Warp 级别汇聚要入队的数量，仅做一次 atomicAdd
+            // Technique 3: warp-level queue allocation
+            // Aggregate enqueue counts within each warp and use one atomicAdd instead of frequent atomics
             // ==========================================================
-            uint32_t warp_mask = 0xFFFFFFFF; // 保证全部32个线程参与
+            uint32_t warp_mask = 0xFFFFFFFF; // Ensure that all 32 lanes participate
             int val = num_valid_neighbors;
             
-            // Warp 内部的 Inclusive Prefix Sum (使用 __shfl_up_sync)
+            // Inclusive prefix sum within the warp using __shfl_up_sync
             #pragma unroll
             for (int offset = 1; offset < 32; offset *= 2) {
                 int n = __shfl_up_sync(warp_mask, val, offset);
                 if (lane_id >= offset) val += n;
             }
             
-            int warp_offset = val - num_valid_neighbors;     // 线程内的排他性偏移
-            int warp_total = __shfl_sync(warp_mask, val, 31); // Warp 总共需要入队的元素个数
+            int warp_offset = val - num_valid_neighbors;     // Exclusive offset for this lane
+            int warp_total = __shfl_sync(warp_mask, val, 31); // Total number of elements to enqueue for this warp
             
             int global_queue_offset = 0;
-            // Lane 31 作为 Leader 代表整个 Warp 申请 Queue 空间
+            // Lane 31 reserves queue space on behalf of the warp
             if (lane_id == 31 && warp_total > 0) {
                 global_queue_offset = atomicAdd(&q_next_sz, warp_total);
             }
-            // 将申请到的基准地址广播给 Warp 内的所有线程
+            // Broadcast the reserved base address to all lanes
             global_queue_offset = __shfl_sync(warp_mask, global_queue_offset, 31);
 
-            // 批量将合法的节点写入 Next Queue
+            // Write valid nodes to the next queue in a batch
             for (int k = 0; k < num_valid_neighbors; ++k) {
                 int write_pos = global_queue_offset + warp_offset + k;
-                if (write_pos < MAX_QUEUE_SIZE) { // 防止极端情况溢出
+                if (write_pos < MAX_QUEUE_SIZE) { // Prevent overflow in extreme cases
                     write_queue[write_pos] = valid_nodes[k];
                 }
             }
-        } // 结束当前 Level 的循环
+        } // Finish the loop for the current level
 
         __syncthreads();
 
-        // --- 队列指针交换 (Double Buffering) ---
+        // --- Swap queue pointers (double buffering) ---
         if (tid == 0) {
             current_dist++;
             q_curr_sz = (q_next_sz > MAX_QUEUE_SIZE) ? MAX_QUEUE_SIZE : q_next_sz;
@@ -242,8 +242,8 @@ __global__ void generate_energy_map_kernel(
         __syncthreads();
     }
 
-    // --- 将能量图写回 Global Memory ---
-    // 能量公式: E = max(0, 255 - d). 若不可达(d=255)，能量为0
+    // --- Write the energy map back to global memory ---
+    // Energy: E = max(0, 255 - d). Unreachable cells (d=255) have zero energy
     uint8_t* my_global_energy_map = ctx.d_global_energy_maps + global_agent_idx * GRID_SIZE;
     
     for (int i = tid; i < GRID_SIZE; i += blockDim.x) {
@@ -259,7 +259,7 @@ void launch_energy_map_kernel(
     const torch::Tensor& states_tensor,
     bool incremental_only)
 {
-    int threads_per_block = 128; // 可根据实际情况调整
+    int threads_per_block = 128; // Adjust as needed for the workload
     int shared_mem_size = compute_energy_map_shared_mem_size();
     configure_energy_map_dynamic_smem_if_needed(shared_mem_size);
 

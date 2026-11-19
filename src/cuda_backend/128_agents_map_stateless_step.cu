@@ -1,5 +1,5 @@
 #include <cuda_runtime.h>
-#include <math_constants.h> // 引入 CUDART_PI_F
+#include <math_constants.h> // Include CUDART_PI_F
 #include <cstdint>
 #include <torch/extension.h>
 #include <stdio.h>
@@ -32,7 +32,7 @@ inline bool can_use_legacy_fullmap_builder(const StatelessGridWorldContext& ctx)
 
 }  // namespace
 
-// 解析静态墙壁的 helper
+// Helper for decoding static walls
 __device__ inline bool is_wall(const uint32_t* __restrict__ s_map_static, int x, int y) {
     if (x < 0 || x >= MAP_W || y < 0 || y >= MAP_H) return true;
     uint32_t row_data = s_map_static[x * COL_OFFSET + (y >> 5)];
@@ -107,7 +107,7 @@ __device__ __forceinline__ uint32_t gather_row_window_bits_shared(
     return (gathered_bits & low_bits_mask(valid_bit_count)) << first_local_col;
 }
 
-// 替换了原来的带分支 sign，利用硬件 copysign 指令，速度极快
+// Replace the branching sign function with the hardware copysign instruction
 __device__ inline float fast_sign(float x) {
     if (x == 0.0f) return 0.0f;
     return copysignf(1.0f, x);
@@ -220,7 +220,7 @@ generate_imitation_obs_fullmap_shared_kernel(
 
     __shared__ uint32_t s_map_static[MAP_OFFSET];
 
-    // 1. 并行读取静态地图
+    // 1. Read the static map in parallel
     #pragma unroll 4
     for (int i = tid; i < MAP_OFFSET; i += blockDim.x) {
         // Optimization 7: __ldg__ for texture cache
@@ -228,7 +228,7 @@ generate_imitation_obs_fullmap_shared_kernel(
     }
     __syncthreads();
 
-    // 2. 初始化临时地图 with padding
+    // 2. Initialize the temporary map with padding
     // Optimization 2: Vectorized initialization (process 2 cells at a time)
     for (int i = tid; i < MAP_W * MAP_H; i += blockDim.x) {
         int x = i / MAP_H;
@@ -238,7 +238,7 @@ generate_imitation_obs_fullmap_shared_kernel(
     }
     __syncthreads();
 
-    // 3. 读取并填充自身状态
+    // 3. Read and populate the agent's own state
     int global_agent_idx = env_node_base + tid;
     AgentState my_state = d_states[global_agent_idx];
     
@@ -252,7 +252,7 @@ generate_imitation_obs_fullmap_shared_kernel(
     __syncthreads();
 
     // ==========================================
-    // 自身观测生成 + edge count
+    // Generate the agent's observation and count edges
     // ==========================================
     int cx = s_agent_x[tid];
     int cy = s_agent_y[tid];
@@ -277,7 +277,7 @@ generate_imitation_obs_fullmap_shared_kernel(
         _step_output.d_pyg_x[pyg_base + 3 * pyg_obs_area + k] = 0.0f;
     }
 
-    // 4. 生成 11x11 局部视野 (using pre-computed offsets)
+    // 4. Generate the 11x11 local view using precomputed offsets
     // Optimization 7: __ldg__ for texture cache
     #pragma unroll 4
     for (int dx = -obs_r; dx <= obs_r; ++dx) {
@@ -319,7 +319,7 @@ generate_imitation_obs_fullmap_shared_kernel(
         }
     }
 
-    // 5. 目标通道投影
+    // 5. Project the goal channel
     int rel_gx = gx - cx;
     int rel_gy = gy - cy;
     

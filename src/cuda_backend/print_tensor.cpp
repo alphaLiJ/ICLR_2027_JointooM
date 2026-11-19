@@ -73,7 +73,7 @@ void print_tensor(const torch::Tensor& tensor, const char* name) {
     }
 }
 
-// 保持所有成员函数声明不变（与问题中完全一致）
+// Keep all member-function declarations unchanged
 void GridWorldSimulator::print_t_grid_compressed() { print_tensor<uint32_t>(t_grid_compressed, "t_grid_compressed"); }
 void GridWorldSimulator::print_t_free_cell_list() { print_tensor<uint32_t>(t_free_cell_list, "t_free_cell_list"); }
 void GridWorldSimulator::print_t_pool_ptr() { print_tensor<int32_t>(t_pool_ptr, "t_pool_ptr"); }

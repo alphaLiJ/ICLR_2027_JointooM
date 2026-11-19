@@ -1,0 +1,156 @@
+# Shared training definition. Run implementation/train.py to execute.
+# Paper values, released-model facts, reference defaults and adaptation choices
+# are distinguished in HYPERPARAMETER_AUDIT.txt and the source inventory.
+specification_status: implemented_semantics_validated_three_seed_pilot_complete
+reference_artifacts: /path/to/external-artifacts/jointloom-20261110/costtracer-reference
+
+environment:
+  reference_pogema_version: 1.2.2
+  num_envs: 16
+  agents_per_env: 128
+  observation_radius: 5
+  observation_channels: 2
+  collision_system: soft
+  on_target: restart
+  actions: [wait, up, down, left, right]
+  time_limit_steps: 512
+  time_limit_interpretation: continuing_task_truncation
+  train_map_ids: [mazes-s0_wc8_od55, mazes-s1_wc3_od70, mazes-s2_wc8_od25, kiva]
+  eval_map_ids: [test-mazes-s40_wc4_od30, test-mazes-s41_wc5_od50]
+  environments_per_training_map: 4
+  task_bank_episodes: 64
+  target_stream_length_per_episode: 513
+  goal_assignment: independent_uniform_connected_component_common_compact_stream
+  initial_and_reassigned_goals: match_pogema_reference
+
+reward:
+  rule: strict_improvement_over_best_distance_for_current_goal
+  # The progress rule is published. Magnitude 0.1 is our explicit choice
+  # anchored to the released execution code, not a recovered training config.
+  progress_reward: 0.1
+  comparison: strict_less_than
+  distance_type: exact_shortest_path_on_static_topology
+  normalize_by_agent_count: false
+  step_reward: 0.0
+  wait_reward: 0.0
+  collision_reward: 0.0
+  additional_arrival_reward: 0.0
+  scale: 1.0
+  clip: null
+  reset_best_distance_on_new_goal: true
+  goal_reassignment_is_terminal: false
+  ordering: transition_then_old_goal_reward_then_goal_assignment_then_context_refresh
+
+observation:
+  reference: released_cpp_generate_input
+  occupancy_includes_self: true
+  goal_distance_encoding: released_local_normalization
+  distance_center_pixel: negative_clipped_distance_to_next_progress_reward
+  required_history: best_distance_for_current_goal
+  running_mean_std: false  # Explicit adaptation; original trainer switch absent.
+  subtract_mean: 0.0
+  scale: 1.0
+  distance_cache_precision: exact_integer_distance_no_magat_uint8_clipping
+
+model:
+  reference: released_onnx_graph
+  parameter_count: 161734
+  encoder_channels: 32
+  residual_blocks: 2
+  convolutions_per_residual_block: 2
+  convolution_kernel: 3
+  convolution_stride: 1
+  convolution_padding: 1
+  residual_activation_order: released_onnx_preactivation_order
+  flattened_features: 3872
+  latent_features: 32
+  activation: relu
+  actor_outputs: 5
+  critic_outputs: 1
+  shared_encoder: true
+  use_rnn: false
+  batch_norm: false
+  dropout: 0.0
+  initialization: orthogonal
+  initialization_gain: 1.0  # Selected SF reference default, not original-run proof.
+  bias_initialization: zero
+  primary_training_start: fresh_common_initialization
+  released_weights_use: forward_semantic_comparison
+
+sampling:
+  mode: synchronous_shared_by_both_environment_backends
+  rollout_steps: 32  # Selected reference default; not documented in MATS table.
+  policy_frozen_within_rollout: true
+  agent_transitions_per_rollout: 65536
+  joint_environment_transitions_per_rollout: 512
+  action_selection: categorical
+  temperature: 1.0
+  extra_action_mask: false
+  stored_action: original_policy_command_before_environment_resolution
+
+ppo:
+  loss_reference: sample_factory_v1.121.4
+  reference_version_is_original_author_version: false
+  with_vtrace: false  # Deliberate synchronous GAE adaptation.
+  gamma: 0.96
+  gae_lambda: 0.95
+  minibatch_size: 2048
+  epochs: 1
+  minibatches_per_epoch: 32
+  shuffle_samples: true
+  clip_ratio_parameter: 0.2
+  clip_ratio_formula: reciprocal_lower_bound
+  clip_ratio_lower: 0.8333333333333334
+  clip_ratio_upper: 1.2
+  ratio_numerical_clamp: [0.05, 20.0]
+  advantage_normalization: per_minibatch
+  advantage_std_correction: 1
+  advantage_min_std: 0.001
+  value_loss: max_of_original_and_clipped_squared_error
+  value_clip: 1.0
+  value_loss_coefficient: 0.5
+  additional_half_factor_in_value_loss: false
+  return_normalization: false  # Chosen v1-style baseline; author config absent.
+  entropy_coefficient: 0.06878
+  entropy_reduction: mean_over_agent_samples
+  kl_loss_coefficient: 0.0
+  target_kl_early_stop: null
+  bootstrap_on_rollout_cut: true
+  bootstrap_on_time_limit: true
+  bootstrap_on_true_termination: false
+  stop_gae_at_environment_reset: true
+  bootstrap_observation: final_observation_before_reset
+
+optimizer:
+  type: adam
+  shared_actor_critic_optimizer: true
+  learning_rate: 0.00013
+  lr_schedule: constant
+  betas: [0.9, 0.999]
+  epsilon: 0.000001
+  weight_decay: 0.0
+  max_global_grad_norm: 4.0
+  gradient_accumulation_steps: 1
+
+numerics:
+  compute_dtype: float32
+  amp: false
+  matmul_tf32: false
+  cudnn_tf32: false
+  cudnn_benchmark: false
+
+comparison:
+  backends: [pogema_cpu, jointloom_cuda]
+  same_network_and_learner: true
+  same_task_distribution_and_algorithm_budget: true
+  same_initial_weights: true
+  cpu_distance_caching: true
+  cpu_parallel_environments: true
+  rollout_input_reuse_on_gpu_for_both: true
+  metrics: [agent_transitions_per_second, joint_environment_transitions_per_second,
+            complete_iteration_seconds, goals_per_joint_step, goals_per_wall_second,
+            learning_return, peak_gpu_memory]
+  requested_training_seeds: [0, 1, 2]
+  pilot_iterations_per_seed: 16
+  pilot_agent_transitions_per_seed: 1048576
+  formal_agent_transition_budget: null  # Select after a bounded cost/learning probe.

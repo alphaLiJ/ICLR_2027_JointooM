@@ -1,0 +1,2 @@
+sample-factory==2.1.1
+pogema==1.2.2

@@ -23,8 +23,8 @@
         }                                                                              \
     } while (0)
 
-// 后续采用 Fisher-Yates 洗牌算法针对极大规模的场景 (当前逻辑仅在负载较小时可靠且高效)
-// 潜在字占据优化
+// Use Fisher-Yates shuffling for very large workloads; the current logic is reliable and efficient only at low load
+// Potential word-level occupancy optimization
 
 __device__ __forceinline__ uint32_t quick_rand(uint32_t* seed) {
     *seed = *seed * 1664525u + 1013904223u;
@@ -51,7 +51,7 @@ __device__ inline int find_unique_slot(
         uint32_t old_val = atomicOr(&bitmap[word_idx], mask);
 
         if ((old_val & mask) == 0) {
-            return curr_idx; // 成功找到并占位
+            return curr_idx; // Successfully found and reserved a cell
         }
         curr_idx++;
         if (curr_idx >= total_free) {

@@ -1,0 +1,34 @@
+Native Sample Factory / JointLoom short-budget reward comparison
+
+Use 16 environments x128 agents (2048 agents), rollout32,65536 agent transitions
+per training batch,32 minibatches of2048 samples, and one PPO epoch. Run128
+formal batches per seed (8388608 processed samples and4096 Adam updates for
+synchronous SF and JointLoom), seeds0/1/2 and profiles sf-sync/sf-async/jointloom.
+Run a separate two-batch probe first. Record asynchronous in-flight work.
+
+Both methods use eight physical CPU cores, one RTX5080, three65x65 mazes and one
+33x46 kiva map, four environments per map. CostTracer has161734 parameters,
+shared actor/critic features and no RNN, BN or dropout. Use identical canonical
+random initial weights and2x11x11 inputs with self occupancy and exact static
+shortest-path/historical-best-distance context.
+
+Reward is+0.1 only for a strict improvement in historical distance to the current
+goal, otherwise0, without division by agent count. Goal changes continue the
+episode;512 steps is a continuing-task timeout. Shared compact task banks store
+initial tasks and future goals, not trajectories or model inputs.
+
+gamma=.96, GAE lambda=.95, constant lr=.00013, reciprocal PPO clip[1/1.2,1.2],
+ratio clamp[.05,20], value clip1, value coefficient.5, entropy coefficient.06878.
+Adam betas(.9,.999), eps1e-6, weight decay0, gradient norm4. FP32 with TF32/AMP
+off; no input/return normalization or V-trace. SF2 advantage std floor1e-7 and
+current-value timeout bootstrap. SF keeps its default unshuffled minibatches;
+JointLoom reads matching actor-major trajectory groups from time-major storage.
+
+Log raw environment reward before timeout/GAE adjustments, complete512-step
+episode returns, collected samples, processed samples and timestamps. Show
+reward against collected interactions and full-job wall time including startup,
+compilation and environment initialization. Retain raw points and show three-seed
+means/standard deviations; interpolate only over shared observed time ranges.
+Native asynchronous SF retains policy lag and different sampling progress.
+These short-budget curves describe training progress, with convergence and
+held-out performance assessed separately. See data/config/online-rl/ for records.

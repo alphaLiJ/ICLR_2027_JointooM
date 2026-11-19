@@ -1,0 +1,10 @@
+{
+  "repetitions": 3,
+  "definition": "1 - JointLoom ready-input time / CAMAR-adapted ready-input time",
+  "aggregation": "Reduction and speedup calculated within each repetition, then median",
+  "input_time_reduction": 0.8626991107990295,
+  "input_speedup": 7.283274025532906,
+  "decision_speedup": 1.0217290854000067,
+  "timing": "Ready observations and valid communication graph; complete decisions also include policy and transition",
+  "cost_model": "T = C + R, with shared policy C and input construction, transition and synchronization in R"
+}

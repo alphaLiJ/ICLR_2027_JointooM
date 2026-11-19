@@ -1,0 +1,1153 @@
+method,seed,cohort,optimizer_updates,training_wall_seconds,family,map_name,task,agents,success,arrived_agents,arrival_fraction,end_step,soc,makespan,mean_arrival_time_if_arrived,horizon_capped_arrival_sum
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s40_wc4_od30,0,128,False,33,0.2578125,256,,,35.09090909090909,25478
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s40_wc4_od30,1,128,False,33,0.2578125,256,,,31.242424242424242,25351
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s40_wc4_od30,2,128,False,32,0.25,256,,,32.78125,25625
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s40_wc4_od30,3,128,False,34,0.265625,256,,,40.0,25424
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s40_wc4_od30,4,128,False,33,0.2578125,256,,,38.06060606060606,25576
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s40_wc4_od30,5,128,False,32,0.25,256,,,29.1875,25510
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s40_wc4_od30,6,128,False,30,0.234375,256,,,39.733333333333334,26280
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s40_wc4_od30,7,128,False,30,0.234375,256,,,26.666666666666668,25888
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s41_wc5_od50,0,128,False,46,0.359375,256,,,51.34782608695652,23354
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s41_wc5_od50,1,128,False,23,0.1796875,256,,,31.956521739130434,27615
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s41_wc5_od50,2,128,False,35,0.2734375,256,,,33.8,24991
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s41_wc5_od50,3,128,False,27,0.2109375,256,,,41.666666666666664,26981
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s41_wc5_od50,4,128,False,31,0.2421875,256,,,35.58064516129032,25935
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s41_wc5_od50,5,128,False,32,0.25,256,,,35.0625,25698
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s41_wc5_od50,6,128,False,23,0.1796875,256,,,39.82608695652174,27796
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s41_wc5_od50,7,128,False,19,0.1484375,256,,,29.736842105263158,28469
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s42_wc7_od30,0,128,False,31,0.2421875,256,,,39.25806451612903,26049
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s42_wc7_od30,1,128,False,32,0.25,256,,,37.90625,25789
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s42_wc7_od30,2,128,False,20,0.15625,256,,,28.15,28211
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s42_wc7_od30,3,128,False,43,0.3359375,256,,,38.95348837209303,23435
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s42_wc7_od30,4,128,False,35,0.2734375,256,,,46.77142857142857,25445
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s42_wc7_od30,5,128,False,27,0.2109375,256,,,37.851851851851855,26878
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s42_wc7_od30,6,128,False,24,0.1875,256,,,34.291666666666664,27447
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s42_wc7_od30,7,128,False,23,0.1796875,256,,,36.78260869565217,27726
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s43_wc2_od45,0,128,False,45,0.3515625,256,,,35.24444444444445,22834
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s43_wc2_od45,1,128,False,53,0.4140625,256,,,35.54716981132076,21084
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s43_wc2_od45,2,128,False,36,0.28125,256,,,38.19444444444444,24927
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s43_wc2_od45,3,128,False,44,0.34375,256,,,38.61363636363637,23203
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s43_wc2_od45,4,128,False,28,0.21875,256,,,32.42857142857143,26508
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s43_wc2_od45,5,128,False,50,0.390625,256,,,37.78,21857
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s43_wc2_od45,6,128,False,39,0.3046875,256,,,35.30769230769231,24161
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s43_wc2_od45,7,128,False,48,0.375,256,,,40.520833333333336,22425
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261109,0,128,False,58,0.453125,256,,,35.44827586206897,19976
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261109,1,128,False,59,0.4609375,256,,,37.40677966101695,19871
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261109,2,128,False,48,0.375,256,,,34.458333333333336,22134
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261109,3,128,False,75,0.5859375,256,,,41.25333333333333,16662
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261109,4,128,False,60,0.46875,256,,,47.63333333333333,20266
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261109,5,128,False,62,0.484375,256,,,39.04838709677419,19317
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261109,6,128,False,57,0.4453125,256,,,35.59649122807018,20205
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261109,7,128,False,57,0.4453125,256,,,38.96491228070175,20397
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261110,0,128,False,64,0.5,256,,,33.546875,18531
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261110,1,128,False,48,0.375,256,,,34.333333333333336,22128
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261110,2,128,False,60,0.46875,256,,,32.8,19376
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261110,3,128,False,55,0.4296875,256,,,34.96363636363636,20611
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261110,4,128,False,66,0.515625,256,,,34.86363636363637,18173
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261110,5,128,False,47,0.3671875,256,,,39.91489361702128,22612
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261110,6,128,False,51,0.3984375,256,,,35.6078431372549,21528
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261110,7,128,False,38,0.296875,256,,,35.421052631578945,24386
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261111,0,128,False,58,0.453125,256,,,39.1551724137931,20191
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261111,1,128,False,45,0.3515625,256,,,32.91111111111111,22729
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261111,2,128,False,52,0.40625,256,,,37.07692307692308,21384
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261111,3,128,False,64,0.5,256,,,36.125,18696
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261111,4,128,False,50,0.390625,256,,,35.8,21758
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261111,5,128,False,63,0.4921875,256,,,36.714285714285715,18953
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261111,6,128,False,59,0.4609375,256,,,34.88135593220339,19722
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261111,7,128,False,56,0.4375,256,,,39.160714285714285,20625
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261112,0,128,False,46,0.359375,256,,,32.69565217391305,22496
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261112,1,128,False,64,0.5,256,,,43.46875,19166
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261112,2,128,False,53,0.4140625,256,,,34.60377358490566,21034
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261112,3,128,False,66,0.515625,256,,,38.60606060606061,18420
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261112,4,128,False,56,0.4375,256,,,35.94642857142857,20445
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261112,5,128,False,51,0.3984375,256,,,39.64705882352941,21734
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261112,6,128,False,49,0.3828125,256,,,37.51020408163265,22062
+conventional_sync,0,August matched-wall,2430,3037.192710244097,random,random-e4-seed20261112,7,128,False,45,0.3515625,256,,,30.11111111111111,22603
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v0,0,128,False,70,0.546875,256,,,39.371428571428574,17604
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v0,1,128,False,70,0.546875,256,,,40.871428571428574,17709
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v0,2,128,False,72,0.5625,256,,,36.77777777777778,16984
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v0,3,128,False,80,0.625,256,,,43.0625,15733
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v0,4,128,False,85,0.6640625,256,,,35.77647058823529,14049
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v0,5,128,False,77,0.6015625,256,,,43.61038961038961,16414
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v0,6,128,False,73,0.5703125,256,,,38.013698630136986,16855
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v0,7,128,False,72,0.5625,256,,,38.833333333333336,17132
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v1,0,128,False,56,0.4375,256,,,32.232142857142854,20237
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v1,1,128,False,64,0.5,256,,,36.09375,18694
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v1,2,128,False,70,0.546875,256,,,39.142857142857146,17588
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v1,3,128,False,74,0.578125,256,,,38.432432432432435,16668
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v1,4,128,False,72,0.5625,256,,,40.083333333333336,17222
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v1,5,128,False,64,0.5,256,,,40.078125,18949
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v1,6,128,False,60,0.46875,256,,,37.416666666666664,19653
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v1,7,128,False,70,0.546875,256,,,36.58571428571429,17409
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v2,0,128,False,60,0.46875,256,,,32.35,19349
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v2,1,128,False,72,0.5625,256,,,37.583333333333336,17042
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v2,2,128,False,70,0.546875,256,,,34.02857142857143,17230
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v2,3,128,False,80,0.625,256,,,38.2625,15349
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v2,4,128,False,77,0.6015625,256,,,33.90909090909091,15667
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v2,5,128,False,65,0.5078125,256,,,41.38461538461539,18818
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v2,6,128,False,69,0.5390625,256,,,33.21739130434783,17396
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v2,7,128,False,57,0.4453125,256,,,33.29824561403509,20074
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v3,0,128,False,68,0.53125,256,,,39.279411764705884,18031
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v3,1,128,False,70,0.546875,256,,,35.58571428571429,17339
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v3,2,128,False,70,0.546875,256,,,35.07142857142857,17303
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v3,3,128,False,56,0.4375,256,,,37.57142857142857,20536
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v3,4,128,False,64,0.5,256,,,37.59375,18790
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v3,5,128,False,62,0.484375,256,,,36.37096774193548,19151
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v3,6,128,False,63,0.4921875,256,,,36.523809523809526,18941
+conventional_sync,0,August matched-wall,2430,3037.192710244097,warehouse,warehouse-e4-shelves65-v3,7,128,False,60,0.46875,256,,,35.36666666666667,19530
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s40_wc4_od30,0,512,False,28,0.0546875,256,,,15.785714285714286,124346
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s40_wc4_od30,1,512,False,39,0.076171875,256,,,23.28205128205128,121996
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s40_wc4_od30,2,512,False,24,0.046875,256,,,24.541666666666668,125517
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s40_wc4_od30,3,512,False,23,0.044921875,256,,,25.08695652173913,125761
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s40_wc4_od30,4,512,False,42,0.08203125,256,,,20.952380952380953,121200
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s40_wc4_od30,5,512,False,31,0.060546875,256,,,23.29032258064516,123858
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s40_wc4_od30,6,512,False,25,0.048828125,256,,,26.84,125343
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s40_wc4_od30,7,512,False,35,0.068359375,256,,,24.085714285714285,122955
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s41_wc5_od50,0,512,False,21,0.041015625,256,,,25.80952380952381,126238
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s41_wc5_od50,1,512,False,28,0.0546875,256,,,16.714285714285715,124372
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s41_wc5_od50,2,512,False,19,0.037109375,256,,,19.473684210526315,126578
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s41_wc5_od50,3,512,False,21,0.041015625,256,,,19.428571428571427,126104
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s41_wc5_od50,4,512,False,21,0.041015625,256,,,21.38095238095238,126145
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s41_wc5_od50,5,512,False,23,0.044921875,256,,,24.73913043478261,125753
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s41_wc5_od50,6,512,False,16,0.03125,256,,,20.0625,127297
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s41_wc5_od50,7,512,False,15,0.029296875,256,,,16.8,127484
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s42_wc7_od30,0,512,False,25,0.048828125,256,,,18.36,125131
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s42_wc7_od30,1,512,False,21,0.041015625,256,,,25.0,126221
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s42_wc7_od30,2,512,False,23,0.044921875,256,,,20.434782608695652,125654
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s42_wc7_od30,3,512,False,34,0.06640625,256,,,22.029411764705884,123117
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s42_wc7_od30,4,512,False,28,0.0546875,256,,,17.785714285714285,124402
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s42_wc7_od30,5,512,False,36,0.0703125,256,,,19.083333333333332,122543
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s42_wc7_od30,6,512,False,26,0.05078125,256,,,25.73076923076923,125085
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s42_wc7_od30,7,512,False,23,0.044921875,256,,,22.391304347826086,125699
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s43_wc2_od45,0,512,False,36,0.0703125,256,,,23.13888888888889,122689
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s43_wc2_od45,1,512,False,34,0.06640625,256,,,22.029411764705884,123117
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s43_wc2_od45,2,512,False,50,0.09765625,256,,,25.04,119524
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s43_wc2_od45,3,512,False,25,0.048828125,256,,,20.04,125173
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s43_wc2_od45,4,512,False,43,0.083984375,256,,,27.651162790697676,121253
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s43_wc2_od45,5,512,False,30,0.05859375,256,,,24.1,124115
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s43_wc2_od45,6,512,False,36,0.0703125,256,,,22.666666666666668,122672
+conventional_sync,0,August matched-wall,2430,3037.192710244097,maze,test-mazes-s43_wc2_od45,7,512,False,36,0.0703125,256,,,27.666666666666668,122852
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s40_wc4_od30,0,128,False,67,0.5234375,256,,,42.298507462686565,18450
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s40_wc4_od30,1,128,False,74,0.578125,256,,,43.08108108108108,17012
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s40_wc4_od30,2,128,False,71,0.5546875,256,,,48.74647887323944,18053
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s40_wc4_od30,3,128,False,87,0.6796875,256,,,46.95402298850575,14581
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s40_wc4_od30,4,128,False,62,0.484375,256,,,46.193548387096776,19760
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s40_wc4_od30,5,128,False,60,0.46875,256,,,42.483333333333334,19957
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s40_wc4_od30,6,128,False,64,0.5,256,,,50.671875,19627
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s40_wc4_od30,7,128,False,60,0.46875,256,,,44.55,20081
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s41_wc5_od50,0,128,False,69,0.5390625,256,,,49.11594202898551,18493
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s41_wc5_od50,1,128,False,60,0.46875,256,,,51.85,20519
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s41_wc5_od50,2,128,False,71,0.5546875,256,,,46.929577464788736,17924
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s41_wc5_od50,3,128,False,61,0.4765625,256,,,55.75409836065574,20553
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s41_wc5_od50,4,128,False,62,0.484375,256,,,46.11290322580645,19755
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s41_wc5_od50,5,128,False,55,0.4296875,256,,,47.03636363636364,21275
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s41_wc5_od50,6,128,False,44,0.34375,256,,,44.31818181818182,23454
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s41_wc5_od50,7,128,False,60,0.46875,256,,,54.61666666666667,20685
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s42_wc7_od30,0,128,False,81,0.6328125,256,,,51.7037037037037,16220
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s42_wc7_od30,1,128,False,61,0.4765625,256,,,45.032786885245905,19899
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s42_wc7_od30,2,128,False,66,0.515625,256,,,50.015151515151516,19173
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s42_wc7_od30,3,128,False,78,0.609375,256,,,42.6025641025641,16123
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s42_wc7_od30,4,128,False,68,0.53125,256,,,50.294117647058826,18780
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s42_wc7_od30,5,128,False,61,0.4765625,256,,,43.26229508196721,19791
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s42_wc7_od30,6,128,False,58,0.453125,256,,,40.36206896551724,20261
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s42_wc7_od30,7,128,False,50,0.390625,256,,,42.66,22101
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s43_wc2_od45,0,128,False,70,0.546875,256,,,38.385714285714286,17535
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s43_wc2_od45,1,128,False,67,0.5234375,256,,,37.28358208955224,18114
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s43_wc2_od45,2,128,False,81,0.6328125,256,,,46.617283950617285,15808
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s43_wc2_od45,3,128,False,72,0.5625,256,,,46.958333333333336,17717
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s43_wc2_od45,4,128,False,75,0.5859375,256,,,48.53333333333333,17208
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s43_wc2_od45,5,128,False,82,0.640625,256,,,43.59756097560975,15351
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s43_wc2_od45,6,128,False,82,0.640625,256,,,43.03658536585366,15305
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s43_wc2_od45,7,128,False,73,0.5703125,256,,,44.54794520547945,17332
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261109,0,128,False,87,0.6796875,256,,,41.264367816091955,14086
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261109,1,128,False,86,0.671875,256,,,45.127906976744185,14633
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261109,2,128,False,91,0.7109375,256,,,46.043956043956044,13662
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261109,3,128,False,87,0.6796875,256,,,43.632183908045974,14292
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261109,4,128,False,90,0.703125,256,,,50.25555555555555,14251
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261109,5,128,False,81,0.6328125,256,,,39.160493827160494,15204
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261109,6,128,False,80,0.625,256,,,40.85,15556
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261109,7,128,False,95,0.7421875,256,,,46.68421052631579,12883
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261110,0,128,False,86,0.671875,256,,,41.30232558139535,14304
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261110,1,128,False,77,0.6015625,256,,,40.84415584415584,16201
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261110,2,128,False,75,0.5859375,256,,,40.29333333333334,16590
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261110,3,128,False,89,0.6953125,256,,,43.96629213483146,13897
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261110,4,128,False,92,0.71875,256,,,44.54347826086956,13314
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261110,5,128,False,87,0.6796875,256,,,45.724137931034484,14474
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261110,6,128,False,82,0.640625,256,,,45.707317073170735,15524
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261110,7,128,False,89,0.6953125,256,,,43.48314606741573,13854
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261111,0,128,False,86,0.671875,256,,,43.116279069767444,14460
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261111,1,128,False,82,0.640625,256,,,42.5,15261
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261111,2,128,False,86,0.671875,256,,,45.68604651162791,14681
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261111,3,128,False,85,0.6640625,256,,,42.64705882352941,14633
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261111,4,128,False,80,0.625,256,,,41.15,15580
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261111,5,128,False,82,0.640625,256,,,42.1219512195122,15230
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261111,6,128,False,83,0.6484375,256,,,41.096385542168676,14931
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261111,7,128,False,98,0.765625,256,,,44.673469387755105,12058
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261112,0,128,False,97,0.7578125,256,,,46.88659793814433,12484
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261112,1,128,False,86,0.671875,256,,,43.83720930232558,14522
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261112,2,128,False,91,0.7109375,256,,,43.38461538461539,13420
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261112,3,128,False,93,0.7265625,256,,,43.45161290322581,13001
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261112,4,128,False,86,0.671875,256,,,40.348837209302324,14222
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261112,5,128,False,87,0.6796875,256,,,45.839080459770116,14484
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261112,6,128,False,90,0.703125,256,,,51.855555555555554,14395
+proposed_async,0,August matched-wall,100000,2983.105666681193,random,random-e4-seed20261112,7,128,False,88,0.6875,256,,,51.78409090909091,14797
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v0,0,128,False,83,0.6484375,256,,,38.28915662650602,14698
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v0,1,128,False,88,0.6875,256,,,46.28409090909091,14313
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v0,2,128,False,88,0.6875,256,,,40.22727272727273,13780
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v0,3,128,False,99,0.7734375,256,,,43.76767676767677,11757
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v0,4,128,False,97,0.7578125,256,,,37.49484536082474,11573
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v0,5,128,False,84,0.65625,256,,,40.773809523809526,14689
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v0,6,128,False,96,0.75,256,,,40.541666666666664,12084
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v0,7,128,False,100,0.78125,256,,,43.22,11490
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v1,0,128,False,90,0.703125,256,,,39.43333333333333,13277
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v1,1,128,False,90,0.703125,256,,,40.833333333333336,13403
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v1,2,128,False,89,0.6953125,256,,,41.561797752808985,13683
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v1,3,128,False,94,0.734375,256,,,37.48936170212766,12228
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v1,4,128,False,90,0.703125,256,,,42.577777777777776,13560
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v1,5,128,False,95,0.7421875,256,,,42.83157894736842,12517
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v1,6,128,False,82,0.640625,256,,,38.76829268292683,14955
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v1,7,128,False,92,0.71875,256,,,41.48913043478261,13033
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v2,0,128,False,86,0.671875,256,,,39.27906976744186,14130
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v2,1,128,False,96,0.75,256,,,40.59375,12089
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v2,2,128,False,102,0.796875,256,,,40.51960784313726,10789
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v2,3,128,False,97,0.7578125,256,,,40.381443298969074,11853
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v2,4,128,False,92,0.71875,256,,,38.119565217391305,12723
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v2,5,128,False,88,0.6875,256,,,41.54545454545455,13896
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v2,6,128,False,94,0.734375,256,,,37.6063829787234,12239
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v2,7,128,False,86,0.671875,256,,,36.104651162790695,13857
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v3,0,128,False,103,0.8046875,256,,,42.699029126213595,10798
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v3,1,128,False,95,0.7421875,256,,,40.49473684210526,12295
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v3,2,128,False,92,0.71875,256,,,37.04347826086956,12624
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v3,3,128,False,91,0.7109375,256,,,43.57142857142857,13437
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v3,4,128,False,92,0.71875,256,,,41.20652173913044,13007
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v3,5,128,False,97,0.7578125,256,,,40.391752577319586,11854
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v3,6,128,False,92,0.71875,256,,,43.93478260869565,13258
+proposed_async,0,August matched-wall,100000,2983.105666681193,warehouse,warehouse-e4-shelves65-v3,7,128,False,90,0.703125,256,,,40.63333333333333,13385
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s40_wc4_od30,0,512,False,64,0.125,256,,,28.40625,116506
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s40_wc4_od30,1,512,False,72,0.140625,256,,,34.69444444444444,115138
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s40_wc4_od30,2,512,False,64,0.125,256,,,31.671875,116715
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s40_wc4_od30,3,512,False,49,0.095703125,256,,,32.0,120096
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s40_wc4_od30,4,512,False,67,0.130859375,256,,,26.686567164179106,115708
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s40_wc4_od30,5,512,False,66,0.12890625,256,,,32.10606060606061,116295
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s40_wc4_od30,6,512,False,66,0.12890625,256,,,30.560606060606062,116193
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s40_wc4_od30,7,512,False,83,0.162109375,256,,,35.34939759036145,112758
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s41_wc5_od50,0,512,False,42,0.08203125,256,,,24.928571428571427,121367
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s41_wc5_od50,1,512,False,48,0.09375,256,,,24.75,119972
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s41_wc5_od50,2,512,False,47,0.091796875,256,,,33.319148936170215,120606
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s41_wc5_od50,3,512,False,54,0.10546875,256,,,35.888888888888886,119186
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s41_wc5_od50,4,512,False,52,0.1015625,256,,,27.365384615384617,119183
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s41_wc5_od50,5,512,False,63,0.123046875,256,,,41.07936507936508,117532
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s41_wc5_od50,6,512,False,57,0.111328125,256,,,36.85964912280702,118581
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s41_wc5_od50,7,512,False,60,0.1171875,256,,,36.96666666666667,117930
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s42_wc7_od30,0,512,False,65,0.126953125,256,,,32.16923076923077,116523
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s42_wc7_od30,1,512,False,59,0.115234375,256,,,31.54237288135593,117829
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s42_wc7_od30,2,512,False,39,0.076171875,256,,,23.102564102564102,121989
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s42_wc7_od30,3,512,False,69,0.134765625,256,,,30.130434782608695,115487
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s42_wc7_od30,4,512,False,46,0.08984375,256,,,28.608695652173914,120612
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s42_wc7_od30,5,512,False,62,0.12109375,256,,,28.870967741935484,116990
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s42_wc7_od30,6,512,False,48,0.09375,256,,,31.791666666666668,120310
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s42_wc7_od30,7,512,False,62,0.12109375,256,,,40.354838709677416,117702
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s43_wc2_od45,0,512,False,80,0.15625,256,,,32.3625,113181
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s43_wc2_od45,1,512,False,75,0.146484375,256,,,30.466666666666665,114157
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s43_wc2_od45,2,512,False,76,0.1484375,256,,,26.69736842105263,113645
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s43_wc2_od45,3,512,False,75,0.146484375,256,,,33.946666666666665,114418
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s43_wc2_od45,4,512,False,81,0.158203125,256,,,32.666666666666664,112982
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s43_wc2_od45,5,512,False,70,0.13671875,256,,,31.15714285714286,115333
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s43_wc2_od45,6,512,False,85,0.166015625,256,,,35.741176470588236,112350
+proposed_async,0,August matched-wall,100000,2983.105666681193,maze,test-mazes-s43_wc2_od45,7,512,False,87,0.169921875,256,,,33.50574712643678,111715
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s40_wc4_od30,0,128,False,62,0.484375,256,,,41.483870967741936,19468
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s40_wc4_od30,1,128,False,93,0.7265625,256,,,48.924731182795696,13510
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s40_wc4_od30,2,128,False,62,0.484375,256,,,45.37096774193548,19709
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s40_wc4_od30,3,128,False,63,0.4921875,256,,,44.07936507936508,19417
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s40_wc4_od30,4,128,False,58,0.453125,256,,,41.96551724137931,20354
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s40_wc4_od30,5,128,False,57,0.4453125,256,,,41.08771929824562,20518
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s40_wc4_od30,6,128,False,49,0.3828125,256,,,40.51020408163265,22209
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s40_wc4_od30,7,128,False,52,0.40625,256,,,36.48076923076923,21353
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s41_wc5_od50,0,128,False,49,0.3828125,256,,,41.87755102040816,22276
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s41_wc5_od50,1,128,False,35,0.2734375,256,,,41.6,25264
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s41_wc5_od50,2,128,False,51,0.3984375,256,,,40.05882352941177,21755
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s41_wc5_od50,3,128,False,46,0.359375,256,,,55.04347826086956,23524
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s41_wc5_od50,4,128,False,49,0.3828125,256,,,44.673469387755105,22413
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s41_wc5_od50,5,128,False,52,0.40625,256,,,42.30769230769231,21656
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s41_wc5_od50,6,128,False,48,0.375,256,,,49.125,22838
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s41_wc5_od50,7,128,False,47,0.3671875,256,,,48.40425531914894,23011
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s42_wc7_od30,0,128,False,60,0.46875,256,,,50.483333333333334,20437
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s42_wc7_od30,1,128,False,62,0.484375,256,,,45.306451612903224,19705
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s42_wc7_od30,2,128,False,50,0.390625,256,,,38.98,21917
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s42_wc7_od30,3,128,False,67,0.5234375,256,,,39.417910447761194,18257
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s42_wc7_od30,4,128,False,56,0.4375,256,,,48.55357142857143,21151
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s42_wc7_od30,5,128,False,46,0.359375,256,,,40.08695652173913,22836
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s42_wc7_od30,6,128,False,71,0.5546875,256,,,46.056338028169016,17862
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s42_wc7_od30,7,128,False,54,0.421875,256,,,46.72222222222222,21467
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s43_wc2_od45,0,128,False,66,0.515625,256,,,36.015151515151516,18249
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s43_wc2_od45,1,128,False,63,0.4921875,256,,,34.53968253968254,18816
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s43_wc2_od45,2,128,False,79,0.6171875,256,,,46.53164556962025,16220
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s43_wc2_od45,3,128,False,65,0.5078125,256,,,45.23076923076923,19068
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s43_wc2_od45,4,128,False,54,0.421875,256,,,42.166666666666664,21221
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s43_wc2_od45,5,128,False,67,0.5234375,256,,,48.417910447761194,18860
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s43_wc2_od45,6,128,False,75,0.5859375,256,,,42.45333333333333,16752
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s43_wc2_od45,7,128,False,76,0.59375,256,,,44.776315789473685,16715
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261109,0,128,False,81,0.6328125,256,,,41.75308641975309,15414
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261109,1,128,False,78,0.609375,256,,,42.51282051282051,16116
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261109,2,128,False,87,0.6796875,256,,,42.64367816091954,14206
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261109,3,128,False,87,0.6796875,256,,,42.51724137931034,14195
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261109,4,128,False,87,0.6796875,256,,,44.310344827586206,14351
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261109,5,128,False,86,0.671875,256,,,43.72093023255814,14512
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261109,6,128,False,77,0.6015625,256,,,40.493506493506494,16174
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261109,7,128,False,84,0.65625,256,,,42.19047619047619,14808
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261110,0,128,False,79,0.6171875,256,,,39.835443037974684,15691
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261110,1,128,False,82,0.640625,256,,,40.36585365853659,15086
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261110,2,128,False,75,0.5859375,256,,,40.2,16583
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261110,3,128,False,82,0.640625,256,,,45.048780487804876,15470
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261110,4,128,False,80,0.625,256,,,43.0,15728
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261110,5,128,False,82,0.640625,256,,,45.21951219512195,15484
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261110,6,128,False,94,0.734375,256,,,46.659574468085104,13090
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261110,7,128,False,91,0.7109375,256,,,47.02197802197802,13751
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261111,0,128,False,88,0.6875,256,,,43.95454545454545,14108
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261111,1,128,False,83,0.6484375,256,,,45.04819277108434,15259
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261111,2,128,False,82,0.640625,256,,,44.73170731707317,15444
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261111,3,128,False,84,0.65625,256,,,40.976190476190474,14706
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261111,4,128,False,80,0.625,256,,,42.95,15724
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261111,5,128,False,84,0.65625,256,,,41.44047619047619,14745
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261111,6,128,False,81,0.6328125,256,,,42.54320987654321,15478
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261111,7,128,False,80,0.625,256,,,39.7,15464
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261112,0,128,False,76,0.59375,256,,,42.23684210526316,16522
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261112,1,128,False,77,0.6015625,256,,,38.285714285714285,16004
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261112,2,128,False,81,0.6328125,256,,,38.629629629629626,15161
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261112,3,128,False,92,0.71875,256,,,42.68478260869565,13143
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261112,4,128,False,90,0.703125,256,,,41.91111111111111,13500
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261112,5,128,False,78,0.609375,256,,,43.35897435897436,16182
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261112,6,128,False,81,0.6328125,256,,,46.50617283950617,15799
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,random,random-e4-seed20261112,7,128,False,88,0.6875,256,,,41.79545454545455,13918
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v0,0,128,False,82,0.640625,256,,,38.75609756097561,14954
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v0,1,128,False,95,0.7421875,256,,,44.38947368421053,12665
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v0,2,128,False,86,0.671875,256,,,38.406976744186046,14055
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v0,3,128,False,88,0.6875,256,,,41.88636363636363,13926
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v0,4,128,False,86,0.671875,256,,,37.151162790697676,13947
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v0,5,128,False,89,0.6953125,256,,,49.01123595505618,14346
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v0,6,128,False,97,0.7578125,256,,,43.134020618556704,12120
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v0,7,128,False,96,0.75,256,,,44.53125,12467
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v1,0,128,False,96,0.75,256,,,42.3125,12254
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v1,1,128,False,89,0.6953125,256,,,38.47191011235955,13408
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v1,2,128,False,89,0.6953125,256,,,43.39325842696629,13846
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v1,3,128,False,91,0.7109375,256,,,39.505494505494504,13067
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v1,4,128,False,93,0.7265625,256,,,45.61290322580645,13202
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v1,5,128,False,87,0.6796875,256,,,43.86206896551724,14312
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v1,6,128,False,78,0.609375,256,,,35.96153846153846,15605
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v1,7,128,False,93,0.7265625,256,,,40.053763440860216,12685
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v2,0,128,False,89,0.6953125,256,,,41.741573033707866,13699
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v2,1,128,False,92,0.71875,256,,,38.608695652173914,12768
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v2,2,128,False,97,0.7578125,256,,,38.628865979381445,11683
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v2,3,128,False,95,0.7421875,256,,,37.98947368421052,12057
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v2,4,128,False,91,0.7109375,256,,,39.07692307692308,13028
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v2,5,128,False,91,0.7109375,256,,,45.02197802197802,13569
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v2,6,128,False,87,0.6796875,256,,,36.252873563218394,13650
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v2,7,128,False,82,0.640625,256,,,36.390243902439025,14760
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v3,0,128,False,112,0.875,256,,,43.526785714285715,8971
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v3,1,128,False,91,0.7109375,256,,,41.54945054945055,13253
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v3,2,128,False,95,0.7421875,256,,,37.50526315789474,12011
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v3,3,128,False,84,0.65625,256,,,43.82142857142857,14945
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v3,4,128,False,82,0.640625,256,,,37.207317073170735,14827
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v3,5,128,False,91,0.7109375,256,,,38.9010989010989,13012
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v3,6,128,False,87,0.6796875,256,,,43.5632183908046,14286
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,warehouse,warehouse-e4-shelves65-v3,7,128,False,91,0.7109375,256,,,39.32967032967033,13051
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s40_wc4_od30,0,512,False,58,0.11328125,256,,,23.06896551724138,117562
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s40_wc4_od30,1,512,False,65,0.126953125,256,,,34.4,116668
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s40_wc4_od30,2,512,False,56,0.109375,256,,,27.892857142857142,118298
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s40_wc4_od30,3,512,False,48,0.09375,256,,,32.833333333333336,120360
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s40_wc4_od30,4,512,False,55,0.107421875,256,,,23.654545454545456,118293
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s40_wc4_od30,5,512,False,64,0.125,256,,,31.4375,116700
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s40_wc4_od30,6,512,False,58,0.11328125,256,,,26.482758620689655,117760
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s40_wc4_od30,7,512,False,64,0.125,256,,,28.171875,116491
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s41_wc5_od50,0,512,False,33,0.064453125,256,,,34.81818181818182,123773
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s41_wc5_od50,1,512,False,43,0.083984375,256,,,26.162790697674417,121189
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s41_wc5_od50,2,512,False,39,0.076171875,256,,,29.128205128205128,122224
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s41_wc5_od50,3,512,False,46,0.08984375,256,,,31.391304347826086,120740
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s41_wc5_od50,4,512,False,44,0.0859375,256,,,32.13636363636363,121222
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s41_wc5_od50,5,512,False,59,0.115234375,256,,,34.23728813559322,117988
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s41_wc5_od50,6,512,False,37,0.072265625,256,,,28.08108108108108,122639
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s41_wc5_od50,7,512,False,30,0.05859375,256,,,25.133333333333333,124146
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s42_wc7_od30,0,512,False,49,0.095703125,256,,,26.93877551020408,119848
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s42_wc7_od30,1,512,False,54,0.10546875,256,,,30.666666666666668,118904
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s42_wc7_od30,2,512,False,50,0.09765625,256,,,38.34,120189
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s42_wc7_od30,3,512,False,47,0.091796875,256,,,25.27659574468085,120228
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s42_wc7_od30,4,512,False,43,0.083984375,256,,,25.46511627906977,121159
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s42_wc7_od30,5,512,False,57,0.111328125,256,,,27.280701754385966,118035
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s42_wc7_od30,6,512,False,49,0.095703125,256,,,31.959183673469386,120094
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s42_wc7_od30,7,512,False,49,0.095703125,256,,,31.693877551020407,120081
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s43_wc2_od45,0,512,False,64,0.125,256,,,25.84375,116342
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s43_wc2_od45,1,512,False,87,0.169921875,256,,,32.14942528735632,111597
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s43_wc2_od45,2,512,False,66,0.12890625,256,,,23.136363636363637,115703
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s43_wc2_od45,3,512,False,76,0.1484375,256,,,33.39473684210526,114154
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s43_wc2_od45,4,512,False,71,0.138671875,256,,,28.859154929577464,114945
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s43_wc2_od45,5,512,False,66,0.12890625,256,,,26.12121212121212,115900
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s43_wc2_od45,6,512,False,63,0.123046875,256,,,28.6984126984127,116752
+cpu_cached_prefetch,0,September cached-prefetch logging,22597,3035.9222612379817,maze,test-mazes-s43_wc2_od45,7,512,False,70,0.13671875,256,,,31.9,115385
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s40_wc4_od30,0,128,False,44,0.34375,256,,,36.13636363636363,23094
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s40_wc4_od30,1,128,False,32,0.25,256,,,33.21875,25639
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s40_wc4_od30,2,128,False,44,0.34375,256,,,39.90909090909091,23260
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s40_wc4_od30,3,128,False,36,0.28125,256,,,37.666666666666664,24908
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s40_wc4_od30,4,128,False,33,0.2578125,256,,,30.303030303030305,25320
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s40_wc4_od30,5,128,False,32,0.25,256,,,28.75,25496
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s40_wc4_od30,6,128,False,32,0.25,256,,,40.75,25880
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s40_wc4_od30,7,128,False,29,0.2265625,256,,,28.482758620689655,26170
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s41_wc5_od50,0,128,False,35,0.2734375,256,,,35.74285714285714,25059
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s41_wc5_od50,1,128,False,27,0.2109375,256,,,36.111111111111114,26831
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s41_wc5_od50,2,128,False,26,0.203125,256,,,31.53846153846154,26932
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s41_wc5_od50,3,128,False,28,0.21875,256,,,50.392857142857146,27011
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s41_wc5_od50,4,128,False,25,0.1953125,256,,,30.08,27120
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s41_wc5_od50,5,128,False,31,0.2421875,256,,,33.96774193548387,25885
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s41_wc5_od50,6,128,False,28,0.21875,256,,,38.142857142857146,26668
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s41_wc5_od50,7,128,False,26,0.203125,256,,,37.88461538461539,27097
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s42_wc7_od30,0,128,False,31,0.2421875,256,,,42.12903225806452,26138
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s42_wc7_od30,1,128,False,27,0.2109375,256,,,31.925925925925927,26718
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s42_wc7_od30,2,128,False,34,0.265625,256,,,35.61764705882353,25275
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s42_wc7_od30,3,128,False,41,0.3203125,256,,,28.0,23420
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s42_wc7_od30,4,128,False,33,0.2578125,256,,,36.45454545454545,25523
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s42_wc7_od30,5,128,False,26,0.203125,256,,,37.57692307692308,27089
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s42_wc7_od30,6,128,False,34,0.265625,256,,,39.3235294117647,25401
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s42_wc7_od30,7,128,False,26,0.203125,256,,,39.26923076923077,27133
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s43_wc2_od45,0,128,False,48,0.375,256,,,30.8125,21959
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s43_wc2_od45,1,128,False,44,0.34375,256,,,32.5,22934
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s43_wc2_od45,2,128,False,53,0.4140625,256,,,38.20754716981132,21225
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s43_wc2_od45,3,128,False,47,0.3671875,256,,,38.234042553191486,22533
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s43_wc2_od45,4,128,False,41,0.3203125,256,,,39.926829268292686,23909
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s43_wc2_od45,5,128,False,52,0.40625,256,,,35.94230769230769,21325
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s43_wc2_od45,6,128,False,51,0.3984375,256,,,40.13725490196079,21759
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s43_wc2_od45,7,128,False,51,0.3984375,256,,,40.13725490196079,21759
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261109,0,128,False,70,0.546875,256,,,41.1,17725
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261109,1,128,False,59,0.4609375,256,,,39.13559322033898,19973
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261109,2,128,False,63,0.4921875,256,,,43.96825396825397,19410
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261109,3,128,False,64,0.5,256,,,44.015625,19201
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261109,4,128,False,55,0.4296875,256,,,41.72727272727273,20983
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261109,5,128,False,52,0.40625,256,,,34.53846153846154,21252
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261109,6,128,False,61,0.4765625,256,,,34.114754098360656,19233
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261109,7,128,False,57,0.4453125,256,,,37.719298245614034,20326
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261110,0,128,False,59,0.4609375,256,,,32.101694915254235,19558
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261110,1,128,False,49,0.3828125,256,,,31.979591836734695,21791
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261110,2,128,False,64,0.5,256,,,36.578125,18725
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261110,3,128,False,57,0.4453125,256,,,33.473684210526315,20084
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261110,4,128,False,57,0.4453125,256,,,35.45614035087719,20197
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261110,5,128,False,57,0.4453125,256,,,38.29824561403509,20359
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261110,6,128,False,54,0.421875,256,,,39.870370370370374,21097
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261110,7,128,False,52,0.40625,256,,,38.46153846153846,21456
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261111,0,128,False,55,0.4296875,256,,,37.236363636363635,20736
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261111,1,128,False,70,0.546875,256,,,41.08571428571429,17724
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261111,2,128,False,48,0.375,256,,,35.729166666666664,22195
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261111,3,128,False,47,0.3671875,256,,,27.595744680851062,22033
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261111,4,128,False,56,0.4375,256,,,36.125,20455
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261111,5,128,False,68,0.53125,256,,,36.26470588235294,17826
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261111,6,128,False,53,0.4140625,256,,,33.339622641509436,20967
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261111,7,128,False,52,0.40625,256,,,36.51923076923077,21355
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261112,0,128,False,41,0.3203125,256,,,33.048780487804876,23627
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261112,1,128,False,63,0.4921875,256,,,35.111111111111114,18852
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261112,2,128,False,58,0.453125,256,,,34.827586206896555,19940
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261112,3,128,False,60,0.46875,256,,,35.166666666666664,19518
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261112,4,128,False,61,0.4765625,256,,,34.442622950819676,19253
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261112,5,128,False,55,0.4296875,256,,,43.2,21064
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261112,6,128,False,62,0.484375,256,,,41.20967741935484,19451
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,random,random-e4-seed20261112,7,128,False,70,0.546875,256,,,36.371428571428574,17394
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v0,0,128,False,76,0.59375,256,,,40.06578947368421,16357
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v0,1,128,False,66,0.515625,256,,,38.72727272727273,18428
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v0,2,128,False,74,0.578125,256,,,39.945945945945944,16780
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v0,3,128,False,65,0.5078125,256,,,35.676923076923075,18447
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v0,4,128,False,74,0.578125,256,,,33.0,16266
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v0,5,128,False,62,0.484375,256,,,37.145161290322584,19199
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v0,6,128,False,64,0.5,256,,,36.078125,18693
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v0,7,128,False,65,0.5078125,256,,,38.55384615384615,18634
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v1,0,128,False,67,0.5234375,256,,,35.149253731343286,17971
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v1,1,128,False,65,0.5078125,256,,,36.89230769230769,18526
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v1,2,128,False,56,0.4375,256,,,37.785714285714285,20548
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v1,3,128,False,70,0.546875,256,,,34.457142857142856,17260
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v1,4,128,False,66,0.515625,256,,,36.42424242424242,18276
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v1,5,128,False,69,0.5390625,256,,,34.405797101449274,17478
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v1,6,128,False,64,0.5,256,,,35.828125,18677
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v1,7,128,False,74,0.578125,256,,,41.5945945945946,16902
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v2,0,128,False,64,0.5,256,,,34.53125,18594
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v2,1,128,False,60,0.46875,256,,,37.666666666666664,19668
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v2,2,128,False,59,0.4609375,256,,,31.593220338983052,19528
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v2,3,128,False,80,0.625,256,,,37.4125,15281
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v2,4,128,False,64,0.5,256,,,33.171875,18507
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v2,5,128,False,63,0.4921875,256,,,41.0,19223
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v2,6,128,False,61,0.4765625,256,,,31.83606557377049,19094
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v2,7,128,False,56,0.4375,256,,,30.517857142857142,20141
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v3,0,128,False,64,0.5,256,,,36.71875,18734
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v3,1,128,False,63,0.4921875,256,,,33.888888888888886,18775
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v3,2,128,False,71,0.5546875,256,,,35.12676056338028,17086
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v3,3,128,False,64,0.5,256,,,37.65625,18794
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v3,4,128,False,71,0.5546875,256,,,38.91549295774648,17355
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v3,5,128,False,73,0.5703125,256,,,36.68493150684932,16758
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v3,6,128,False,66,0.515625,256,,,39.81818181818182,18500
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,warehouse,warehouse-e4-shelves65-v3,7,128,False,59,0.4609375,256,,,35.610169491525426,19765
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s40_wc4_od30,0,512,False,37,0.072265625,256,,,22.16216216216216,122420
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s40_wc4_od30,1,512,False,31,0.060546875,256,,,19.806451612903224,123750
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s40_wc4_od30,2,512,False,30,0.05859375,256,,,20.333333333333332,124002
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s40_wc4_od30,3,512,False,15,0.029296875,256,,,21.333333333333332,127552
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s40_wc4_od30,4,512,False,34,0.06640625,256,,,20.0,123048
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s40_wc4_od30,5,512,False,34,0.06640625,256,,,22.823529411764707,123144
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s40_wc4_od30,6,512,False,31,0.060546875,256,,,18.870967741935484,123721
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s40_wc4_od30,7,512,False,29,0.056640625,256,,,21.517241379310345,124272
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s41_wc5_od50,0,512,False,20,0.0390625,256,,,17.0,126292
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s41_wc5_od50,1,512,False,28,0.0546875,256,,,22.607142857142858,124537
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s41_wc5_od50,2,512,False,16,0.03125,256,,,15.875,127230
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s41_wc5_od50,3,512,False,19,0.037109375,256,,,14.842105263157896,126490
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s41_wc5_od50,4,512,False,28,0.0546875,256,,,23.714285714285715,124568
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s41_wc5_od50,5,512,False,20,0.0390625,256,,,17.3,126298
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s41_wc5_od50,6,512,False,18,0.03515625,256,,,20.555555555555557,126834
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s41_wc5_od50,7,512,False,24,0.046875,256,,,22.75,125474
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s42_wc7_od30,0,512,False,29,0.056640625,256,,,21.620689655172413,124275
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s42_wc7_od30,1,512,False,27,0.052734375,256,,,25.77777777777778,124856
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s42_wc7_od30,2,512,False,29,0.056640625,256,,,20.20689655172414,124234
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s42_wc7_od30,3,512,False,34,0.06640625,256,,,24.264705882352942,123193
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s42_wc7_od30,4,512,False,28,0.0546875,256,,,19.571428571428573,124452
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s42_wc7_od30,5,512,False,39,0.076171875,256,,,20.923076923076923,121904
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s42_wc7_od30,6,512,False,29,0.056640625,256,,,22.75862068965517,124308
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s42_wc7_od30,7,512,False,20,0.0390625,256,,,23.75,126427
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s43_wc2_od45,0,512,False,33,0.064453125,256,,,21.636363636363637,123338
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s43_wc2_od45,1,512,False,36,0.0703125,256,,,23.25,122693
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s43_wc2_od45,2,512,False,50,0.09765625,256,,,25.6,119552
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s43_wc2_od45,3,512,False,27,0.052734375,256,,,22.185185185185187,124759
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s43_wc2_od45,4,512,False,41,0.080078125,256,,,24.21951219512195,121569
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s43_wc2_od45,5,512,False,39,0.076171875,256,,,22.71794871794872,121974
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s43_wc2_od45,6,512,False,34,0.06640625,256,,,21.352941176470587,123094
+conventional_sync,1,August matched-wall,2450,3036.2910592551343,maze,test-mazes-s43_wc2_od45,7,512,False,30,0.05859375,256,,,25.1,124145
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s40_wc4_od30,0,128,False,64,0.5,256,,,42.0,19072
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s40_wc4_od30,1,128,False,90,0.703125,256,,,46.0,13868
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s40_wc4_od30,2,128,False,56,0.4375,256,,,42.232142857142854,20797
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s40_wc4_od30,3,128,False,79,0.6171875,256,,,45.68354430379747,16153
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s40_wc4_od30,4,128,False,66,0.515625,256,,,45.31818181818182,18863
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s40_wc4_od30,5,128,False,61,0.4765625,256,,,39.98360655737705,19591
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s40_wc4_od30,6,128,False,69,0.5390625,256,,,49.98550724637681,18553
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s40_wc4_od30,7,128,False,78,0.609375,256,,,49.55128205128205,16665
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s41_wc5_od50,0,128,False,54,0.421875,256,,,47.074074074074076,21486
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s41_wc5_od50,1,128,False,54,0.421875,256,,,47.75925925925926,21523
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s41_wc5_od50,2,128,False,65,0.5078125,256,,,45.292307692307695,19072
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s41_wc5_od50,3,128,False,64,0.5,256,,,57.734375,20079
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s41_wc5_od50,4,128,False,69,0.5390625,256,,,48.36231884057971,18441
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s41_wc5_od50,5,128,False,47,0.3671875,256,,,41.4468085106383,22684
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s41_wc5_od50,6,128,False,59,0.4609375,256,,,53.847457627118644,20841
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s41_wc5_od50,7,128,False,57,0.4453125,256,,,52.91228070175438,21192
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s42_wc7_od30,0,128,False,70,0.546875,256,,,48.94285714285714,18274
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s42_wc7_od30,1,128,False,65,0.5078125,256,,,41.707692307692305,18839
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s42_wc7_od30,2,128,False,47,0.3671875,256,,,39.255319148936174,22581
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s42_wc7_od30,3,128,False,71,0.5546875,256,,,39.19718309859155,17375
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s42_wc7_od30,4,128,False,61,0.4765625,256,,,44.032786885245905,19838
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s42_wc7_od30,5,128,False,59,0.4609375,256,,,47.76271186440678,20482
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s42_wc7_od30,6,128,False,58,0.453125,256,,,40.46551724137931,20267
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s42_wc7_od30,7,128,False,57,0.4453125,256,,,47.526315789473685,20885
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s43_wc2_od45,0,128,False,71,0.5546875,256,,,37.774647887323944,17274
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s43_wc2_od45,1,128,False,72,0.5625,256,,,40.56944444444444,17257
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s43_wc2_od45,2,128,False,64,0.5,256,,,39.828125,18933
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s43_wc2_od45,3,128,False,69,0.5390625,256,,,42.52173913043478,18038
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s43_wc2_od45,4,128,False,65,0.5078125,256,,,46.676923076923075,19162
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s43_wc2_od45,5,128,False,86,0.671875,256,,,45.63953488372093,14677
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s43_wc2_od45,6,128,False,77,0.6015625,256,,,45.98701298701299,16597
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s43_wc2_od45,7,128,False,82,0.640625,256,,,47.951219512195124,15708
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261109,0,128,False,89,0.6953125,256,,,42.348314606741575,13753
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261109,1,128,False,82,0.640625,256,,,39.73170731707317,15034
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261109,2,128,False,81,0.6328125,256,,,42.074074074074076,15440
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261109,3,128,False,92,0.71875,256,,,43.54347826086956,13222
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261109,4,128,False,92,0.71875,256,,,47.22826086956522,13561
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261109,5,128,False,74,0.578125,256,,,39.770270270270274,16767
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261109,6,128,False,86,0.671875,256,,,41.825581395348834,14349
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261109,7,128,False,86,0.671875,256,,,44.26744186046512,14559
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261110,0,128,False,82,0.640625,256,,,40.292682926829265,15080
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261110,1,128,False,89,0.6953125,256,,,39.26966292134831,13479
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261110,2,128,False,71,0.5546875,256,,,37.54929577464789,17258
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261110,3,128,False,88,0.6875,256,,,42.05681818181818,13941
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261110,4,128,False,92,0.71875,256,,,41.58695652173913,13042
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261110,5,128,False,80,0.625,256,,,40.6875,15543
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261110,6,128,False,92,0.71875,256,,,45.97826086956522,13446
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261110,7,128,False,87,0.6796875,256,,,47.89655172413793,14663
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261111,0,128,False,86,0.671875,256,,,42.75581395348837,14429
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261111,1,128,False,87,0.6796875,256,,,44.0919540229885,14332
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261111,2,128,False,71,0.5546875,256,,,43.11267605633803,17653
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261111,3,128,False,68,0.53125,256,,,34.36764705882353,17697
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261111,4,128,False,89,0.6953125,256,,,45.49438202247191,14033
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261111,5,128,False,82,0.640625,256,,,39.96341463414634,15053
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261111,6,128,False,79,0.6171875,256,,,41.54430379746835,15826
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261111,7,128,False,89,0.6953125,256,,,41.89887640449438,13713
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261112,0,128,False,87,0.6796875,256,,,42.3448275862069,14180
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261112,1,128,False,86,0.671875,256,,,38.26744186046512,14043
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261112,2,128,False,79,0.6171875,256,,,38.43037974683544,15580
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261112,3,128,False,91,0.7109375,256,,,42.824175824175825,13369
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261112,4,128,False,87,0.6796875,256,,,40.01149425287356,13977
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261112,5,128,False,93,0.7265625,256,,,47.16129032258065,13346
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261112,6,128,False,74,0.578125,256,,,42.32432432432432,16956
+proposed_async,1,August matched-wall,100000,2940.6966339312494,random,random-e4-seed20261112,7,128,False,87,0.6796875,256,,,43.04597701149425,14241
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v0,0,128,False,93,0.7265625,256,,,42.795698924731184,12940
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v0,1,128,False,84,0.65625,256,,,45.32142857142857,15071
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v0,2,128,False,84,0.65625,256,,,41.214285714285715,14726
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v0,3,128,False,85,0.6640625,256,,,40.529411764705884,14453
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v0,4,128,False,91,0.7109375,256,,,36.747252747252745,12816
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v0,5,128,False,89,0.6953125,256,,,45.7752808988764,14058
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v0,6,128,False,84,0.65625,256,,,39.404761904761905,14574
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v0,7,128,False,94,0.734375,256,,,44.07446808510638,12847
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v1,0,128,False,87,0.6796875,256,,,43.44827586206897,14276
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v1,1,128,False,89,0.6953125,256,,,39.247191011235955,13477
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v1,2,128,False,96,0.75,256,,,45.864583333333336,12595
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v1,3,128,False,99,0.7734375,256,,,38.303030303030305,11216
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v1,4,128,False,95,0.7421875,256,,,44.1578947368421,12643
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v1,5,128,False,85,0.6640625,256,,,40.870588235294115,14482
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v1,6,128,False,76,0.59375,256,,,40.71052631578947,16406
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v1,7,128,False,86,0.671875,256,,,38.56976744186046,14069
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v2,0,128,False,89,0.6953125,256,,,40.91011235955056,13625
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v2,1,128,False,95,0.7421875,256,,,41.45263157894737,12386
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v2,2,128,False,90,0.703125,256,,,38.422222222222224,13186
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v2,3,128,False,97,0.7578125,256,,,39.845360824742265,11801
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v2,4,128,False,95,0.7421875,256,,,39.07368421052632,12160
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v2,5,128,False,87,0.6796875,256,,,42.6551724137931,14207
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v2,6,128,False,83,0.6484375,256,,,35.036144578313255,14428
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v2,7,128,False,95,0.7421875,256,,,39.09473684210526,12162
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v3,0,128,False,99,0.7734375,256,,,40.282828282828284,11412
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v3,1,128,False,93,0.7265625,256,,,40.365591397849464,12714
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v3,2,128,False,94,0.734375,256,,,38.11702127659574,12287
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v3,3,128,False,87,0.6796875,256,,,42.632183908045974,14205
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v3,4,128,False,92,0.71875,256,,,39.32608695652174,12834
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v3,5,128,False,92,0.71875,256,,,40.81521739130435,12971
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v3,6,128,False,92,0.71875,256,,,44.5,13310
+proposed_async,1,August matched-wall,100000,2940.6966339312494,warehouse,warehouse-e4-shelves65-v3,7,128,False,94,0.734375,256,,,42.12765957446808,12664
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s40_wc4_od30,0,512,False,58,0.11328125,256,,,24.517241379310345,117646
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s40_wc4_od30,1,512,False,67,0.130859375,256,,,28.70149253731343,115843
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s40_wc4_od30,2,512,False,62,0.12109375,256,,,27.419354838709676,116900
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s40_wc4_od30,3,512,False,63,0.123046875,256,,,35.82539682539682,117201
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s40_wc4_od30,4,512,False,66,0.12890625,256,,,27.439393939393938,115987
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s40_wc4_od30,5,512,False,75,0.146484375,256,,,31.12,114206
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s40_wc4_od30,6,512,False,63,0.123046875,256,,,30.38095238095238,116858
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s40_wc4_od30,7,512,False,71,0.138671875,256,,,31.971830985915492,115166
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s41_wc5_od50,0,512,False,44,0.0859375,256,,,28.181818181818183,121048
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s41_wc5_od50,1,512,False,54,0.10546875,256,,,27.037037037037038,118708
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s41_wc5_od50,2,512,False,41,0.080078125,256,,,24.5609756097561,121583
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s41_wc5_od50,3,512,False,45,0.087890625,256,,,34.28888888888889,121095
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s41_wc5_od50,4,512,False,50,0.09765625,256,,,26.24,119584
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s41_wc5_od50,5,512,False,61,0.119140625,256,,,40.049180327868854,117899
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s41_wc5_od50,6,512,False,52,0.1015625,256,,,35.63461538461539,119613
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s41_wc5_od50,7,512,False,32,0.0625,256,,,34.5625,123986
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s42_wc7_od30,0,512,False,59,0.115234375,256,,,32.30508474576271,117874
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s42_wc7_od30,1,512,False,57,0.111328125,256,,,26.842105263157894,118010
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s42_wc7_od30,2,512,False,50,0.09765625,256,,,29.9,119767
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s42_wc7_od30,3,512,False,64,0.125,256,,,29.546875,116579
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s42_wc7_od30,4,512,False,50,0.09765625,256,,,23.94,119469
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s42_wc7_od30,5,512,False,51,0.099609375,256,,,24.11764705882353,119246
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s42_wc7_od30,6,512,False,48,0.09375,256,,,28.833333333333332,120168
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s42_wc7_od30,7,512,False,43,0.083984375,256,,,28.72093023255814,121299
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s43_wc2_od45,0,512,False,76,0.1484375,256,,,29.05263157894737,113824
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s43_wc2_od45,1,512,False,66,0.12890625,256,,,31.71212121212121,116269
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s43_wc2_od45,2,512,False,75,0.146484375,256,,,29.933333333333334,114117
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s43_wc2_od45,3,512,False,60,0.1171875,256,,,31.916666666666668,117627
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s43_wc2_od45,4,512,False,67,0.130859375,256,,,28.582089552238806,115835
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s43_wc2_od45,5,512,False,73,0.142578125,256,,,30.397260273972602,114603
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s43_wc2_od45,6,512,False,68,0.1328125,256,,,29.13235294117647,115645
+proposed_async,1,August matched-wall,100000,2940.6966339312494,maze,test-mazes-s43_wc2_od45,7,512,False,77,0.150390625,256,,,32.54545454545455,113866
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s40_wc4_od30,0,128,False,60,0.46875,256,,,43.13333333333333,19996
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s40_wc4_od30,1,128,False,71,0.5546875,256,,,41.74647887323944,17556
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s40_wc4_od30,2,128,False,54,0.421875,256,,,44.388888888888886,21341
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s40_wc4_od30,3,128,False,63,0.4921875,256,,,39.03174603174603,19099
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s40_wc4_od30,4,128,False,61,0.4765625,256,,,42.60655737704918,19751
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s40_wc4_od30,5,128,False,60,0.46875,256,,,40.5,19838
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s40_wc4_od30,6,128,False,55,0.4296875,256,,,44.49090909090909,21135
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s40_wc4_od30,7,128,False,57,0.4453125,256,,,42.63157894736842,20606
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s41_wc5_od50,0,128,False,46,0.359375,256,,,46.32608695652174,23123
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s41_wc5_od50,1,128,False,36,0.28125,256,,,41.833333333333336,25058
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s41_wc5_od50,2,128,False,49,0.3828125,256,,,45.755102040816325,22466
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s41_wc5_od50,3,128,False,44,0.34375,256,,,54.22727272727273,23890
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s41_wc5_od50,4,128,False,53,0.4140625,256,,,46.15094339622642,21646
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s41_wc5_od50,5,128,False,57,0.4453125,256,,,49.824561403508774,21016
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s41_wc5_od50,6,128,False,45,0.3515625,256,,,45.955555555555556,23316
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s41_wc5_od50,7,128,False,34,0.265625,256,,,37.0,25322
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s42_wc7_od30,0,128,False,47,0.3671875,256,,,43.57446808510638,22784
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s42_wc7_od30,1,128,False,50,0.390625,256,,,38.02,21869
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s42_wc7_od30,2,128,False,43,0.3359375,256,,,44.395348837209305,23669
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s42_wc7_od30,3,128,False,71,0.5546875,256,,,40.88732394366197,17495
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s42_wc7_od30,4,128,False,59,0.4609375,256,,,45.186440677966104,20330
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s42_wc7_od30,5,128,False,52,0.40625,256,,,41.96153846153846,21638
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s42_wc7_od30,6,128,False,60,0.46875,256,,,47.43333333333333,20254
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s42_wc7_od30,7,128,False,35,0.2734375,256,,,37.31428571428572,25114
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s43_wc2_od45,0,128,False,67,0.5234375,256,,,37.55223880597015,18132
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s43_wc2_od45,1,128,False,62,0.484375,256,,,35.54838709677419,19100
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s43_wc2_od45,2,128,False,68,0.53125,256,,,42.838235294117645,18273
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s43_wc2_od45,3,128,False,62,0.484375,256,,,41.33870967741935,19459
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s43_wc2_od45,4,128,False,49,0.3828125,256,,,36.795918367346935,22027
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s43_wc2_od45,5,128,False,74,0.578125,256,,,43.472972972972975,17041
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s43_wc2_od45,6,128,False,63,0.4921875,256,,,40.96825396825397,19221
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s43_wc2_od45,7,128,False,67,0.5234375,256,,,47.95522388059702,18829
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261109,0,128,False,91,0.7109375,256,,,42.48351648351648,13338
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261109,1,128,False,89,0.6953125,256,,,43.831460674157306,13885
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261109,2,128,False,81,0.6328125,256,,,43.370370370370374,15545
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261109,3,128,False,85,0.6640625,256,,,41.588235294117645,14543
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261109,4,128,False,82,0.640625,256,,,45.646341463414636,15519
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261109,5,128,False,74,0.578125,256,,,39.567567567567565,16752
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261109,6,128,False,69,0.5390625,256,,,37.81159420289855,17713
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261109,7,128,False,85,0.6640625,256,,,43.83529411764706,14734
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261110,0,128,False,74,0.578125,256,,,37.16216216216216,16574
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261110,1,128,False,86,0.671875,256,,,40.68604651162791,14251
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261110,2,128,False,74,0.578125,256,,,40.71621621621622,16837
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261110,3,128,False,91,0.7109375,256,,,45.56043956043956,13618
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261110,4,128,False,70,0.546875,256,,,38.1,17515
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261110,5,128,False,66,0.515625,256,,,41.18181818181818,18590
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261110,6,128,False,92,0.71875,256,,,45.34782608695652,13388
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261110,7,128,False,75,0.5859375,256,,,40.85333333333333,16632
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261111,0,128,False,81,0.6328125,256,,,41.77777777777778,15416
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261111,1,128,False,81,0.6328125,256,,,45.04938271604938,15681
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261111,2,128,False,85,0.6640625,256,,,47.10588235294118,15012
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261111,3,128,False,78,0.609375,256,,,39.52564102564103,15883
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261111,4,128,False,72,0.5625,256,,,38.18055555555556,17085
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261111,5,128,False,87,0.6796875,256,,,40.206896551724135,13994
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261111,6,128,False,80,0.625,256,,,40.5125,15529
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261111,7,128,False,78,0.609375,256,,,41.80769230769231,16061
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261112,0,128,False,95,0.7421875,256,,,45.04210526315789,12727
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261112,1,128,False,92,0.71875,256,,,43.55434782608695,13223
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261112,2,128,False,88,0.6875,256,,,42.11363636363637,13946
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261112,3,128,False,90,0.703125,256,,,42.477777777777774,13551
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261112,4,128,False,90,0.703125,256,,,43.266666666666666,13622
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261112,5,128,False,86,0.671875,256,,,46.16279069767442,14722
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261112,6,128,False,79,0.6171875,256,,,44.0253164556962,16022
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,random,random-e4-seed20261112,7,128,False,84,0.65625,256,,,40.94047619047619,14703
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v0,0,128,False,90,0.703125,256,,,40.25555555555555,13351
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v0,1,128,False,86,0.671875,256,,,43.46511627906977,14490
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v0,2,128,False,84,0.65625,256,,,40.023809523809526,14626
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v0,3,128,False,99,0.7734375,256,,,44.717171717171716,11851
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v0,4,128,False,96,0.75,256,,,40.21875,12053
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v0,5,128,False,93,0.7265625,256,,,46.81720430107527,13314
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v0,6,128,False,78,0.609375,256,,,37.82051282051282,15750
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v0,7,128,False,79,0.6171875,256,,,40.620253164556964,15753
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v1,0,128,False,87,0.6796875,256,,,39.14942528735632,13902
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v1,1,128,False,90,0.703125,256,,,39.522222222222226,13285
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v1,2,128,False,83,0.6484375,256,,,42.13253012048193,15017
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v1,3,128,False,95,0.7421875,256,,,41.136842105263156,12356
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v1,4,128,False,93,0.7265625,256,,,42.666666666666664,12928
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v1,5,128,False,91,0.7109375,256,,,44.010989010989015,13477
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v1,6,128,False,78,0.609375,256,,,38.53846153846154,15806
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v1,7,128,False,90,0.703125,256,,,41.733333333333334,13484
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v2,0,128,False,87,0.6796875,256,,,40.827586206896555,14048
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v2,1,128,False,81,0.6328125,256,,,40.617283950617285,15322
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v2,2,128,False,102,0.796875,256,,,41.63725490196079,10903
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v2,3,128,False,96,0.75,256,,,41.75,12200
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v2,4,128,False,90,0.703125,256,,,36.94444444444444,13053
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v2,5,128,False,82,0.640625,256,,,42.0,15220
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v2,6,128,False,91,0.7109375,256,,,39.69230769230769,13084
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v2,7,128,False,89,0.6953125,256,,,36.89887640449438,13268
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v3,0,128,False,92,0.71875,256,,,40.391304347826086,12932
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v3,1,128,False,79,0.6171875,256,,,38.63291139240506,15596
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v3,2,128,False,88,0.6875,256,,,39.65909090909091,13730
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v3,3,128,False,95,0.7421875,256,,,46.21052631578947,12838
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v3,4,128,False,92,0.71875,256,,,40.98913043478261,12987
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v3,5,128,False,93,0.7265625,256,,,40.83870967741935,12758
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v3,6,128,False,95,0.7421875,256,,,45.578947368421055,12778
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,warehouse,warehouse-e4-shelves65-v3,7,128,False,89,0.6953125,256,,,44.2247191011236,13920
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s40_wc4_od30,0,512,False,51,0.099609375,256,,,21.529411764705884,119114
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s40_wc4_od30,1,512,False,50,0.09765625,256,,,25.88,119566
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s40_wc4_od30,2,512,False,55,0.107421875,256,,,30.472727272727273,118668
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s40_wc4_od30,3,512,False,35,0.068359375,256,,,24.97142857142857,122986
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s40_wc4_od30,4,512,False,44,0.0859375,256,,,25.227272727272727,120918
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s40_wc4_od30,5,512,False,51,0.099609375,256,,,28.88235294117647,119489
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s40_wc4_od30,6,512,False,44,0.0859375,256,,,23.204545454545453,120829
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s40_wc4_od30,7,512,False,53,0.103515625,256,,,29.69811320754717,119078
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s41_wc5_od50,0,512,False,30,0.05859375,256,,,24.1,124115
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s41_wc5_od50,1,512,False,30,0.05859375,256,,,20.466666666666665,124006
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s41_wc5_od50,2,512,False,33,0.064453125,256,,,24.87878787878788,123445
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s41_wc5_od50,3,512,False,37,0.072265625,256,,,29.675675675675677,122698
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s41_wc5_od50,4,512,False,39,0.076171875,256,,,26.743589743589745,122131
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s41_wc5_od50,5,512,False,30,0.05859375,256,,,22.466666666666665,124066
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s41_wc5_od50,6,512,False,32,0.0625,256,,,22.8125,123610
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s41_wc5_od50,7,512,False,24,0.046875,256,,,19.5,125396
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s42_wc7_od30,0,512,False,44,0.0859375,256,,,24.09090909090909,120868
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s42_wc7_od30,1,512,False,50,0.09765625,256,,,32.02,119873
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s42_wc7_od30,2,512,False,38,0.07421875,256,,,29.13157894736842,122451
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s42_wc7_od30,3,512,False,46,0.08984375,256,,,22.195652173913043,120317
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s42_wc7_od30,4,512,False,49,0.095703125,256,,,23.591836734693878,119684
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s42_wc7_od30,5,512,False,48,0.09375,256,,,27.0625,120083
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s42_wc7_od30,6,512,False,30,0.05859375,256,,,29.633333333333333,124281
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s42_wc7_od30,7,512,False,35,0.068359375,256,,,24.771428571428572,122979
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s43_wc2_od45,0,512,False,56,0.109375,256,,,27.767857142857142,118291
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s43_wc2_od45,1,512,False,65,0.126953125,256,,,29.8,116369
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s43_wc2_od45,2,512,False,67,0.130859375,256,,,31.388059701492537,116023
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s43_wc2_od45,3,512,False,61,0.119140625,256,,,27.327868852459016,117123
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s43_wc2_od45,4,512,False,59,0.115234375,256,,,29.74576271186441,117723
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s43_wc2_od45,5,512,False,63,0.123046875,256,,,25.841269841269842,116572
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s43_wc2_od45,6,512,False,53,0.103515625,256,,,28.735849056603772,119027
+cpu_cached_prefetch,1,September cached-prefetch logging,20893,3035.9901625930797,maze,test-mazes-s43_wc2_od45,7,512,False,52,0.1015625,256,,,27.557692307692307,119193
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s40_wc4_od30,0,128,False,34,0.265625,256,,,32.205882352941174,25159
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s40_wc4_od30,1,128,False,41,0.3203125,256,,,35.58536585365854,23731
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s40_wc4_od30,2,128,False,38,0.296875,256,,,36.18421052631579,24415
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s40_wc4_od30,3,128,False,29,0.2265625,256,,,28.689655172413794,26176
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s40_wc4_od30,4,128,False,22,0.171875,256,,,21.772727272727273,27615
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s40_wc4_od30,5,128,False,41,0.3203125,256,,,35.292682926829265,23719
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s40_wc4_od30,6,128,False,23,0.1796875,256,,,33.04347826086956,27640
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s40_wc4_od30,7,128,False,30,0.234375,256,,,31.466666666666665,26032
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s41_wc5_od50,0,128,False,32,0.25,256,,,37.625,25780
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s41_wc5_od50,1,128,False,20,0.15625,256,,,31.95,28287
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s41_wc5_od50,2,128,False,35,0.2734375,256,,,36.4,25082
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s41_wc5_od50,3,128,False,29,0.2265625,256,,,46.6551724137931,26697
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s41_wc5_od50,4,128,False,27,0.2109375,256,,,28.962962962962962,26638
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s41_wc5_od50,5,128,False,28,0.21875,256,,,37.67857142857143,26655
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s41_wc5_od50,6,128,False,23,0.1796875,256,,,41.21739130434783,27828
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s41_wc5_od50,7,128,False,23,0.1796875,256,,,37.17391304347826,27735
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s42_wc7_od30,0,128,False,23,0.1796875,256,,,35.869565217391305,27705
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s42_wc7_od30,1,128,False,31,0.2421875,256,,,38.58064516129032,26028
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s42_wc7_od30,2,128,False,19,0.1484375,256,,,24.842105263157894,28376
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s42_wc7_od30,3,128,False,41,0.3203125,256,,,33.073170731707314,23628
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s42_wc7_od30,4,128,False,29,0.2265625,256,,,38.0,26446
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s42_wc7_od30,5,128,False,27,0.2109375,256,,,35.111111111111114,26804
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s42_wc7_od30,6,128,False,22,0.171875,256,,,41.22727272727273,28043
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s42_wc7_od30,7,128,False,20,0.15625,256,,,30.2,28252
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s43_wc2_od45,0,128,False,39,0.3046875,256,,,28.846153846153847,23909
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s43_wc2_od45,1,128,False,43,0.3359375,256,,,30.25581395348837,23061
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s43_wc2_od45,2,128,False,48,0.375,256,,,40.3125,22415
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s43_wc2_od45,3,128,False,40,0.3125,256,,,32.825,23841
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s43_wc2_od45,4,128,False,20,0.15625,256,,,31.9,28286
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s43_wc2_od45,5,128,False,31,0.2421875,256,,,32.61290322580645,25843
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s43_wc2_od45,6,128,False,39,0.3046875,256,,,34.794871794871796,24141
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s43_wc2_od45,7,128,False,39,0.3046875,256,,,36.15384615384615,24194
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261109,0,128,False,64,0.5,256,,,36.359375,18711
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261109,1,128,False,55,0.4296875,256,,,38.45454545454545,20803
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261109,2,128,False,45,0.3515625,256,,,36.733333333333334,22901
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261109,3,128,False,61,0.4765625,256,,,42.21311475409836,19727
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261109,4,128,False,50,0.390625,256,,,39.72,21954
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261109,5,128,False,42,0.328125,256,,,35.76190476190476,23518
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261109,6,128,False,64,0.5,256,,,35.40625,18650
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261109,7,128,False,69,0.5390625,256,,,44.26086956521739,18158
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261110,0,128,False,51,0.3984375,256,,,31.901960784313726,21339
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261110,1,128,False,42,0.328125,256,,,32.80952380952381,23394
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261110,2,128,False,52,0.40625,256,,,35.17307692307692,21285
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261110,3,128,False,57,0.4453125,256,,,39.07017543859649,20403
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261110,4,128,False,60,0.46875,256,,,40.166666666666664,19818
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261110,5,128,False,47,0.3671875,256,,,41.0,22663
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261110,6,128,False,55,0.4296875,256,,,45.09090909090909,21168
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261110,7,128,False,54,0.421875,256,,,37.96296296296296,20994
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261111,0,128,False,40,0.3125,256,,,33.875,23883
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261111,1,128,False,43,0.3359375,256,,,30.558139534883722,23074
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261111,2,128,False,61,0.4765625,256,,,39.16393442622951,19541
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261111,3,128,False,55,0.4296875,256,,,32.25454545454546,20462
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261111,4,128,False,47,0.3671875,256,,,36.170212765957444,22436
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261111,5,128,False,52,0.40625,256,,,35.88461538461539,21322
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261111,6,128,False,48,0.375,256,,,30.395833333333332,21939
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261111,7,128,False,50,0.390625,256,,,36.24,21780
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261112,0,128,False,42,0.328125,256,,,33.404761904761905,23419
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261112,1,128,False,41,0.3203125,256,,,31.658536585365855,23570
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261112,2,128,False,38,0.296875,256,,,23.68421052631579,23940
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261112,3,128,False,47,0.3671875,256,,,33.212765957446805,22297
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261112,4,128,False,41,0.3203125,256,,,32.46341463414634,23603
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261112,5,128,False,57,0.4453125,256,,,37.92982456140351,20338
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261112,6,128,False,41,0.3203125,256,,,38.65853658536585,23857
+conventional_sync,2,August matched-wall,2439,3036.642328578979,random,random-e4-seed20261112,7,128,False,52,0.40625,256,,,32.38461538461539,21140
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v0,0,128,False,52,0.40625,256,,,34.69230769230769,21260
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v0,1,128,False,72,0.5625,256,,,41.361111111111114,17314
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v0,2,128,False,58,0.453125,256,,,36.46551724137931,20035
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v0,3,128,False,63,0.4921875,256,,,36.42857142857143,18935
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v0,4,128,False,78,0.609375,256,,,34.05128205128205,15456
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v0,5,128,False,54,0.421875,256,,,37.68518518518518,20979
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v0,6,128,False,69,0.5390625,256,,,37.26086956521739,17675
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v0,7,128,False,58,0.453125,256,,,37.96551724137931,20122
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v1,0,128,False,51,0.3984375,256,,,40.372549019607845,21771
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v1,1,128,False,53,0.4140625,256,,,33.264150943396224,20963
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v1,2,128,False,67,0.5234375,256,,,39.0,18229
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v1,3,128,False,72,0.5625,256,,,36.763888888888886,16983
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v1,4,128,False,74,0.578125,256,,,42.71621621621622,16985
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v1,5,128,False,57,0.4453125,256,,,35.24561403508772,20185
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v1,6,128,False,62,0.484375,256,,,35.435483870967744,19093
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v1,7,128,False,64,0.5,256,,,35.859375,18679
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v2,0,128,False,61,0.4765625,256,,,37.83606557377049,19460
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v2,1,128,False,60,0.46875,256,,,37.416666666666664,19653
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v2,2,128,False,64,0.5,256,,,33.65625,18538
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v2,3,128,False,66,0.515625,256,,,36.53030303030303,18283
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v2,4,128,False,57,0.4453125,256,,,30.789473684210527,19931
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v2,5,128,False,61,0.4765625,256,,,38.721311475409834,19514
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v2,6,128,False,58,0.453125,256,,,37.91379310344828,20119
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v2,7,128,False,56,0.4375,256,,,33.42857142857143,20304
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v3,0,128,False,57,0.4453125,256,,,34.70175438596491,20154
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v3,1,128,False,49,0.3828125,256,,,33.93877551020408,21887
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v3,2,128,False,64,0.5,256,,,33.90625,18554
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v3,3,128,False,46,0.359375,256,,,35.82608695652174,22640
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v3,4,128,False,76,0.59375,256,,,37.64473684210526,16173
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v3,5,128,False,63,0.4921875,256,,,39.317460317460316,19117
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v3,6,128,False,57,0.4453125,256,,,35.14035087719298,20179
+conventional_sync,2,August matched-wall,2439,3036.642328578979,warehouse,warehouse-e4-shelves65-v3,7,128,False,56,0.4375,256,,,42.0,20784
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s40_wc4_od30,0,512,False,24,0.046875,256,,,19.916666666666668,125406
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s40_wc4_od30,1,512,False,30,0.05859375,256,,,28.266666666666666,124240
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s40_wc4_od30,2,512,False,24,0.046875,256,,,17.708333333333332,125353
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s40_wc4_od30,3,512,False,15,0.029296875,256,,,17.0,127487
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s40_wc4_od30,4,512,False,25,0.048828125,256,,,21.4,125207
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s40_wc4_od30,5,512,False,26,0.05078125,256,,,27.807692307692307,125139
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s40_wc4_od30,6,512,False,24,0.046875,256,,,18.041666666666668,125361
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s40_wc4_od30,7,512,False,22,0.04296875,256,,,27.136363636363637,126037
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s41_wc5_od50,0,512,False,20,0.0390625,256,,,15.0,126252
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s41_wc5_od50,1,512,False,21,0.041015625,256,,,11.761904761904763,125943
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s41_wc5_od50,2,512,False,16,0.03125,256,,,12.875,127182
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s41_wc5_od50,3,512,False,16,0.03125,256,,,20.0,127296
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s41_wc5_od50,4,512,False,21,0.041015625,256,,,17.904761904761905,126072
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s41_wc5_od50,5,512,False,21,0.041015625,256,,,16.61904761904762,126045
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s41_wc5_od50,6,512,False,18,0.03515625,256,,,18.61111111111111,126799
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s41_wc5_od50,7,512,False,17,0.033203125,256,,,19.0,127043
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s42_wc7_od30,0,512,False,20,0.0390625,256,,,14.45,126241
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s42_wc7_od30,1,512,False,27,0.052734375,256,,,23.0,124781
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s42_wc7_od30,2,512,False,24,0.046875,256,,,24.916666666666668,125526
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s42_wc7_od30,3,512,False,24,0.046875,256,,,19.708333333333332,125401
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s42_wc7_od30,4,512,False,22,0.04296875,256,,,13.181818181818182,125730
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s42_wc7_od30,5,512,False,27,0.052734375,256,,,16.0,124592
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s42_wc7_od30,6,512,False,28,0.0546875,256,,,26.142857142857142,124636
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s42_wc7_od30,7,512,False,19,0.037109375,256,,,18.736842105263158,126564
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s43_wc2_od45,0,512,False,31,0.060546875,256,,,20.451612903225808,123770
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s43_wc2_od45,1,512,False,33,0.064453125,256,,,20.424242424242426,123298
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s43_wc2_od45,2,512,False,27,0.052734375,256,,,16.40740740740741,124603
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s43_wc2_od45,3,512,False,29,0.056640625,256,,,20.06896551724138,124230
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s43_wc2_od45,4,512,False,29,0.056640625,256,,,19.79310344827586,124222
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s43_wc2_od45,5,512,False,34,0.06640625,256,,,18.029411764705884,122981
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s43_wc2_od45,6,512,False,26,0.05078125,256,,,21.692307692307693,124980
+conventional_sync,2,August matched-wall,2439,3036.642328578979,maze,test-mazes-s43_wc2_od45,7,512,False,42,0.08203125,256,,,34.38095238095238,121764
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s40_wc4_od30,0,128,False,61,0.4765625,256,,,37.50819672131148,19440
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s40_wc4_od30,1,128,False,79,0.6171875,256,,,43.936708860759495,16015
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s40_wc4_od30,2,128,False,55,0.4296875,256,,,45.10909090909091,21169
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s40_wc4_od30,3,128,False,73,0.5703125,256,,,41.10958904109589,17081
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s40_wc4_od30,4,128,False,53,0.4140625,256,,,38.39622641509434,21235
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s40_wc4_od30,5,128,False,60,0.46875,256,,,42.95,19985
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s40_wc4_od30,6,128,False,61,0.4765625,256,,,48.63934426229508,20119
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s40_wc4_od30,7,128,False,63,0.4921875,256,,,45.73015873015873,19521
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s41_wc5_od50,0,128,False,65,0.5078125,256,,,43.90769230769231,18982
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s41_wc5_od50,1,128,False,61,0.4765625,256,,,54.032786885245905,20448
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s41_wc5_od50,2,128,False,62,0.484375,256,,,52.32258064516129,20140
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s41_wc5_od50,3,128,False,49,0.3828125,256,,,46.61224489795919,22508
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s41_wc5_od50,4,128,False,64,0.5,256,,,44.734375,19247
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s41_wc5_od50,5,128,False,50,0.390625,256,,,41.4,22038
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s41_wc5_od50,6,128,False,38,0.296875,256,,,41.921052631578945,24633
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s41_wc5_od50,7,128,False,43,0.3359375,256,,,49.604651162790695,23893
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s42_wc7_od30,0,128,False,74,0.578125,256,,,51.0,17598
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s42_wc7_od30,1,128,False,64,0.5,256,,,41.640625,19049
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s42_wc7_od30,2,128,False,69,0.5390625,256,,,49.2463768115942,18502
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s42_wc7_od30,3,128,False,71,0.5546875,256,,,41.352112676056336,17528
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s42_wc7_od30,4,128,False,55,0.4296875,256,,,47.6,21306
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s42_wc7_od30,5,128,False,66,0.515625,256,,,46.53030303030303,18943
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s42_wc7_od30,6,128,False,64,0.5,256,,,43.9375,19196
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s42_wc7_od30,7,128,False,44,0.34375,256,,,37.86363636363637,23170
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s43_wc2_od45,0,128,False,73,0.5703125,256,,,38.534246575342465,16893
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s43_wc2_od45,1,128,False,67,0.5234375,256,,,36.95522388059702,18092
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s43_wc2_od45,2,128,False,75,0.5859375,256,,,43.306666666666665,16816
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s43_wc2_od45,3,128,False,69,0.5390625,256,,,45.42028985507246,18238
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s43_wc2_od45,4,128,False,56,0.4375,256,,,43.892857142857146,20890
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s43_wc2_od45,5,128,False,83,0.6484375,256,,,42.75903614457831,15069
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s43_wc2_od45,6,128,False,82,0.640625,256,,,44.0609756097561,15389
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s43_wc2_od45,7,128,False,65,0.5078125,256,,,45.38461538461539,19078
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261109,0,128,False,93,0.7265625,256,,,44.82795698924731,13129
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261109,1,128,False,84,0.65625,256,,,39.642857142857146,14594
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261109,2,128,False,76,0.59375,256,,,40.25,16371
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261109,3,128,False,88,0.6875,256,,,42.97727272727273,14022
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261109,4,128,False,78,0.609375,256,,,46.666666666666664,16440
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261109,5,128,False,89,0.6953125,256,,,44.662921348314605,13959
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261109,6,128,False,74,0.578125,256,,,40.608108108108105,16829
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261109,7,128,False,83,0.6484375,256,,,43.46987951807229,15128
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261110,0,128,False,71,0.5546875,256,,,35.53521126760563,17115
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261110,1,128,False,74,0.578125,256,,,38.148648648648646,16647
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261110,2,128,False,72,0.5625,256,,,40.34722222222222,17241
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261110,3,128,False,98,0.765625,256,,,43.755102040816325,11968
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261110,4,128,False,82,0.640625,256,,,40.707317073170735,15114
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261110,5,128,False,70,0.546875,256,,,47.614285714285714,18181
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261110,6,128,False,81,0.6328125,256,,,52.08641975308642,16251
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261110,7,128,False,79,0.6171875,256,,,43.151898734177216,15953
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261111,0,128,False,96,0.75,256,,,43.125,12332
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261111,1,128,False,90,0.703125,256,,,43.37777777777778,13632
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261111,2,128,False,88,0.6875,256,,,47.23863636363637,14397
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261111,3,128,False,78,0.609375,256,,,38.782051282051285,15825
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261111,4,128,False,77,0.6015625,256,,,43.142857142857146,16378
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261111,5,128,False,85,0.6640625,256,,,45.96470588235294,14915
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261111,6,128,False,89,0.6953125,256,,,45.79775280898876,14060
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261111,7,128,False,94,0.734375,256,,,40.97872340425532,12556
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261112,0,128,False,80,0.625,256,,,42.9625,15725
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261112,1,128,False,86,0.671875,256,,,38.44186046511628,14058
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261112,2,128,False,78,0.609375,256,,,37.1025641025641,15694
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261112,3,128,False,87,0.6796875,256,,,40.14942528735632,13989
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261112,4,128,False,90,0.703125,256,,,41.666666666666664,13478
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261112,5,128,False,100,0.78125,256,,,48.67,12035
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261112,6,128,False,87,0.6796875,256,,,47.01149425287356,14586
+proposed_async,2,August matched-wall,100000,2946.5971067319624,random,random-e4-seed20261112,7,128,False,86,0.671875,256,,,40.593023255813954,14243
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v0,0,128,False,92,0.71875,256,,,39.94565217391305,12891
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v0,1,128,False,95,0.7421875,256,,,45.68421052631579,12788
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v0,2,128,False,93,0.7265625,256,,,41.59139784946237,12828
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v0,3,128,False,93,0.7265625,256,,,41.354838709677416,12806
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v0,4,128,False,101,0.7890625,256,,,37.28712871287129,10678
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v0,5,128,False,94,0.734375,256,,,46.51063829787234,13076
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v0,6,128,False,90,0.703125,256,,,39.27777777777778,13263
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v0,7,128,False,94,0.734375,256,,,42.59574468085106,12708
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v1,0,128,False,84,0.65625,256,,,40.273809523809526,14647
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v1,1,128,False,91,0.7109375,256,,,38.956043956043956,13017
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v1,2,128,False,96,0.75,256,,,46.90625,12695
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v1,3,128,False,87,0.6796875,256,,,36.50574712643678,13672
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v1,4,128,False,83,0.6484375,256,,,40.506024096385545,14882
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v1,5,128,False,86,0.671875,256,,,40.04651162790697,14196
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v1,6,128,False,79,0.6171875,256,,,37.58227848101266,15513
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v1,7,128,False,91,0.7109375,256,,,40.34065934065934,13143
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v2,0,128,False,89,0.6953125,256,,,39.13483146067416,13467
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v2,1,128,False,90,0.703125,256,,,38.62222222222222,13204
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v2,2,128,False,91,0.7109375,256,,,36.8021978021978,12821
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v2,3,128,False,95,0.7421875,256,,,38.705263157894734,12125
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v2,4,128,False,83,0.6484375,256,,,38.16867469879518,14688
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v2,5,128,False,85,0.6640625,256,,,45.45882352941177,14872
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v2,6,128,False,88,0.6875,256,,,36.19318181818182,13425
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v2,7,128,False,91,0.7109375,256,,,39.21978021978022,13041
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v3,0,128,False,109,0.8515625,256,,,43.69724770642202,9627
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v3,1,128,False,89,0.6953125,256,,,39.38202247191011,13489
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v3,2,128,False,93,0.7265625,256,,,35.666666666666664,12277
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v3,3,128,False,90,0.703125,256,,,44.477777777777774,13731
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v3,4,128,False,100,0.78125,256,,,41.59,11327
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v3,5,128,False,96,0.75,256,,,40.5625,12086
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v3,6,128,False,91,0.7109375,256,,,41.46153846153846,13245
+proposed_async,2,August matched-wall,100000,2946.5971067319624,warehouse,warehouse-e4-shelves65-v3,7,128,False,91,0.7109375,256,,,42.527472527472526,13342
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s40_wc4_od30,0,512,False,75,0.146484375,256,,,34.92,114491
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s40_wc4_od30,1,512,False,70,0.13671875,256,,,29.985714285714284,115251
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s40_wc4_od30,2,512,False,62,0.12109375,256,,,27.387096774193548,116898
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s40_wc4_od30,3,512,False,46,0.08984375,256,,,31.652173913043477,120752
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s40_wc4_od30,4,512,False,54,0.10546875,256,,,23.314814814814813,118507
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s40_wc4_od30,5,512,False,74,0.14453125,256,,,31.43243243243243,114454
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s40_wc4_od30,6,512,False,57,0.111328125,256,,,30.473684210526315,118217
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s40_wc4_od30,7,512,False,78,0.15234375,256,,,31.58974358974359,113568
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s41_wc5_od50,0,512,False,40,0.078125,256,,,27.775,121943
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s41_wc5_od50,1,512,False,55,0.107421875,256,,,26.363636363636363,118442
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s41_wc5_od50,2,512,False,33,0.064453125,256,,,24.757575757575758,123441
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s41_wc5_od50,3,512,False,34,0.06640625,256,,,27.058823529411764,123288
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s41_wc5_od50,4,512,False,41,0.080078125,256,,,23.853658536585368,121554
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s41_wc5_od50,5,512,False,38,0.07421875,256,,,31.657894736842106,122547
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s41_wc5_od50,6,512,False,46,0.08984375,256,,,29.02173913043478,120631
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s41_wc5_od50,7,512,False,36,0.0703125,256,,,29.75,122927
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s42_wc7_od30,0,512,False,57,0.111328125,256,,,32.87719298245614,118354
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s42_wc7_od30,1,512,False,53,0.103515625,256,,,28.056603773584907,118991
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s42_wc7_od30,2,512,False,68,0.1328125,256,,,37.411764705882355,116208
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s42_wc7_od30,3,512,False,59,0.115234375,256,,,27.135593220338983,117569
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s42_wc7_od30,4,512,False,42,0.08203125,256,,,21.547619047619047,121225
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s42_wc7_od30,5,512,False,63,0.123046875,256,,,29.0,116771
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s42_wc7_od30,6,512,False,41,0.080078125,256,,,30.878048780487806,121842
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s42_wc7_od30,7,512,False,50,0.09765625,256,,,31.4,119842
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s43_wc2_od45,0,512,False,60,0.1171875,256,,,27.983333333333334,117391
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s43_wc2_od45,1,512,False,67,0.130859375,256,,,27.940298507462686,115792
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s43_wc2_od45,2,512,False,89,0.173828125,256,,,29.089887640449437,110877
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s43_wc2_od45,3,512,False,70,0.13671875,256,,,31.042857142857144,115325
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s43_wc2_od45,4,512,False,78,0.15234375,256,,,29.743589743589745,113424
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s43_wc2_od45,5,512,False,70,0.13671875,256,,,25.52857142857143,114939
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s43_wc2_od45,6,512,False,73,0.142578125,256,,,30.013698630136986,114575
+proposed_async,2,August matched-wall,100000,2946.5971067319624,maze,test-mazes-s43_wc2_od45,7,512,False,84,0.1640625,256,,,35.583333333333336,112557
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s40_wc4_od30,0,128,False,1,0.0078125,256,,,10.0,32522
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s40_wc4_od30,1,128,False,2,0.015625,256,,,18.5,32293
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s40_wc4_od30,2,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s40_wc4_od30,3,128,False,1,0.0078125,256,,,11.0,32523
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s40_wc4_od30,4,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s40_wc4_od30,5,128,False,1,0.0078125,256,,,25.0,32537
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s40_wc4_od30,6,128,False,1,0.0078125,256,,,22.0,32534
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s40_wc4_od30,7,128,False,1,0.0078125,256,,,21.0,32533
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s41_wc5_od50,0,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s41_wc5_od50,1,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s41_wc5_od50,2,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s41_wc5_od50,3,128,False,1,0.0078125,256,,,14.0,32526
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s41_wc5_od50,4,128,False,1,0.0078125,256,,,15.0,32527
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s41_wc5_od50,5,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s41_wc5_od50,6,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s41_wc5_od50,7,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s42_wc7_od30,0,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s42_wc7_od30,1,128,False,2,0.015625,256,,,37.5,32331
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s42_wc7_od30,2,128,False,2,0.015625,256,,,18.0,32292
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s42_wc7_od30,3,128,False,1,0.0078125,256,,,10.0,32522
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s42_wc7_od30,4,128,False,2,0.015625,256,,,13.0,32282
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s42_wc7_od30,5,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s42_wc7_od30,6,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s42_wc7_od30,7,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s43_wc2_od45,0,128,False,1,0.0078125,256,,,17.0,32529
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s43_wc2_od45,1,128,False,2,0.015625,256,,,4.5,32265
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s43_wc2_od45,2,128,False,2,0.015625,256,,,23.5,32303
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s43_wc2_od45,3,128,False,1,0.0078125,256,,,13.0,32525
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s43_wc2_od45,4,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s43_wc2_od45,5,128,False,1,0.0078125,256,,,24.0,32536
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s43_wc2_od45,6,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s43_wc2_od45,7,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261109,0,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261109,1,128,False,1,0.0078125,256,,,16.0,32528
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261109,2,128,False,1,0.0078125,256,,,10.0,32522
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261109,3,128,False,2,0.015625,256,,,10.0,32276
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261109,4,128,False,1,0.0078125,256,,,35.0,32547
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261109,5,128,False,1,0.0078125,256,,,3.0,32515
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261109,6,128,False,1,0.0078125,256,,,1.0,32513
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261109,7,128,False,1,0.0078125,256,,,41.0,32553
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261110,0,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261110,1,128,False,1,0.0078125,256,,,4.0,32516
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261110,2,128,False,1,0.0078125,256,,,4.0,32516
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261110,3,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261110,4,128,False,1,0.0078125,256,,,15.0,32527
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261110,5,128,False,2,0.015625,256,,,10.5,32277
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261110,6,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261110,7,128,False,1,0.0078125,256,,,21.0,32533
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261111,0,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261111,1,128,False,1,0.0078125,256,,,3.0,32515
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261111,2,128,False,1,0.0078125,256,,,3.0,32515
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261111,3,128,False,1,0.0078125,256,,,63.0,32575
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261111,4,128,False,1,0.0078125,256,,,20.0,32532
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261111,5,128,False,2,0.015625,256,,,10.0,32276
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261111,6,128,False,2,0.015625,256,,,15.5,32287
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261111,7,128,False,1,0.0078125,256,,,7.0,32519
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261112,0,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261112,1,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261112,2,128,False,1,0.0078125,256,,,16.0,32528
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261112,3,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261112,4,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261112,5,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261112,6,128,False,0,0.0,256,,,,32768
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,random,random-e4-seed20261112,7,128,False,1,0.0078125,256,,,48.0,32560
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v0,0,128,False,9,0.0703125,256,,,39.44444444444444,30819
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v0,1,128,False,4,0.03125,256,,,33.25,31877
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v0,2,128,False,6,0.046875,256,,,36.0,31448
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v0,3,128,False,5,0.0390625,256,,,27.6,31626
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v0,4,128,False,8,0.0625,256,,,26.25,30930
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v0,5,128,False,10,0.078125,256,,,31.2,30520
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v0,6,128,False,6,0.046875,256,,,35.666666666666664,31446
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v0,7,128,False,3,0.0234375,256,,,40.333333333333336,32121
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v1,0,128,False,7,0.0546875,256,,,27.428571428571427,31168
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v1,1,128,False,6,0.046875,256,,,35.0,31442
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v1,2,128,False,12,0.09375,256,,,38.083333333333336,30153
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v1,3,128,False,9,0.0703125,256,,,26.22222222222222,30700
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v1,4,128,False,6,0.046875,256,,,26.166666666666668,31389
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v1,5,128,False,9,0.0703125,256,,,40.77777777777778,30831
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v1,6,128,False,7,0.0546875,256,,,33.57142857142857,31211
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v1,7,128,False,9,0.0703125,256,,,27.444444444444443,30711
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v2,0,128,False,9,0.0703125,256,,,37.77777777777778,30804
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v2,1,128,False,7,0.0546875,256,,,26.142857142857142,31159
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v2,2,128,False,14,0.109375,256,,,35.42857142857143,29680
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v2,3,128,False,16,0.125,256,,,41.6875,29339
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v2,4,128,False,8,0.0625,256,,,27.625,30941
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v2,5,128,False,14,0.109375,256,,,55.142857142857146,29956
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v2,6,128,False,15,0.1171875,256,,,32.2,29411
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v2,7,128,False,7,0.0546875,256,,,27.428571428571427,31168
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v3,0,128,False,5,0.0390625,256,,,19.4,31585
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v3,1,128,False,14,0.109375,256,,,38.5,29723
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v3,2,128,False,8,0.0625,256,,,29.875,30959
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v3,3,128,False,7,0.0546875,256,,,28.0,31172
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v3,4,128,False,6,0.046875,256,,,36.166666666666664,31449
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v3,5,128,False,7,0.0546875,256,,,30.857142857142858,31192
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v3,6,128,False,10,0.078125,256,,,45.3,30661
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,warehouse,warehouse-e4-shelves65-v3,7,128,False,9,0.0703125,256,,,27.333333333333332,30710
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s40_wc4_od30,0,512,False,1,0.001953125,256,,,3.0,130819
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s40_wc4_od30,1,512,False,2,0.00390625,256,,,4.5,130569
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s40_wc4_od30,2,512,False,1,0.001953125,256,,,15.0,130831
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s40_wc4_od30,3,512,False,1,0.001953125,256,,,17.0,130833
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s40_wc4_od30,4,512,False,1,0.001953125,256,,,11.0,130827
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s40_wc4_od30,5,512,False,0,0.0,256,,,,131072
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s40_wc4_od30,6,512,False,1,0.001953125,256,,,15.0,130831
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s40_wc4_od30,7,512,False,0,0.0,256,,,,131072
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s41_wc5_od50,0,512,False,1,0.001953125,256,,,6.0,130822
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s41_wc5_od50,1,512,False,3,0.005859375,256,,,5.0,130319
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s41_wc5_od50,2,512,False,0,0.0,256,,,,131072
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s41_wc5_od50,3,512,False,1,0.001953125,256,,,11.0,130827
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s41_wc5_od50,4,512,False,0,0.0,256,,,,131072
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s41_wc5_od50,5,512,False,3,0.005859375,256,,,8.333333333333334,130329
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s41_wc5_od50,6,512,False,1,0.001953125,256,,,20.0,130836
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s41_wc5_od50,7,512,False,0,0.0,256,,,,131072
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s42_wc7_od30,0,512,False,1,0.001953125,256,,,35.0,130851
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s42_wc7_od30,1,512,False,1,0.001953125,256,,,5.0,130821
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s42_wc7_od30,2,512,False,2,0.00390625,256,,,13.0,130586
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s42_wc7_od30,3,512,False,3,0.005859375,256,,,7.666666666666667,130327
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s42_wc7_od30,4,512,False,2,0.00390625,256,,,8.5,130577
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s42_wc7_od30,5,512,False,6,0.01171875,256,,,10.5,129599
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s42_wc7_od30,6,512,False,2,0.00390625,256,,,2.0,130564
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s42_wc7_od30,7,512,False,0,0.0,256,,,,131072
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s43_wc2_od45,0,512,False,1,0.001953125,256,,,18.0,130834
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s43_wc2_od45,1,512,False,2,0.00390625,256,,,4.5,130569
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s43_wc2_od45,2,512,False,4,0.0078125,256,,,7.0,130076
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s43_wc2_od45,3,512,False,0,0.0,256,,,,131072
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s43_wc2_od45,4,512,False,2,0.00390625,256,,,2.0,130564
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s43_wc2_od45,5,512,False,4,0.0078125,256,,,11.25,130093
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s43_wc2_od45,6,512,False,3,0.005859375,256,,,8.666666666666666,130330
+cpu_cached_prefetch,2,September cached-prefetch logging,21066,3035.988899431075,maze,test-mazes-s43_wc2_od45,7,512,False,3,0.005859375,256,,,7.0,130325

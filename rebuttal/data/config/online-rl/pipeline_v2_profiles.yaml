@@ -1,0 +1,48 @@
+status: optimized_validated_three_seed_trials_complete
+role: historical_self_implemented_adapter_diagnostic_not_actual_sample_factory
+base_training_definition: costtracer_128_proposed.yaml
+reference_cpu_buffers:
+  environment: pogema_1.2.2_soft
+  workers: 8
+  worker_cpu_affinity_count: 16
+  cpu_exact_distance_cache: true
+  cpu_vectorized_observation: true
+  rollout: cpu_pinned
+  gae: cpu_numpy
+  batch_preparation: cpu_pinned_then_upload
+  shuffle: numpy_cpu_permutation
+  learner: gpu_eager
+  layout: NCHW
+  adam: original_torch_adam
+  cudnn_benchmark: false
+  model_compilation: false
+  cuda_graph: false
+  provenance: selected_sample_factory_v1_121_4_placement_synchronous_adapter
+  original_author_training_config_available: false
+jointloom_optimized:
+  environment: jointloom_resident_cuda
+  rollout: gpu
+  gae: fused_triton_exact_fp32
+  minibatch_gather: fused_triton
+  shuffle: torch_cuda_permutation
+  learner: gpu_captured
+  layout: NCHW
+  adam: fused_adam_same_hyperparameters
+  cudnn_benchmark: true
+  model_compilation: true
+  loss_compilation: true
+  cuda_graph: true
+common:
+  num_envs: 16
+  agents_per_env: 128
+  rollout_steps: 32
+  minibatch_size: 2048
+  optimization_epochs: 1
+  adam_updates_per_rollout: 32
+  dtype: float32
+  amp: false
+  tf32: false
+  seeds: [0, 1, 2]
+  iterations_per_run: 16
+  agent_samples_per_run: 1048576
+  first_timing_warmup_iterations: 2

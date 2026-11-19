@@ -1,0 +1,30 @@
+CostTracer paper-budget reference: paired seed0 training
+
+Reference: MATS-LP / CostTracer, Table1 (page8):
+https://grafft.github.io/assets/pdf/mats2024.pdf#page=8
+Table1 specifies75000000 training steps,16 environments, agents[64,128],
+lr.00013, gamma.96, lambda.95, PPO clip.2, one epoch, batch2048 and entropy.06878.
+Use the released ONNX network structure: two32-channel residual blocks,11x11
+input and161734 parameters. The public repository supplies inference rather
+than the complete original trainer: https://github.com/Cognitive-AI-Systems/mats-lp
+
+Fix128agents/env,16env and shared canonical seed0 initialization. Compare native
+asynchronous SF and resident JointLoom with the learning settings in
+REWARD_CURVE_PLAN.txt. Count SF agent transitions explicitly. Round the target
+up to1145 batches of65536 samples:75038720 samples and36640 Adam updates for
+the fixed-budget learner. Report SF in-flight additional work separately.
+
+Use a fresh96-episode task bank sampled from the same distribution; preserve
+the previous64-episode bank and its curves. Check the96-episode tensor shapes
+and the transition from episode63 to64. Generate only initial tasks and future
+goal randomness. Compute trajectories, observations, rewards and updates online.
+JointLoom saves every128 batches; SF retains its native60-second save interval.
+Both methods use eight physical CPU cores and one RTX5080.
+
+After training, evaluate fixed initial/final checkpoints on two unseen mazes,
+test-mazes-s40_wc4_od30 and test-mazes-s41_wc5_od50, eight environments per map,
+128agents/env and512 lifelong steps, with shared tasks/categorical action seeds.
+Report mean agent return and completed goals per environment step. The training
+budget follows the paper; this adaptation does not reconstruct an unpublished
+trainer. Keep single-seed measurements distinct from statistical claims.
+Outputs include commands, parameters, raw rewards, checkpoints and evaluation.

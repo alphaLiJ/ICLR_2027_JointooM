@@ -1,0 +1,11 @@
+setting,model,evaluation_record,evaluation_driver,tasks,successes,success_rate,mean_agent_arrival,successful_soc_mean,successful_makespan_mean
+official-heldout150,cpu-online-validation-best,cpu_online_evaluation,official_single_environment,150,145,0.9666666666666667,0.9975833333333333,4110.496551724138,125.23448275862069
+official-heldout150,cpu-online-final,cpu_online_evaluation,official_single_environment,150,140,0.9333333333333333,0.9963194444444445,4304.478571428572,149.62857142857143
+official-heldout150,official-pretrained,cpu_online_evaluation,official_single_environment,150,111,0.74,0.9779583333333333,7525.594594594595,230.00900900900902
+shared128-warehouse32,cpu-online-validation-best,cpu_online_evaluation,official_single_environment,128,107,0.8359375,0.99774169921875,13188.018691588784,208.90654205607476
+shared128-warehouse32,cpu-online-final,cpu_online_evaluation,official_single_environment,128,107,0.8359375,0.9949951171875,14253.41121495327,250.6355140186916
+shared128-warehouse32,official-pretrained,cpu_online_evaluation,official_single_environment,128,47,0.3671875,0.9705810546875,31777.489361702126,417.78723404255317
+official-heldout150,jointloom-validation-best,gpu_checkpoint_evaluation,official_single_environment,150,144,0.96,0.9978333333333335,4595.423611111111,132.8125
+official-heldout150,jointloom-final,gpu_checkpoint_evaluation,official_single_environment,150,137,0.9133333333333333,0.9971527777777777,4501.160583941606,152.91970802919707
+shared128-warehouse32,official-pretrained,shared128_reference_evaluation,batched_16_environments,128,50,0.390625,0.9683837890625,31850.2,422.24
+shared128-warehouse32,original-jointloom-best,gpu_checkpoint_evaluation,batched_16_environments,128,117,0.9140625,0.99835205078125,14009.811965811965,221.4017094017094

@@ -1,0 +1,383 @@
+[
+  {
+    "model": "initial",
+    "checkpoint": "/path/to/external-artifacts/jointloom-20261110/costtracer-rl-20261110/sample-factory-native/initial-seed-0.pt",
+    "selection": "fixed initial/final, no best-checkpoint selection",
+    "agents_per_env": 128,
+    "num_envs": 16,
+    "steps": 512,
+    "action_mode": "categorical, same fixed evaluation RNG",
+    "mean_agent_episode_return": 0.8016601800918579,
+    "completed_goals": 38.0,
+    "goals_per_joint_env_step": 0.004638671875,
+    "per_env": [
+      {
+        "env_id": 0,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 0.8539062738418579,
+        "completed_goals": 3.0,
+        "goals_per_joint_env_step": 0.005859375
+      },
+      {
+        "env_id": 1,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 0.7820312976837158,
+        "completed_goals": 4.0,
+        "goals_per_joint_env_step": 0.0078125
+      },
+      {
+        "env_id": 2,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 0.8125000596046448,
+        "completed_goals": 4.0,
+        "goals_per_joint_env_step": 0.0078125
+      },
+      {
+        "env_id": 3,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 0.7445313930511475,
+        "completed_goals": 5.0,
+        "goals_per_joint_env_step": 0.009765625
+      },
+      {
+        "env_id": 4,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 0.7601563930511475,
+        "completed_goals": 3.0,
+        "goals_per_joint_env_step": 0.005859375
+      },
+      {
+        "env_id": 5,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 0.7382813096046448,
+        "completed_goals": 2.0,
+        "goals_per_joint_env_step": 0.00390625
+      },
+      {
+        "env_id": 6,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 0.7945313453674316,
+        "completed_goals": 1.0,
+        "goals_per_joint_env_step": 0.001953125
+      },
+      {
+        "env_id": 7,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 0.7328125238418579,
+        "completed_goals": 1.0,
+        "goals_per_joint_env_step": 0.001953125
+      },
+      {
+        "env_id": 8,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 0.8265625238418579,
+        "completed_goals": 3.0,
+        "goals_per_joint_env_step": 0.005859375
+      },
+      {
+        "env_id": 9,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 0.8914063572883606,
+        "completed_goals": 1.0,
+        "goals_per_joint_env_step": 0.001953125
+      },
+      {
+        "env_id": 10,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 0.7742187976837158,
+        "completed_goals": 2.0,
+        "goals_per_joint_env_step": 0.00390625
+      },
+      {
+        "env_id": 11,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 0.7953125238418579,
+        "completed_goals": 1.0,
+        "goals_per_joint_env_step": 0.001953125
+      },
+      {
+        "env_id": 12,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 0.8234375715255737,
+        "completed_goals": 3.0,
+        "goals_per_joint_env_step": 0.005859375
+      },
+      {
+        "env_id": 13,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 0.8406250476837158,
+        "completed_goals": 1.0,
+        "goals_per_joint_env_step": 0.001953125
+      },
+      {
+        "env_id": 14,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 0.8421875238418579,
+        "completed_goals": 1.0,
+        "goals_per_joint_env_step": 0.001953125
+      },
+      {
+        "env_id": 15,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 0.8140625357627869,
+        "completed_goals": 3.0,
+        "goals_per_joint_env_step": 0.005859375
+      }
+    ],
+    "evaluation_seconds": 1.146091453032568
+  },
+  {
+    "model": "sf-async",
+    "checkpoint": "/path/to/external-artifacts/jointloom-20261110/costtracer-rl-20261110/sample-factory-native/runs/one-hour-s0-v2-formal-sf-async-s0/checkpoint_p0/checkpoint_000422112_864485376.pth",
+    "selection": "fixed initial/final, no best-checkpoint selection",
+    "agents_per_env": 128,
+    "num_envs": 16,
+    "steps": 512,
+    "action_mode": "categorical, same fixed evaluation RNG",
+    "mean_agent_episode_return": 23.820688247680664,
+    "completed_goals": 8730.0,
+    "goals_per_joint_env_step": 1.065673828125,
+    "per_env": [
+      {
+        "env_id": 0,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 24.619564056396484,
+        "completed_goals": 571.0,
+        "goals_per_joint_env_step": 1.115234375
+      },
+      {
+        "env_id": 1,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 17.72267723083496,
+        "completed_goals": 393.0,
+        "goals_per_joint_env_step": 0.767578125
+      },
+      {
+        "env_id": 2,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 26.332847595214844,
+        "completed_goals": 608.0,
+        "goals_per_joint_env_step": 1.1875
+      },
+      {
+        "env_id": 3,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 19.941438674926758,
+        "completed_goals": 430.0,
+        "goals_per_joint_env_step": 0.83984375
+      },
+      {
+        "env_id": 4,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 26.768779754638672,
+        "completed_goals": 632.0,
+        "goals_per_joint_env_step": 1.234375
+      },
+      {
+        "env_id": 5,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 19.265647888183594,
+        "completed_goals": 409.0,
+        "goals_per_joint_env_step": 0.798828125
+      },
+      {
+        "env_id": 6,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 25.568788528442383,
+        "completed_goals": 616.0,
+        "goals_per_joint_env_step": 1.203125
+      },
+      {
+        "env_id": 7,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 23.34769630432129,
+        "completed_goals": 522.0,
+        "goals_per_joint_env_step": 1.01953125
+      },
+      {
+        "env_id": 8,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 24.560178756713867,
+        "completed_goals": 577.0,
+        "goals_per_joint_env_step": 1.126953125
+      },
+      {
+        "env_id": 9,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 21.64613151550293,
+        "completed_goals": 465.0,
+        "goals_per_joint_env_step": 0.908203125
+      },
+      {
+        "env_id": 10,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 28.210205078125,
+        "completed_goals": 692.0,
+        "goals_per_joint_env_step": 1.3515625
+      },
+      {
+        "env_id": 11,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 22.701601028442383,
+        "completed_goals": 495.0,
+        "goals_per_joint_env_step": 0.966796875
+      },
+      {
+        "env_id": 12,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 28.344566345214844,
+        "completed_goals": 693.0,
+        "goals_per_joint_env_step": 1.353515625
+      },
+      {
+        "env_id": 13,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 20.39456558227539,
+        "completed_goals": 429.0,
+        "goals_per_joint_env_step": 0.837890625
+      },
+      {
+        "env_id": 14,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 30.509414672851562,
+        "completed_goals": 724.0,
+        "goals_per_joint_env_step": 1.4140625
+      },
+      {
+        "env_id": 15,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 21.196908950805664,
+        "completed_goals": 474.0,
+        "goals_per_joint_env_step": 0.92578125
+      }
+    ],
+    "evaluation_seconds": 0.9213576212059706
+  },
+  {
+    "model": "jointloom",
+    "checkpoint": "/path/to/external-artifacts/jointloom-20261110/costtracer-rl-20261110/sample-factory-native/one-hour-s0-v2/training/formal-jointloom-s0/final.pt",
+    "selection": "fixed initial/final, no best-checkpoint selection",
+    "agents_per_env": 128,
+    "num_envs": 16,
+    "steps": 512,
+    "action_mode": "categorical, same fixed evaluation RNG",
+    "mean_agent_episode_return": 23.910823822021484,
+    "completed_goals": 8767.0,
+    "goals_per_joint_env_step": 1.0701904296875,
+    "per_env": [
+      {
+        "env_id": 0,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 23.575021743774414,
+        "completed_goals": 544.0,
+        "goals_per_joint_env_step": 1.0625
+      },
+      {
+        "env_id": 1,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 20.769559860229492,
+        "completed_goals": 462.0,
+        "goals_per_joint_env_step": 0.90234375
+      },
+      {
+        "env_id": 2,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 26.537519454956055,
+        "completed_goals": 617.0,
+        "goals_per_joint_env_step": 1.205078125
+      },
+      {
+        "env_id": 3,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 22.34065818786621,
+        "completed_goals": 485.0,
+        "goals_per_joint_env_step": 0.947265625
+      },
+      {
+        "env_id": 4,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 23.932842254638672,
+        "completed_goals": 552.0,
+        "goals_per_joint_env_step": 1.078125
+      },
+      {
+        "env_id": 5,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 20.601593017578125,
+        "completed_goals": 449.0,
+        "goals_per_joint_env_step": 0.876953125
+      },
+      {
+        "env_id": 6,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 25.754718780517578,
+        "completed_goals": 623.0,
+        "goals_per_joint_env_step": 1.216796875
+      },
+      {
+        "env_id": 7,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 21.668010711669922,
+        "completed_goals": 481.0,
+        "goals_per_joint_env_step": 0.939453125
+      },
+      {
+        "env_id": 8,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 28.39534568786621,
+        "completed_goals": 690.0,
+        "goals_per_joint_env_step": 1.34765625
+      },
+      {
+        "env_id": 9,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 22.822690963745117,
+        "completed_goals": 504.0,
+        "goals_per_joint_env_step": 0.984375
+      },
+      {
+        "env_id": 10,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 26.76097869873047,
+        "completed_goals": 657.0,
+        "goals_per_joint_env_step": 1.283203125
+      },
+      {
+        "env_id": 11,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 21.238311767578125,
+        "completed_goals": 452.0,
+        "goals_per_joint_env_step": 0.8828125
+      },
+      {
+        "env_id": 12,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 29.481281280517578,
+        "completed_goals": 721.0,
+        "goals_per_joint_env_step": 1.408203125
+      },
+      {
+        "env_id": 13,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 21.390655517578125,
+        "completed_goals": 445.0,
+        "goals_per_joint_env_step": 0.869140625
+      },
+      {
+        "env_id": 14,
+        "map_name": "test-mazes-s40_wc4_od30",
+        "mean_agent_episode_return": 26.10472869873047,
+        "completed_goals": 612.0,
+        "goals_per_joint_env_step": 1.1953125
+      },
+      {
+        "env_id": 15,
+        "map_name": "test-mazes-s41_wc5_od50",
+        "mean_agent_episode_return": 21.199249267578125,
+        "completed_goals": 473.0,
+        "goals_per_joint_env_step": 0.923828125
+      }
+    ],
+    "evaluation_seconds": 0.9208801439963281
+  }
+]

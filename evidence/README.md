@@ -1,12 +1,12 @@
-# Evidence and rerun inputs
+# Experimental evidence and rerun inputs
 
-This ZIP contains implementation, experiment orchestration and tests. Large
-checkpoints, frozen evaluation inputs and full experiment registries are not
-included. Relative `artifacts/` paths in selected runners are intended for
-those separately distributed assets; they are not silently generated.
+The measured discussion-period records are in
+[rebuttal/data/](../rebuttal/data/README.md), including per-task and per-seed
+tables, learning-curve points, executed configurations and configuration-selection
+records. The directory also supplies the same files as a data ZIP.
 
-For a paper-number reproduction release, publish a separate versioned
-evidence bundle with: accepted summary rows; input, checkpoint and source
-hashes; protocol manifests; command lines; and a map from each paper table or
-figure to its generating script. This code ZIP can be reviewed and built
-without downloading that larger bundle.
+[rebuttal/README.md](../rebuttal/README.md) maps each experimental workflow to
+its runner and configurable input locations. Large raw expert corpora,
+pretrained checkpoints, generated task banks and full training logs are
+separate inputs identified by those protocols. Existing `artifacts/` defaults
+select local input/output locations.

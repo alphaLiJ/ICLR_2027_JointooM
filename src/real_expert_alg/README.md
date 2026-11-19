@@ -1,4 +1,4 @@
-expert 算法即为上述 lacam, 其包装后执行示例为：
+The expert algorithm is LaCAM, as described above. Example usage of its wrapper:
 ''
 from lacam.inference import LacamInference, LacamInferenceConfig
 class ExpertWrapper:

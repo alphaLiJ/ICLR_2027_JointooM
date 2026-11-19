@@ -168,7 +168,7 @@ std::string resolved_pyg_builder_impl_to_string(const StatelessGridWorldContext&
 
 }  // namespace
 
-// 注意: 在cuda 上运行的代码中, 有取地址操作的变量一定要位于 cuda 上
+// Variables whose addresses are taken by device code must reside on the device
 GridWorldSimulator::GridWorldSimulator(
     torch::Tensor grids,
     int n_agents,
@@ -193,14 +193,14 @@ GridWorldSimulator::GridWorldSimulator(
     // ctx.max_free_cell_count = 0;
     ctx.n_agents = n_agents;
     ctx.pool_capacity = pool_capacity;
-    ctx.current_step = 0; // 初始化步数
+    ctx.current_step = 0; // Initialize the step count
     ctx.task_mode = parse_task_mode_string(task_mode);
     TORCH_CHECK(max_episode_steps > 0, "max_episode_steps must be positive");
     ctx.max_episode_steps = max_episode_steps;
     ctx.clamp_value = 1.0f;
     initialize_local_gather_capability(pyg_ctx);
     
-    // 定义 Tensor 配置 (CUDA, 对应的类型)
+    // Define tensor options (CUDA and the corresponding dtype)
     auto opt_u8  = torch::TensorOptions().dtype(torch::kUInt8).device(grids.device());  // for uint8_t
     auto opt_i16 = torch::TensorOptions().dtype(torch::kInt16).device(grids.device());  // for int16_t
     auto opt_u16 = torch::TensorOptions().dtype(torch::kInt16).device(grids.device());   // for uint16_t (use Int16, same byte width)
@@ -235,8 +235,8 @@ GridWorldSimulator::GridWorldSimulator(
     t_grid_ocp = torch::zeros({n_envs, MAP_OFFSET}, opt_i32);
     ctx.d_grid_ocp = (uint32_t*)t_grid_ocp.data_ptr<int>();
 
-    // 2. 智能体状态初始化 (Agent States)
-    // 注意：Torch C++ API 中 kInt16 对应 short，与 uint16_t 字节数相同(2bytes)
+    // 2. Initialize agent states
+    // Torch C++ kInt16 corresponds to short and has the same size as uint16_t (2 bytes)
     t_cur_x = torch::empty({n_envs, n_agents}, opt_u16);
     ctx.cur_x = (uint16_t*)t_cur_x.data_ptr<int16_t>();
     
@@ -249,9 +249,9 @@ GridWorldSimulator::GridWorldSimulator(
     t_goals_y = torch::empty({n_envs, n_agents}, opt_u16);
     ctx.goals_y = (uint16_t*)t_goals_y.data_ptr<int16_t>();
 
-    // 3. 观测、奖励与动作 (Obs, Reward, Action)
+    // 3. Observations, rewards and actions
 
-    // 补充一个 初始化 ctx.d_agents_obs 的操作, 每个智能体拥有 16 个(注意关注 step 中逻辑是否正确)
+    // Initialize ctx.d_agents_obs with 16 entries per agent; keep this consistent with the step logic
     t_agents_obs = torch::zeros({n_envs*n_agents, num_features, RADIUS * 2 + 1}, opt_u16); 
     ctx.d_agents_obs = (uint16_t*)t_agents_obs.data_ptr<int16_t>();
 
@@ -330,7 +330,7 @@ GridWorldSimulator::GridWorldSimulator(
     cudaMemcpy(t_pyg_ptr.data_ptr<int64_t>(), ptr_host.data(),
                (n_envs + 1) * sizeof(int64_t), cudaMemcpyHostToDevice);
     // -------------------------------------------------
-    // 4. RNG 状态
+    // 4. RNG state
     // -------------------------------------------------
     int64_t rng_size = n_envs * std::max(n_agents, 32);
     t_rng_states = torch::empty({rng_size * (int64_t)sizeof(curandState)}, opt_u8);
@@ -362,7 +362,7 @@ StatelessGridWorldSimulator::StatelessGridWorldSimulator(torch::Tensor grids, in
     ctx.builder_mode = PYG_BUILDER_MODE_AUTO;
     initialize_local_gather_capability(ctx);
     
-    // 定义 Tensor 配置 (CUDA, 对应的类型)
+    // Define tensor options (CUDA and the corresponding dtype)
     auto opt_u8  = torch::TensorOptions().dtype(torch::kUInt8).device(torch::kCUDA);  // for uint8_t
     auto opt_i16 = torch::TensorOptions().dtype(torch::kInt16).device(torch::kCUDA);  // for int16_t
     auto opt_u16 = torch::TensorOptions().dtype(torch::kInt16).device(torch::kCUDA);   // for uint16_t (use Int16, same byte width)
@@ -640,9 +640,9 @@ void GridWorldSimulator::init_rng(unsigned long seed) {
     cudaDeviceSynchronize(); 
 }
 
-// warp 级调度 结合 SM数量 vs env 数量
-// 综合考量:(n_envs, n_agents, map_size), 其中, n_envs 可以随着 n_agents 及 map_size 改变
-// 综合考虑 SM 的个数以及 shared_memory 大小
+// Warp-level scheduling: consider the SM count and environment count
+// Consider (n_envs, n_agents, map_size) together; n_envs may vary with n_agents and map_size
+// Consider both SM count and shared-memory capacity
 void GridWorldSimulator::run_initialization() {
     c10::cuda::CUDAGuard device_guard(t_cur_x.device());
     ctx.current_step = 0;
@@ -659,7 +659,7 @@ void GridWorldSimulator::run_initialization() {
     if(_num_threads >= 256)   _num_threads = 256;
     else _num_threads = next_pow2_efficient(_num_threads);
     if (_num_threads < 32) _num_threads = 32;
-    dim3 threads(_num_threads);   // 根据智能体数量而定, 最大设置为 256(智能体数量更大时, 对应的 kernel 内部循环处理)
+    dim3 threads(_num_threads);   // Choose according to the agent count, capped at 256; larger counts are handled by an internal kernel loop
 
     launch_cache_map_free_cells_kernel(ctx, blocks, threads);
     cudaError_t err = cudaGetLastError();
@@ -850,7 +850,7 @@ void StatelessGridWorldSimulator::update_derived_state(const torch::Tensor& stat
 }
 
 void StatelessGridWorldSimulator::update_energy_maps(const torch::Tensor& states_tensor, int length) {
-    // 更新能量图
+    // Update the energy map
     launch_energy_map_kernel(ctx.energy_map_ctx, ctx.n_agents, length, states_tensor);
     cudaError_t err = cudaGetLastError();
     if (err != cudaSuccess) {
@@ -872,7 +872,7 @@ torch::Tensor GridWorldSimulator::decode_to_uint8() {
     launch_decode_to_uint8_kernel(ctx.d_agents_obs, blocks, threads, 
             out_tensor.data_ptr<uint8_t>(), total_pixels, diameter);
 
-    // 检查错误
+    // Check for errors
     cudaError_t err = cudaGetLastError();
     if (err != cudaSuccess) {
         throw std::runtime_error(std::string("Decode kernel failed: ") + cudaGetErrorString(err));

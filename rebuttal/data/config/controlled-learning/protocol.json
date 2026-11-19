@@ -1,0 +1,80 @@
+{
+  "agents": 128,
+  "envs": 16,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "rounds": 32,
+  "steps": 512,
+  "queries": 128,
+  "query_sampling": "stratified",
+  "query_time_bins": 8,
+  "replay_sampling": "episode-stratified",
+  "updates_per_round": 32,
+  "background_graphs": 512,
+  "background_agents": 64,
+  "background_per_batch": 48,
+  "online_per_batch": 16,
+  "map_directory": "/path/to/external-artifacts/jointloom-20261117/magat-dagger-20261117/coverage512-agents128-u1024/maps/warehouse32",
+  "map_configuration": {
+    "generator": "official grid_config_generator.generate_warehouse",
+    "settings": {
+      "width": 32,
+      "height": 32,
+      "num_wall_rows": 8,
+      "num_wall_cols": 3,
+      "wall_width": 8,
+      "wall_height": 2,
+      "side_pad": 3,
+      "horizontal_gap": 1,
+      "vertical_gap": 1,
+      "block_extra_space": true,
+      "seed": 17
+    },
+    "agents": 128,
+    "free_cells": 416,
+    "occupancy": 0.3076923076923077,
+    "reference": {
+      "shape": [
+        23,
+        23
+      ],
+      "agents": 64,
+      "free_cells": 208,
+      "occupancy": 0.3076923076923077
+    }
+  },
+  "learning_rate": 1e-06,
+  "freeze_batchnorm": true,
+  "expert_iteration_budget": 2000,
+  "expert_processes": 4,
+  "pibt_threads": 10,
+  "cpu_workers": 8,
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "deterministic": true,
+  "independent_rngs": true,
+  "proof_rounds": 4,
+  "proof_updates": 128,
+  "quality_test_seed_base": 2037000000,
+  "quality_test_tasks": 128,
+  "selection": "fixed final after 1024 updates; no test-based selection"
+}

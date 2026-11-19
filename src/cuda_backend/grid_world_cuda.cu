@@ -158,7 +158,7 @@ void launch_encode_full_map_kernel_on_stream(
         return;
     }
     
-    // 可以考虑减少 numBlocks 数量 (让一个 block 承担更多的计算, 在 block 内部加一个与 batch_size 有关的循环)
+    // Consider reducing numBlocks by assigning more work to each block with an internal batch_size loop
     encode_full_map_kernel<<<
         numBlocks,
         blockSize,
@@ -171,7 +171,7 @@ void launch_encode_full_map_kernel_on_stream(
     );
 }
 
-// 根据 block smem 使用大小分析 blockSize 保证并行度不下降
+// Choose blockSize based on shared-memory usage to preserve parallelism
 void launch_encode_full_map_kernel(const uint32_t* input_map,
                                    uint32_t* compressed_map,
                                    int batch_size,
@@ -182,11 +182,11 @@ void launch_encode_full_map_kernel(const uint32_t* input_map,
     cudaDeviceSynchronize();
 }
 
-// 运用 uint16_t 进行压缩：行数为 diameter (obs 的每行压缩为一个 uint16_t 的数)
+// Compress rows with uint16_t: diameter rows, with each observation row packed into one uint16_t
 __global__ void decode_to_uint8_kernel(
-    const uint16_t* __restrict__ compressed_obs, // 输入: [Batch, 2*Diameter] (uint16)
-    uint8_t* __restrict__ output,                // 输出: [Batch, 2, Diameter, Diameter] (uint8)
-    int total_pixels,                            // 总输出像素数
+    const uint16_t* __restrict__ compressed_obs, // Input: [Batch, 2*Diameter] (uint16)
+    uint8_t* __restrict__ output,                // Output: [Batch, 2, Diameter, Diameter] (uint8)
+    int total_pixels,                            // Total number of output pixels
     int diameter                                 // 2 * RADIUS + 1
 ) {
     int tid = blockIdx.x * blockDim.x + threadIdx.x;
@@ -291,7 +291,7 @@ __global__ void cache_map_free_cells_kernel(GridWorldContext ctx) {
         unsigned mask = __activemask();
         int warp_prefix = my_popc;
         for (int offset = 1; offset < 32; offset <<= 1) {
-            int n = __shfl_up_sync(mask, warp_prefix, offset); // 注意这里传的是 warp_prefix
+            int n = __shfl_up_sync(mask, warp_prefix, offset); // Pass warp_prefix here
             if (lane_id >= offset) warp_prefix += n;
         }
         int warp_total = __shfl_sync(mask, warp_prefix, 31);
@@ -302,7 +302,7 @@ __global__ void cache_map_free_cells_kernel(GridWorldContext ctx) {
         warp_write_base = __shfl_sync(mask, warp_write_base, 0);
         int thread_write_idx = start_off + warp_write_base + (warp_prefix - my_popc);
 
-        // 解码坐标并写入
+        // Decode the coordinates and write the result
         if (my_popc > 0) {
             int chunk_col_base = (i % COL_OFFSET) * 32;
             uint32_t coord_base = (chunk_row << 16) | chunk_col_base; 
@@ -310,7 +310,7 @@ __global__ void cache_map_free_cells_kernel(GridWorldContext ctx) {
             while (empty_mask != 0) {
                 int x = __ffs(empty_mask) - 1;
                 empty_mask &= ~(1u << x);
-                // 直接写入全局显存 (Coalesced Access 效果很好)
+                // Write directly to global memory with coalesced access
                 if (thread_write_idx < ctx.pool_capacity) {
                     ctx.d_free_cell_list[thread_write_idx++] = (coord_base | x);
                 }
@@ -349,7 +349,7 @@ __global__ void cache_map_smem_free_cells_kernel(GridWorldContext ctx) {
         int chunk_col_base = (i % COL_OFFSET) * 32;
         uint32_t coord_base = (chunk_row << 16) | chunk_col_base; 
         
-        // Warp Scan 逻辑
+        // Warp scan logic
         int my_count = __popc(empty_mask);
         unsigned mask = __activemask();
         int val = my_count;
@@ -359,21 +359,21 @@ __global__ void cache_map_smem_free_cells_kernel(GridWorldContext ctx) {
             if (lane_id >= offset) val += n;
         }
         int lane_prefix_sum = val;
-        // 目的: 防止 MAP_OFFSET 不为 32 的倍数 (若为 32 倍数, 直接使用 31即可)
+        // Handle MAP_OFFSET values that are not multiples of 32; otherwise 31 is sufficient
         int leader_lane = 31 - __clz(mask);
         int warp_total = __shfl_sync(mask, val, leader_lane); 
         int base_offset = 0;
-        // 只有 Leader 执行原子加
+        // Only the leader performs the atomic addition
         if (lane_id == leader_lane) { 
             base_offset = atomicAdd(&local_count, warp_total);
         }
-        // 广播基地址
+        // Broadcast the base address
         base_offset = __shfl_sync(mask, base_offset, leader_lane);
         
         int my_write_offset = base_offset + (lane_prefix_sum - my_count);
 
         while (empty_mask != 0) {
-            int x = __ffs(empty_mask) - 1; // x 是 0-31 的位偏移
+            int x = __ffs(empty_mask) - 1; // x is the bit offset from 0 to 31
             empty_mask &= ~(1u << x);
             local_coords[my_write_offset++] = coord_base | x; 
         }
@@ -406,13 +406,13 @@ __global__ void init_agents_kernel(GridWorldContext ctx) {
     int env_id = blockIdx.x;
     int tid = threadIdx.x;
 
-    // 动态共享内存大小需要在启动 kernel 时指定: sizeof(uint32_t) * ((total_free + 31) / 32)
+    // Specify dynamic shared memory at launch: sizeof(uint32_t) * ((total_free + 31) / 32)
     extern __shared__ uint32_t occupancy_bitmap[];
 
     int total_free = ctx.d_env_counts[env_id];
     int n_agents = ctx.n_agents;
 
-    // 计算位图需要的 uint32 数量
+    // Number of uint32 words required for the bitmap
     int bitmap_len = (total_free + 31) >> 5; 
     for (int i = tid; i < bitmap_len; i += blockDim.x) {
         occupancy_bitmap[i] = 0;
@@ -429,8 +429,8 @@ __global__ void init_agents_kernel(GridWorldContext ctx) {
         ctx.rng_states[global_agent_idx] = local_state;
         int env_offset = ctx.d_env_offsets[env_id];
         
-        uint32_t raw_start = ctx.d_free_cell_list[env_offset + start_slot_idx]; // 起始坐标(压缩过)
-        uint32_t raw_goal  = ctx.d_free_cell_list[env_offset + goal_slot_idx];  // 终点坐标(压缩过)
+        uint32_t raw_start = ctx.d_free_cell_list[env_offset + start_slot_idx]; // Packed starting coordinates
+        uint32_t raw_goal  = ctx.d_free_cell_list[env_offset + goal_slot_idx];  // Packed destination coordinates
         ctx.cur_x[global_agent_idx]   = (uint16_t)(raw_start >> 16);
         ctx.cur_y[global_agent_idx]   = (uint16_t)(raw_start & 0xFFFF);
         ctx.goals_x[global_agent_idx] = (uint16_t)(raw_goal >> 16);
@@ -444,7 +444,7 @@ void launch_init_agents_kernel(GridWorldContext ctx, dim3 blocks, dim3 threads) 
 
     cudaMemcpy(
         &max_count_shared, 
-        ctx.max_free_cell_count,  // 设备指针
+        ctx.max_free_cell_count,  // Device pointer
         sizeof(uint32_t),
         cudaMemcpyDeviceToHost
     );
@@ -489,8 +489,8 @@ void launch_decode_to_uint8_kernel(uint16_t* compressed_obs, int blocks, int thr
                                     uint8_t* output, int total_pixels, int diameter)
 {
     decode_to_uint8_kernel<<<blocks, threads>>>(
-        compressed_obs,            // 源数据 (uint32*)
-        output, // 目标数据 (uint8*)
+        compressed_obs,            // Source data (uint32*)
+        output, // Destination data (uint8*)
         total_pixels,
         diameter
     );

@@ -1,0 +1,28 @@
+{
+  "chosen_host_workers": 8,
+  "cpu_cores": 16,
+  "scores": {
+    "16": {
+      "input_wait_fraction": 0.6030791602079966,
+      "process_tree_cpu_s": 595.8100000000001,
+      "samples_s": 28562.43893325173
+    },
+    "2": {
+      "input_wait_fraction": 0.8318099454396988,
+      "process_tree_cpu_s": 166.82,
+      "samples_s": 12562.604971527906
+    },
+    "4": {
+      "input_wait_fraction": 0.7204487719283741,
+      "process_tree_cpu_s": 275.33,
+      "samples_s": 22298.51224215801
+    },
+    "8": {
+      "input_wait_fraction": 0.5797915780311451,
+      "process_tree_cpu_s": 459.89000000000004,
+      "samples_s": 33304.175651295154
+    }
+  },
+  "selection_rule": "within 5% of fastest single 45-second online pilot; fewer workers wins",
+  "status": "ok"
+}

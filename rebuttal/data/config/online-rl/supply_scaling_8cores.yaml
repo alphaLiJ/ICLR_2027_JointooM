@@ -1,0 +1,23 @@
+status: completed_12_runs
+question: producer_consumer_matching_under_fixed_cpu_budget
+baseline: official_sample_factory_2.1.1_native_async
+cpu_affinity: [0, 1, 2, 3, 4, 5, 6, 7]
+distinct_physical_cores: 8
+agents_per_env: 128
+environment_counts: [16, 32]
+seeds: [0, 1, 2]
+iterations_per_run: 16
+rollout: 32
+minibatch: 2048
+epochs: 1
+samples_per_iteration: {16: 65536, 32: 131072}
+adam_updates_per_iteration: {16: 32, 32: 64}
+sf_workers: 8
+sf_envs_per_worker: {16: 2, 32: 4}
+sf_worker_splits: 2
+math_profile: SF2_matched
+amp: false
+tf32: false
+monitor_seconds: 0.2
+results: /path/to/external-artifacts/jointloom-20261110/costtracer-rl-20261110/sample-factory-native/supply-scaling-8cores-v1
+conclusion: capacity_verified_but_no_widening_speedup_under_this_consumer

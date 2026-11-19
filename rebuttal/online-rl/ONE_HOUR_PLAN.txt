@@ -1,0 +1,7 @@
+Equal-wall-time native Sample Factory / JointLoom comparison (Table S5)
+16 environments x 128 agents; seed 0; 3600 seconds per system from process launch.
+Same CNN initialization, reward and PPO constants; eight physical CPU cores.
+Native asynchronous SF 2.1.1 / Pogema 1.2.2 and GPU-resident JointLoom run sequentially.
+Startup, compilation, interaction, learning and periodic checkpoints count toward time.
+The 2048-episode task bank stores initial positions and future goal assignments.
+Tables, configurations and learning records: rebuttal/data/.

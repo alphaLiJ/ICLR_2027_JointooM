@@ -1,0 +1,36 @@
+{
+  "fixed_updates": 512,
+  "host_depth": 4,
+  "host_workers": 2,
+  "length_rule": "at least 512; estimate >=15s from fastest pilot, round up to 256",
+  "median_samples_s": 11100.876851773439,
+  "peak_process_tree_rss_bytes": 5443575808,
+  "pilot_updates": 64,
+  "scores": [
+    {
+      "host_depth": 2,
+      "host_workers": 1,
+      "median_samples_s": 6868.084811437913,
+      "peak_process_tree_rss_bytes": 4772892672
+    },
+    {
+      "host_depth": 4,
+      "host_workers": 1,
+      "median_samples_s": 6899.797122637906,
+      "peak_process_tree_rss_bytes": 4757143552
+    },
+    {
+      "host_depth": 2,
+      "host_workers": 2,
+      "median_samples_s": 10107.381723890201,
+      "peak_process_tree_rss_bytes": 5433970688
+    },
+    {
+      "host_depth": 4,
+      "host_workers": 2,
+      "median_samples_s": 11100.876851773439,
+      "peak_process_tree_rss_bytes": 5443575808
+    }
+  ],
+  "selection_rule": "within 5% of fastest median throughput; fewer workers then shallower queue"
+}

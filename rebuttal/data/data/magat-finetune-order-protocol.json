@@ -1,0 +1,366 @@
+{
+  "seed": 42,
+  "epochs": 52,
+  "batch_size": 64,
+  "initial_training_graphs": 28798,
+  "correction_cases": 466,
+  "correction_graphs": 9048,
+  "optimizer_updates": 29124,
+  "per_epoch": [
+    {
+      "epoch": 1,
+      "initial_graphs": 28798,
+      "correction_graphs": 0,
+      "updates": 450
+    },
+    {
+      "epoch": 2,
+      "initial_graphs": 28798,
+      "correction_graphs": 0,
+      "updates": 450
+    },
+    {
+      "epoch": 3,
+      "initial_graphs": 28798,
+      "correction_graphs": 0,
+      "updates": 450
+    },
+    {
+      "epoch": 4,
+      "initial_graphs": 28798,
+      "correction_graphs": 0,
+      "updates": 450
+    },
+    {
+      "epoch": 5,
+      "initial_graphs": 28798,
+      "correction_graphs": 4980,
+      "updates": 528
+    },
+    {
+      "epoch": 6,
+      "initial_graphs": 28798,
+      "correction_graphs": 4980,
+      "updates": 528
+    },
+    {
+      "epoch": 7,
+      "initial_graphs": 28798,
+      "correction_graphs": 4980,
+      "updates": 528
+    },
+    {
+      "epoch": 8,
+      "initial_graphs": 28798,
+      "correction_graphs": 4980,
+      "updates": 528
+    },
+    {
+      "epoch": 9,
+      "initial_graphs": 28798,
+      "correction_graphs": 6046,
+      "updates": 545
+    },
+    {
+      "epoch": 10,
+      "initial_graphs": 28798,
+      "correction_graphs": 6046,
+      "updates": 545
+    },
+    {
+      "epoch": 11,
+      "initial_graphs": 28798,
+      "correction_graphs": 6046,
+      "updates": 545
+    },
+    {
+      "epoch": 12,
+      "initial_graphs": 28798,
+      "correction_graphs": 6046,
+      "updates": 545
+    },
+    {
+      "epoch": 13,
+      "initial_graphs": 28798,
+      "correction_graphs": 6483,
+      "updates": 552
+    },
+    {
+      "epoch": 14,
+      "initial_graphs": 28798,
+      "correction_graphs": 6483,
+      "updates": 552
+    },
+    {
+      "epoch": 15,
+      "initial_graphs": 28798,
+      "correction_graphs": 6483,
+      "updates": 552
+    },
+    {
+      "epoch": 16,
+      "initial_graphs": 28798,
+      "correction_graphs": 6483,
+      "updates": 552
+    },
+    {
+      "epoch": 17,
+      "initial_graphs": 28798,
+      "correction_graphs": 7476,
+      "updates": 567
+    },
+    {
+      "epoch": 18,
+      "initial_graphs": 28798,
+      "correction_graphs": 7476,
+      "updates": 567
+    },
+    {
+      "epoch": 19,
+      "initial_graphs": 28798,
+      "correction_graphs": 7476,
+      "updates": 567
+    },
+    {
+      "epoch": 20,
+      "initial_graphs": 28798,
+      "correction_graphs": 7476,
+      "updates": 567
+    },
+    {
+      "epoch": 21,
+      "initial_graphs": 28798,
+      "correction_graphs": 7741,
+      "updates": 571
+    },
+    {
+      "epoch": 22,
+      "initial_graphs": 28798,
+      "correction_graphs": 7741,
+      "updates": 571
+    },
+    {
+      "epoch": 23,
+      "initial_graphs": 28798,
+      "correction_graphs": 7741,
+      "updates": 571
+    },
+    {
+      "epoch": 24,
+      "initial_graphs": 28798,
+      "correction_graphs": 7741,
+      "updates": 571
+    },
+    {
+      "epoch": 25,
+      "initial_graphs": 28798,
+      "correction_graphs": 7855,
+      "updates": 573
+    },
+    {
+      "epoch": 26,
+      "initial_graphs": 28798,
+      "correction_graphs": 7855,
+      "updates": 573
+    },
+    {
+      "epoch": 27,
+      "initial_graphs": 28798,
+      "correction_graphs": 7855,
+      "updates": 573
+    },
+    {
+      "epoch": 28,
+      "initial_graphs": 28798,
+      "correction_graphs": 7855,
+      "updates": 573
+    },
+    {
+      "epoch": 29,
+      "initial_graphs": 28798,
+      "correction_graphs": 8017,
+      "updates": 576
+    },
+    {
+      "epoch": 30,
+      "initial_graphs": 28798,
+      "correction_graphs": 8017,
+      "updates": 576
+    },
+    {
+      "epoch": 31,
+      "initial_graphs": 28798,
+      "correction_graphs": 8017,
+      "updates": 576
+    },
+    {
+      "epoch": 32,
+      "initial_graphs": 28798,
+      "correction_graphs": 8017,
+      "updates": 576
+    },
+    {
+      "epoch": 33,
+      "initial_graphs": 28798,
+      "correction_graphs": 8129,
+      "updates": 578
+    },
+    {
+      "epoch": 34,
+      "initial_graphs": 28798,
+      "correction_graphs": 8129,
+      "updates": 578
+    },
+    {
+      "epoch": 35,
+      "initial_graphs": 28798,
+      "correction_graphs": 8129,
+      "updates": 578
+    },
+    {
+      "epoch": 36,
+      "initial_graphs": 28798,
+      "correction_graphs": 8129,
+      "updates": 578
+    },
+    {
+      "epoch": 37,
+      "initial_graphs": 28798,
+      "correction_graphs": 8264,
+      "updates": 580
+    },
+    {
+      "epoch": 38,
+      "initial_graphs": 28798,
+      "correction_graphs": 8264,
+      "updates": 580
+    },
+    {
+      "epoch": 39,
+      "initial_graphs": 28798,
+      "correction_graphs": 8264,
+      "updates": 580
+    },
+    {
+      "epoch": 40,
+      "initial_graphs": 28798,
+      "correction_graphs": 8264,
+      "updates": 580
+    },
+    {
+      "epoch": 41,
+      "initial_graphs": 28798,
+      "correction_graphs": 8456,
+      "updates": 583
+    },
+    {
+      "epoch": 42,
+      "initial_graphs": 28798,
+      "correction_graphs": 8456,
+      "updates": 583
+    },
+    {
+      "epoch": 43,
+      "initial_graphs": 28798,
+      "correction_graphs": 8456,
+      "updates": 583
+    },
+    {
+      "epoch": 44,
+      "initial_graphs": 28798,
+      "correction_graphs": 8456,
+      "updates": 583
+    },
+    {
+      "epoch": 45,
+      "initial_graphs": 28798,
+      "correction_graphs": 8655,
+      "updates": 586
+    },
+    {
+      "epoch": 46,
+      "initial_graphs": 28798,
+      "correction_graphs": 8655,
+      "updates": 586
+    },
+    {
+      "epoch": 47,
+      "initial_graphs": 28798,
+      "correction_graphs": 8655,
+      "updates": 586
+    },
+    {
+      "epoch": 48,
+      "initial_graphs": 28798,
+      "correction_graphs": 8655,
+      "updates": 586
+    },
+    {
+      "epoch": 49,
+      "initial_graphs": 28798,
+      "correction_graphs": 9048,
+      "updates": 592
+    },
+    {
+      "epoch": 50,
+      "initial_graphs": 28798,
+      "correction_graphs": 9048,
+      "updates": 592
+    },
+    {
+      "epoch": 51,
+      "initial_graphs": 28798,
+      "correction_graphs": 9048,
+      "updates": 592
+    },
+    {
+      "epoch": 52,
+      "initial_graphs": 28798,
+      "correction_graphs": 9048,
+      "updates": 592
+    }
+  ],
+  "pretrained_checkpoint": "195.pt",
+  "train_validation_test_split": [
+    700,
+    150,
+    150
+  ],
+  "correction_release_epochs": [
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    44,
+    48
+  ],
+  "order": [
+    "ordered",
+    "window-128",
+    "global-shuffle"
+  ],
+  "evaluation": {
+    "horizon": 512,
+    "sampling": "probabilistic",
+    "temperature": 1.0,
+    "shielding": "naive",
+    "runner": "released MAGAT+ run_model_on_grid",
+    "action_rng": "official per-task generator seeded from the frozen GridConfig.seed",
+    "task_sets": {
+      "warehouse-heldout150": 150,
+      "warehouse32-agents128": 128
+    },
+    "selection_order": [
+      "fixed-final",
+      "validation-selected"
+    ]
+  },
+  "pretrained_evaluation": "The same official evaluator and frozen task lists, run in independent task shards.",
+  "checkpoint_selection": "Fixed epoch 52 and highest success rate on a common validation set, earliest tie."
+}

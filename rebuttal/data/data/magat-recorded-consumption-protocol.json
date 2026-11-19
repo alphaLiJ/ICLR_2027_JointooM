@@ -1,0 +1,46 @@
+{
+  "source": "Completed same-record consumption runs, seeds 0, 1, 2",
+  "initialization": "Common MAGAT model and optimizer definitions within each paired seed",
+  "cpu": "CachedHostBuilder with 2 workers, 4 prefetch slots and pinned H2D lookahead",
+  "jointloom": "Compact ring depth 128, asynchronous DMA and GPU input construction",
+  "maps": "Four original 65x65 Maze maps",
+  "envs": 4,
+  "agents_per_env": 512,
+  "updates": 4096,
+  "batch_agent_samples": 2048,
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "gpu": "RTX 5080",
+  "precision": "FP32, TF32 disabled",
+  "timing": "RAM-resident raw expert states and labels through final optimizer completion",
+  "included": [
+    "input construction",
+    "delivery",
+    "model forward",
+    "loss",
+    "backward",
+    "Adam"
+  ],
+  "completed_before_timing": [
+    "expert trajectory generation",
+    "disk loading",
+    "initialization and warmup"
+  ],
+  "records": "Same state/label records and configuration order within each pair, one pass"
+}

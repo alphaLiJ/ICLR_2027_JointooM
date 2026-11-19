@@ -1,0 +1,51 @@
+{
+  "archive_steps": [
+    1000,
+    2000
+  ],
+  "backend": "magat",
+  "capture_stage_hashes": false,
+  "checkpoint_interval_s": 300.0,
+  "device": "cuda:0",
+  "grad_clip_norm": null,
+  "host_depth": 4,
+  "host_workers": 2,
+  "lr_end": 1e-06,
+  "lr_scheduler": "cosine-annealing",
+  "lr_start": 0.001,
+  "map_names": [
+    "mazes-s0_wc8_od55",
+    "mazes-s1_wc3_od70",
+    "mazes-s2_wc8_od25",
+    "mazes-s3_wc6_od35"
+  ],
+  "maps_path": "maps/maps.yaml",
+  "max_episode_steps": 256,
+  "microbatch_size": 256,
+  "model_size": "2M",
+  "num_agents": 512,
+  "num_steps": 100000,
+  "progress_interval_s": 30.0,
+  "ring_depth": 128,
+  "scheduler_total_steps": 100000,
+  "seed": 0,
+  "shuffle_capacity": 8192,
+  "timeout_s": 120.0,
+  "top_k_checkpoints": 3,
+  "train_batch_size": 2048,
+  "train_on_arrived_agents": true,
+  "validation": [
+    "/path/to/experiment-artifacts/s2-matched-wall-multiseed-20260812/inputs/validation/val_1.npz",
+    "/path/to/experiment-artifacts/s2-matched-wall-multiseed-20260812/inputs/validation/val_2.npz",
+    "/path/to/experiment-artifacts/s2-matched-wall-multiseed-20260812/inputs/validation/val_3.npz",
+    "/path/to/experiment-artifacts/s2-matched-wall-multiseed-20260812/inputs/validation/val_4.npz"
+  ],
+  "validation_batch_size": 256,
+  "validation_steps": [
+    250,
+    500,
+    1000,
+    2000
+  ],
+  "wall_budget_s": 3035.921933
+}

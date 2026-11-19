@@ -1,0 +1,60 @@
+[
+  {
+    "profile": "sf-async",
+    "budget_seconds": 3600,
+    "argv": [
+      "/path/to/external-artifacts/jointloom-20261110/costtracer-rl-20261110/sample-factory-native/venv/bin/python",
+      "/path/to/paper-workspace/working/2026-11-10-costtracer-rl/implementation/sf_native.py",
+      "--algo=APPO",
+      "--env=jointloom_costtracer_pogema",
+      "--experiment=one-hour-s0-v2-formal-sf-async-s0",
+      "--train_dir=/path/to/external-artifacts/jointloom-20261110/costtracer-rl-20261110/sample-factory-native/runs",
+      "--seed=0",
+      "--async_rl=True",
+      "--num_workers=8",
+      "--num_envs_per_worker=2",
+      "--shuffle_minibatches=False",
+      "--costtracer_reward_log",
+      "--costtracer_progress_log",
+      "--costtracer_iterations=1000000",
+      "--train_for_env_steps=1000000000000000",
+      "--train_for_seconds=7200",
+      "--save_every_sec=300",
+      "--keep_checkpoints=24",
+      "--costtracer_initial_weights=/path/to/external-artifacts/jointloom-20261110/costtracer-rl-20261110/sample-factory-native/initial-seed-0.pt",
+      "--costtracer_observer_dir=/path/to/external-artifacts/jointloom-20261110/costtracer-rl-20261110/sample-factory-native/one-hour-s0-v2/training/formal-sf-async-s0",
+      "--costtracer_task_bank_episodes=2048",
+      "--costtracer_stop_perf_ns=<new-process-deadline-ns>",
+      "--costtracer_stop_file=/path/to/external-artifacts/jointloom-20261110/costtracer-rl-20261110/sample-factory-native/one-hour-s0-v2/STOP_REQUESTED"
+    ]
+  },
+  {
+    "profile": "jointloom",
+    "budget_seconds": 3600,
+    "argv": [
+      "/path/to/external-artifacts/jointloom-20261110/costtracer-rl-20261110/sample-factory-native/venv/bin/python",
+      "/path/to/paper-workspace/working/2026-11-10-costtracer-rl/implementation/train_pipeline.py",
+      "--profile",
+      "jointloom_optimized",
+      "--sf2-compatible",
+      "--num-envs",
+      "16",
+      "--seed",
+      "0",
+      "--iterations",
+      "1000000",
+      "--minibatch-order",
+      "sf_env_major",
+      "--output",
+      "/path/to/external-artifacts/jointloom-20261110/costtracer-rl-20261110/sample-factory-native/one-hour-s0-v2/training/formal-jointloom-s0",
+      "--task-bank-episodes",
+      "2048",
+      "--checkpoint-seconds",
+      "300",
+      "--stop-perf-ns",
+      "<new-process-deadline-ns>",
+      "--stop-file",
+      "/path/to/external-artifacts/jointloom-20261110/costtracer-rl-20261110/sample-factory-native/one-hour-s0-v2/STOP_REQUESTED"
+    ]
+  }
+]

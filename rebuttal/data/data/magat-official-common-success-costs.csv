@@ -1,0 +1,3 @@
+model,common_successes,mean_soc,mean_makespan
+cpu-online-validation-best,139,3947.6187050359713,121.25179856115108
+jointloom-validation-best,139,4394.179856115108,128.74820143884892

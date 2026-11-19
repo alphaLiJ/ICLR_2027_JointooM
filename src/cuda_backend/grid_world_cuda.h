@@ -44,7 +44,7 @@ enum TaskMode : int {
     TASK_MODE_STANDARD_MAPF = 1,
 };
 
-// 需要有两个初始化函数: 1.有状态 2.无状态
+// Two initialization functions are needed: stateful and stateless
 
 struct StepOutput
 {
@@ -59,29 +59,29 @@ struct AgentState;
 struct EnergyMapContext
 {
     // size =[n_envs, n_agents, MAP_W, MAP_H]
-    uint32_t* d_maps;               // 地图数据，压缩为32位整数，每位表示一个格子是否被占用
+    uint32_t* d_maps;               // Map packed into 32-bit integers, one occupancy bit per cell
     uint8_t* d_global_energy_maps;
 };
 
 struct GridWorldContext {
-    // 1. 地图相关 (Read-only on progress generation)
-    uint32_t* d_maps;               // 地图数据，压缩为32位整数，每位表示一个格子是否被占用
-    uint32_t* d_grid_ocp;           // 当前占用状态，动态更新
-    uint32_t* d_free_cell_list;     // 空闲位置列表，预先分配足够空间
-    int* d_global_pool_ptr;         // 全局空闲位置池指针，指向d_free_cell_list中的下一个可用位置
-    int* d_env_offsets;             // 每个环境起始偏移
-    int* d_env_counts;              // 每个环境空闲数
-    int* d_real_map_extents;        // [n_envs, 2] 每个环境的真实有效范围 (x_limit, y_limit)
-    // cost-to-go 原图: size = [n_envs, n_agents, MAP_W, MAP_H]
+    // 1. Map data (read-only during progress generation)
+    uint32_t* d_maps;               // Map packed into 32-bit integers, one occupancy bit per cell
+    uint32_t* d_grid_ocp;           // Current occupancy, updated dynamically
+    uint32_t* d_free_cell_list;     // Free-cell list with sufficient preallocated capacity
+    int* d_global_pool_ptr;         // Global free-cell pool pointer: the next available entry in d_free_cell_list
+    int* d_env_offsets;             // Starting offset for each environment
+    int* d_env_counts;              // Number of free cells in each environment
+    int* d_real_map_extents;        // [n_envs, 2] Valid extent of each environment (x_limit, y_limit)
+    // Original cost-to-go map: size = [n_envs, n_agents, MAP_W, MAP_H]
     uint8_t* d_global_energy_maps; 
 
-    // 2. 智能体状态 (Read-write)
+    // 2. Agent states (read/write)
     uint16_t* cur_x;
     uint16_t* cur_y;
     uint16_t* goals_x;
     uint16_t* goals_y;
 
-    // 3. 压缩观测与奖励
+    // 3. Compressed observations and rewards
     uint16_t* d_agents_obs;
     float* rewards;
     uint8_t* actions;
@@ -94,7 +94,7 @@ struct GridWorldContext {
     StepOutput step_output;
     int* d_edge_counts;
 
-    // 4. 系统相关
+    // 4. System state
     curandState* rng_states;
     int n_envs;
     uint32_t* max_free_cell_count;
@@ -108,7 +108,7 @@ struct GridWorldContext {
 };
 
 struct StatelessGridWorldContext {
-    EnergyMapContext energy_map_ctx;  // 包含地图和能量图相关的指针
+    EnergyMapContext energy_map_ctx;  // Pointers for map and energy-map data
     StepOutput step_output;
 
     uint32_t* d_grid_ocp;
@@ -137,7 +137,7 @@ struct AgentState {
     uint16_t reset_flag;
 };
 
-// Kernel 声明
+// Kernel declarations
 __global__ void cache_map_free_cells_kernel(GridWorldContext ctx);
 __global__ void init_agents_from_cache_kernel(GridWorldContext ctx);
 __global__ void step_kernel(GridWorldContext ctx);

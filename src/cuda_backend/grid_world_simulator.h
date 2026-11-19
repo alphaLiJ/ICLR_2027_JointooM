@@ -8,10 +8,10 @@
 
 class GridWorldSimulator {
 public:
-    GridWorldContext ctx;  // 注意：这个 struct 是纯 POD，可在 host 初始化
+    GridWorldContext ctx;  // This struct is plain old data (POD) and can be initialized on the host
     StatelessGridWorldContext pyg_ctx;  // reuse stateless PyG generation path on stateful state
 
-    // Host 端 Tensor 引用（用于内存管理 & RAII）
+    // Host-side tensor references for memory management and RAII
     torch::Tensor t_grid_compressed;
     torch::Tensor t_free_cell_list, t_pool_ptr, t_offsets, t_counts, t_grid_ocp;
     torch::Tensor t_real_map_extents;

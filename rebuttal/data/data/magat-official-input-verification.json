@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "frames": 51,
+  "agents": 2976,
+  "maximum_errors": {
+    "x": 0.0,
+    "edge_attr": 0.0,
+    "edge_weight": 0.0
+  },
+  "exact_fields": {
+    "edge_index": true,
+    "y": true,
+    "terminated": true
+  },
+  "cpu_build_seconds": 0.5099099753424525,
+  "elapsed_seconds": 0.7659865710884333,
+  "mode": "independent check process only; formal training opens raw sources and computes inputs online"
+}

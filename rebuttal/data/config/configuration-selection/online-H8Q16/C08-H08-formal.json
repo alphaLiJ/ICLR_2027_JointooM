@@ -1,0 +1,20 @@
+{
+  "host_depth": 16,
+  "host_workers": 8,
+  "map_names": [
+    "mazes-s0_wc8_od55__replica0",
+    "mazes-s1_wc3_od70__replica0",
+    "mazes-s2_wc8_od25__replica0",
+    "mazes-s3_wc6_od35__replica0",
+    "mazes-s0_wc8_od55__replica1",
+    "mazes-s1_wc3_od70__replica1",
+    "mazes-s2_wc8_od25__replica1",
+    "mazes-s3_wc6_od35__replica1"
+  ],
+  "maps_path": "/path/to/experiment-artifacts/jointloom-worker-scaling-20260922-v1/inputs/maps-E08.yaml",
+  "num_steps": 1000000000,
+  "ring_depth": 512,
+  "seed": 0,
+  "validation": [],
+  "wall_budget_s": 180.0
+}

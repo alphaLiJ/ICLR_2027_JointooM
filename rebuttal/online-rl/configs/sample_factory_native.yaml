@@ -1,0 +1,50 @@
+status: integrated_validated_nine_runs_complete
+baseline: official_sample_factory_2.1.1
+original_costtracer_trainer_public: false
+core_modifications: []
+extensions: [environment_registration, encoder_registration, canonical_model_weights, timing_observer]
+backend: pogema_1.2.2_soft
+num_workers: 8
+num_envs_per_worker: 2
+agents_per_env: 128
+worker_num_splits: 2
+batched_sampling: true
+policy_workers_per_policy: 1
+cpu_affinity_budget: 16
+profiles:
+  sf-sync: {async_rl: false, comparison: matched_on_policy_budget}
+  sf-async: {async_rl: true, comparison: native_async_steady_throughput}
+  jointloom-sf2: {async_rl: false, comparison: optimized_resident_matched_math}
+common:
+  network_parameters: 161734
+  rollout: 32
+  batch_size: 2048
+  num_batches_per_epoch: 32
+  num_epochs: 1
+  use_rnn: false
+  recurrence: 1
+  gamma: 0.96
+  gae_lambda: 0.95
+  learning_rate: 0.00013
+  lr_schedule: constant
+  ppo_clip_ratio: 0.2
+  ppo_clip_value: 1.0
+  value_loss_coeff: 0.5
+  exploration_loss_coeff: 0.06878
+  adam_eps: 0.000001
+  max_grad_norm: 4.0
+  with_vtrace: false
+  normalize_input: false
+  normalize_returns: false
+  value_bootstrap: true
+  timeout_bootstrap: native_SF2_current_state_value_approximation
+  advantage_min_std: 0.0000001
+  dtype: float32
+  tf32: false
+  amp: false
+  seeds: [0, 1, 2]
+  requested_training_batches: 16
+actual_checkpoint:
+  sync_and_jointloom: {agent_samples: 1048576, adam_steps: 512}
+  async: {agent_samples: 1114112, adam_steps: 544, extra_inflight_batches: 1}
+artifacts: /path/to/external-artifacts/jointloom-20261110/costtracer-rl-20261110/sample-factory-native

@@ -1,0 +1,388 @@
+{
+  "status": "complete",
+  "envs": 16,
+  "agents": 128,
+  "updates": 1024,
+  "collection_steps": 512,
+  "queries_per_round": 128,
+  "all_learning_and_quality_pairs_identical": true,
+  "online_paired_median_speedup": 2.0905462324323922,
+  "process_paired_median_speedup": 2.0712451973641497,
+  "mean_cpu_online_seconds": 1005.9863557930415,
+  "mean_jointloom_online_seconds": 481.02669115286943,
+  "mean_input_payload_ratio": 210.46406797156396,
+  "rows": [
+    {
+      "seed": 0,
+      "cpu_online_seconds": 1010.4630403458141,
+      "jointloom_online_seconds": 483.3488131808117,
+      "online_speedup": 2.0905462324323922,
+      "cpu_process_seconds": 1019.568921814207,
+      "jointloom_process_seconds": 492.24926296109334,
+      "process_speedup": 2.0712451973641497,
+      "cpu_labels": 3943,
+      "jointloom_labels": 3943,
+      "updates": 1024,
+      "agent_transitions": 33554432,
+      "learner_agent_samples": 5242880,
+      "parameter_max_change": 0.0019125903490930796,
+      "cpu_h2d_bytes": 113350235480,
+      "jointloom_h2d_bytes": 538308608,
+      "payload_ratio": 210.56738420203752,
+      "cpu_cuda_peak_allocated_gib": 4.584574222564697,
+      "jointloom_cuda_peak_allocated_gib": 4.881966590881348
+    },
+    {
+      "seed": 1,
+      "cpu_online_seconds": 1000.0022654230706,
+      "jointloom_online_seconds": 480.6540194610134,
+      "online_speedup": 2.0805032828903296,
+      "cpu_process_seconds": 1008.4255395759828,
+      "jointloom_process_seconds": 489.3969363612123,
+      "process_speedup": 2.060547307618795,
+      "cpu_labels": 3934,
+      "jointloom_labels": 3934,
+      "updates": 1024,
+      "agent_transitions": 33554432,
+      "learner_agent_samples": 5242880,
+      "parameter_max_change": 0.001923424657434225,
+      "cpu_h2d_bytes": 113245861760,
+      "jointloom_h2d_bytes": 538294272,
+      "payload_ratio": 210.37909494976012,
+      "cpu_cuda_peak_allocated_gib": 4.574376583099365,
+      "jointloom_cuda_peak_allocated_gib": 4.869776248931885
+    },
+    {
+      "seed": 2,
+      "cpu_online_seconds": 1007.4937616102397,
+      "jointloom_online_seconds": 479.07724081678316,
+      "online_speedup": 2.102988152583818,
+      "cpu_process_seconds": 1015.9166827355511,
+      "jointloom_process_seconds": 487.3433686415665,
+      "process_speedup": 2.0846014291060193,
+      "cpu_labels": 3916,
+      "jointloom_labels": 3916,
+      "updates": 1024,
+      "agent_transitions": 33554432,
+      "learner_agent_samples": 5242880,
+      "parameter_max_change": 0.0018459465354681015,
+      "cpu_h2d_bytes": 113278280264,
+      "jointloom_h2d_bytes": 538277888,
+      "payload_ratio": 210.44572476289423,
+      "cpu_cuda_peak_allocated_gib": 4.590273380279541,
+      "jointloom_cuda_peak_allocated_gib": 4.888117790222168
+    }
+  ],
+  "evaluation": {
+    "status": "complete",
+    "tasks": 128,
+    "agents": 128,
+    "summaries": [
+      {
+        "checkpoint": "official-pretrained",
+        "input_path": "cpu",
+        "tasks": 128,
+        "successes": 50,
+        "success_rate": 0.390625,
+        "mean_agent_arrival": 0.9683837890625,
+        "soc_mean": 31850.2,
+        "makespan_mean": 422.24
+      },
+      {
+        "checkpoint": "reference256-cpu-n16-s0",
+        "input_path": "cpu",
+        "tasks": 128,
+        "successes": 17,
+        "success_rate": 0.1328125,
+        "mean_agent_arrival": 0.95794677734375,
+        "soc_mean": 25830.117647058825,
+        "makespan_mean": 420.94117647058823
+      },
+      {
+        "checkpoint": "timing-cpu-n16-s0",
+        "input_path": "cpu",
+        "tasks": 128,
+        "successes": 41,
+        "success_rate": 0.3203125,
+        "mean_agent_arrival": 0.961181640625,
+        "soc_mean": 26423.926829268294,
+        "makespan_mean": 392.8048780487805
+      },
+      {
+        "checkpoint": "timing-jointloom-n16-s0",
+        "input_path": "jointloom",
+        "tasks": 128,
+        "successes": 41,
+        "success_rate": 0.3203125,
+        "mean_agent_arrival": 0.961181640625,
+        "soc_mean": 26423.926829268294,
+        "makespan_mean": 392.8048780487805
+      },
+      {
+        "checkpoint": "reference256-cpu-n16-s1",
+        "input_path": "cpu",
+        "tasks": 128,
+        "successes": 18,
+        "success_rate": 0.140625,
+        "mean_agent_arrival": 0.95184326171875,
+        "soc_mean": 26134.11111111111,
+        "makespan_mean": 416.22222222222223
+      },
+      {
+        "checkpoint": "timing-cpu-n16-s1",
+        "input_path": "cpu",
+        "tasks": 128,
+        "successes": 38,
+        "success_rate": 0.296875,
+        "mean_agent_arrival": 0.9658203125,
+        "soc_mean": 26035.57894736842,
+        "makespan_mean": 389.3157894736842
+      },
+      {
+        "checkpoint": "timing-jointloom-n16-s1",
+        "input_path": "jointloom",
+        "tasks": 128,
+        "successes": 38,
+        "success_rate": 0.296875,
+        "mean_agent_arrival": 0.9658203125,
+        "soc_mean": 26035.57894736842,
+        "makespan_mean": 389.3157894736842
+      },
+      {
+        "checkpoint": "reference256-cpu-n16-s2",
+        "input_path": "cpu",
+        "tasks": 128,
+        "successes": 26,
+        "success_rate": 0.203125,
+        "mean_agent_arrival": 0.94598388671875,
+        "soc_mean": 26125.846153846152,
+        "makespan_mean": 406.11538461538464
+      },
+      {
+        "checkpoint": "timing-cpu-n16-s2",
+        "input_path": "cpu",
+        "tasks": 128,
+        "successes": 38,
+        "success_rate": 0.296875,
+        "mean_agent_arrival": 0.95654296875,
+        "soc_mean": 26567.605263157893,
+        "makespan_mean": 397.0
+      },
+      {
+        "checkpoint": "timing-jointloom-n16-s2",
+        "input_path": "jointloom",
+        "tasks": 128,
+        "successes": 38,
+        "success_rate": 0.296875,
+        "mean_agent_arrival": 0.95654296875,
+        "soc_mean": 26567.605263157893,
+        "makespan_mean": 397.0
+      }
+    ],
+    "pairs": [
+      {
+        "cpu": "timing-cpu-n16-s0",
+        "jointloom": "timing-jointloom-n16-s0",
+        "actions_identical": true,
+        "action_count": 8388608,
+        "per_task_metrics_identical": true,
+        "identical": true
+      },
+      {
+        "cpu": "timing-cpu-n16-s1",
+        "jointloom": "timing-jointloom-n16-s1",
+        "actions_identical": true,
+        "action_count": 8388608,
+        "per_task_metrics_identical": true,
+        "identical": true
+      },
+      {
+        "cpu": "timing-cpu-n16-s2",
+        "jointloom": "timing-jointloom-n16-s2",
+        "actions_identical": true,
+        "action_count": 8388608,
+        "per_task_metrics_identical": true,
+        "identical": true
+      }
+    ],
+    "all_pairs_identical": true,
+    "elapsed_seconds": 1823.2091770078987
+  },
+  "coverage": [
+    {
+      "seed": 0,
+      "query_sampling": "stratified",
+      "replay_sampling": "episode-stratified",
+      "episode_horizon": 512,
+      "collection_steps": 512,
+      "time_bin_width": 64.0,
+      "queries_by_time_bin": [
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512
+      ],
+      "queries_by_episode_bin": [
+        676,
+        618,
+        557,
+        518,
+        500,
+        466,
+        412,
+        349
+      ],
+      "labels_by_episode_bin": [
+        636,
+        587,
+        533,
+        503,
+        483,
+        453,
+        407,
+        341
+      ],
+      "queries_late_episode": 1727,
+      "queries_near_completion": 1686,
+      "learner_online_graphs_by_episode_bin": [
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048
+      ]
+    },
+    {
+      "seed": 1,
+      "query_sampling": "stratified",
+      "replay_sampling": "episode-stratified",
+      "episode_horizon": 512,
+      "collection_steps": 512,
+      "time_bin_width": 64.0,
+      "queries_by_time_bin": [
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512
+      ],
+      "queries_by_episode_bin": [
+        667,
+        614,
+        553,
+        520,
+        502,
+        471,
+        410,
+        359
+      ],
+      "labels_by_episode_bin": [
+        624,
+        574,
+        528,
+        502,
+        491,
+        457,
+        403,
+        355
+      ],
+      "queries_late_episode": 1742,
+      "queries_near_completion": 1710,
+      "learner_online_graphs_by_episode_bin": [
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048
+      ]
+    },
+    {
+      "seed": 2,
+      "query_sampling": "stratified",
+      "replay_sampling": "episode-stratified",
+      "episode_horizon": 512,
+      "collection_steps": 512,
+      "time_bin_width": 64.0,
+      "queries_by_time_bin": [
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512
+      ],
+      "queries_by_episode_bin": [
+        653,
+        617,
+        562,
+        520,
+        501,
+        468,
+        413,
+        362
+      ],
+      "labels_by_episode_bin": [
+        615,
+        591,
+        525,
+        501,
+        474,
+        452,
+        403,
+        355
+      ],
+      "queries_late_episode": 1744,
+      "queries_near_completion": 1702,
+      "learner_online_graphs_by_episode_bin": [
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048
+      ]
+    }
+  ],
+  "coverage_effect": [
+    {
+      "seed": 0,
+      "previous256_successes": 17,
+      "current512_successes": 41,
+      "tasks": 128,
+      "success_rate_change_pp": 18.75
+    },
+    {
+      "seed": 1,
+      "previous256_successes": 18,
+      "current512_successes": 38,
+      "tasks": 128,
+      "success_rate_change_pp": 15.625
+    },
+    {
+      "seed": 2,
+      "previous256_successes": 26,
+      "current512_successes": 38,
+      "tasks": 128,
+      "success_rate_change_pp": 9.375
+    }
+  ],
+  "pretrained_successes": 50,
+  "scope": "same deterministic learning protocol; full 512-step collection and stratified queries/replay"
+}

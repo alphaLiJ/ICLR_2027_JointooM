@@ -5,7 +5,7 @@ import numpy as np
 
 from pogema import GridConfig
 
-# 这里生成地图
+# Generate the map here
 def generate_obstacles(grid_config: GridConfig, rnd=None):
     if rnd is None:
         rnd = np.random.default_rng(grid_config.seed)

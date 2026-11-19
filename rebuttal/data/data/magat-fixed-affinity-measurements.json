@@ -1,0 +1,83 @@
+{
+  "by_core": {
+    "16": {
+      "max_ratio_jointloom_over_cpu": 2.076900565914657,
+      "median_ratio_jointloom_over_cpu": 2.0526459686518965,
+      "min_ratio_jointloom_over_cpu": 2.0466519237777216
+    },
+    "8": {
+      "max_ratio_jointloom_over_cpu": 2.482854866216277,
+      "median_ratio_jointloom_over_cpu": 2.437632698783063,
+      "min_ratio_jointloom_over_cpu": 2.388439884648583
+    }
+  },
+  "pairs": [
+    {
+      "cores": 8,
+      "cpu_input_wait_fraction": 0.5479806389202473,
+      "cpu_samples_s": 33007.74926491762,
+      "cpu_updates": 1451,
+      "jointloom_input_wait_fraction": 0.042547199796465804,
+      "jointloom_samples_s": 78837.02484680919,
+      "jointloom_updates": 3465,
+      "ratio_jointloom_over_cpu": 2.388439884648583,
+      "seed": 0
+    },
+    {
+      "cores": 8,
+      "cpu_input_wait_fraction": 0.5486382915752798,
+      "cpu_samples_s": 32736.355117750125,
+      "cpu_updates": 1441,
+      "jointloom_input_wait_fraction": 0.015348514854931149,
+      "jointloom_samples_s": 81279.61860629002,
+      "jointloom_updates": 3572,
+      "ratio_jointloom_over_cpu": 2.482854866216277,
+      "seed": 1
+    },
+    {
+      "cores": 8,
+      "cpu_input_wait_fraction": 0.5557749011278015,
+      "cpu_samples_s": 32419.673590378778,
+      "cpu_updates": 1428,
+      "jointloom_input_wait_fraction": 0.042233168540447535,
+      "jointloom_samples_s": 79027.25642778102,
+      "jointloom_updates": 3473,
+      "ratio_jointloom_over_cpu": 2.437632698783063,
+      "seed": 2
+    },
+    {
+      "cores": 16,
+      "cpu_input_wait_fraction": 0.5300315985588923,
+      "cpu_samples_s": 38452.23219520189,
+      "cpu_updates": 1690,
+      "jointloom_input_wait_fraction": 0.04186375222385281,
+      "jointloom_samples_s": 78928.81940114783,
+      "jointloom_updates": 3469,
+      "ratio_jointloom_over_cpu": 2.0526459686518965,
+      "seed": 0
+    },
+    {
+      "cores": 16,
+      "cpu_input_wait_fraction": 0.5203555690607551,
+      "cpu_samples_s": 39151.564013301875,
+      "cpu_updates": 1721,
+      "jointloom_input_wait_fraction": 0.0147495821053283,
+      "jointloom_samples_s": 81313.9054556706,
+      "jointloom_updates": 3574,
+      "ratio_jointloom_over_cpu": 2.076900565914657,
+      "seed": 1
+    },
+    {
+      "cores": 16,
+      "cpu_input_wait_fraction": 0.529573865980426,
+      "cpu_samples_s": 38628.995316516295,
+      "cpu_updates": 1698,
+      "jointloom_input_wait_fraction": 0.04179828708067959,
+      "jointloom_samples_s": 79060.10757814867,
+      "jointloom_updates": 3475,
+      "ratio_jointloom_over_cpu": 2.0466519237777216,
+      "seed": 2
+    }
+  ],
+  "scope": "three-seed paired online throughput under fixed CPU affinity and batch"
+}

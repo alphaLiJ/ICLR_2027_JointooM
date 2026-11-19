@@ -1,0 +1,101 @@
+[
+  {
+    "cpu": "/path/to/external-artifacts/jointloom-20261117/magat-dagger-20261117/coverage512-agents128-u1024/timing-cpu-n16-s0",
+    "jointloom": "/path/to/external-artifacts/jointloom-20261117/magat-dagger-20261117/coverage512-agents128-u1024/timing-jointloom-n16-s0",
+    "checkpoints": {
+      "last.pt": {
+        "identical": true,
+        "tensors": 94,
+        "elements": 759471,
+        "differences": []
+      },
+      "final-optimizer": {
+        "identical": true,
+        "tensors": 192,
+        "elements": 1516170,
+        "differences": []
+      }
+    },
+    "update_trace_identical": true,
+    "updates": 1024,
+    "actions": {
+      "identical": true,
+      "shape": [
+        16384,
+        16,
+        128
+      ],
+      "actions": 33554432,
+      "differences": 0
+    },
+    "queried_states": 4096,
+    "query_differences": [],
+    "identical": true
+  },
+  {
+    "cpu": "/path/to/external-artifacts/jointloom-20261117/magat-dagger-20261117/coverage512-agents128-u1024/timing-cpu-n16-s1",
+    "jointloom": "/path/to/external-artifacts/jointloom-20261117/magat-dagger-20261117/coverage512-agents128-u1024/timing-jointloom-n16-s1",
+    "checkpoints": {
+      "last.pt": {
+        "identical": true,
+        "tensors": 94,
+        "elements": 759471,
+        "differences": []
+      },
+      "final-optimizer": {
+        "identical": true,
+        "tensors": 192,
+        "elements": 1516170,
+        "differences": []
+      }
+    },
+    "update_trace_identical": true,
+    "updates": 1024,
+    "actions": {
+      "identical": true,
+      "shape": [
+        16384,
+        16,
+        128
+      ],
+      "actions": 33554432,
+      "differences": 0
+    },
+    "queried_states": 4096,
+    "query_differences": [],
+    "identical": true
+  },
+  {
+    "cpu": "/path/to/external-artifacts/jointloom-20261117/magat-dagger-20261117/coverage512-agents128-u1024/timing-cpu-n16-s2",
+    "jointloom": "/path/to/external-artifacts/jointloom-20261117/magat-dagger-20261117/coverage512-agents128-u1024/timing-jointloom-n16-s2",
+    "checkpoints": {
+      "last.pt": {
+        "identical": true,
+        "tensors": 94,
+        "elements": 759471,
+        "differences": []
+      },
+      "final-optimizer": {
+        "identical": true,
+        "tensors": 192,
+        "elements": 1516170,
+        "differences": []
+      }
+    },
+    "update_trace_identical": true,
+    "updates": 1024,
+    "actions": {
+      "identical": true,
+      "shape": [
+        16384,
+        16,
+        128
+      ],
+      "actions": 33554432,
+      "differences": 0
+    },
+    "queried_states": 4096,
+    "query_differences": [],
+    "identical": true
+  }
+]

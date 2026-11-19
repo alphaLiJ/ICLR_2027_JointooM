@@ -1,0 +1,7 @@
+# Install only in the isolated environment; keep the existing CUDA JAX runtime.
+jax==0.6.2
+jaxlib==0.6.2
+flax==0.10.7
+optax==0.2.5
+orbax-checkpoint==0.11.13
+chex==0.1.89
