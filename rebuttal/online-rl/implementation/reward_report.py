@@ -202,7 +202,7 @@ def main():
     lines += ['', '512-step episode return per agent, averaged over three seeds:']
     for profile in PROFILES:
         v=final_returns[profile]
-        lines.append(f"{profile}: episode1 {v['first_mean']:.6f} -> episode{v['episodes']} {v['last_mean']:.6f} ± {v['last_seed_sd']:.6f}。")
+        lines.append(f"{profile}: episode1 {v['first_mean']:.6f} -> episode{v['episodes']} {v['last_mean']:.6f} ± {v['last_seed_sd']:.6f}.")
     lines += ['', 'Left: equal cumulative collected interactions. Right: full-job wall-clock time including startup, compilation and environment initialization for both methods.',
         'Some CPU framework environment initialization occurs after on_start; GPU initialization occurs before the loop. Both main curves include startup to align the timing boundary.',
         'Reward is the raw +0.1 environment progress reward before timeout bootstrap and GAE adjustments; it is separate from value estimates, returns and losses.',

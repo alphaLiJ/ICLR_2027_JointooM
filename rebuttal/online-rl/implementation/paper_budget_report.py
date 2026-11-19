@@ -105,7 +105,7 @@ def main():
         lines.append(f"{profile}: reward={value['tail16_mean_progress_reward']:.7f}; same collection budget: {value['full_job_seconds_to_collected_budget']:.3f}s; full process (including saving/exit): {value['full_training_job_seconds']:.3f}s.")
     lines += ['', 'Fixed unseen-map evaluation (two mazes, eight environments per map,128agents/env,512 steps, shared categorical tasks/RNG):']
     for r in evaluation:
-        lines.append(f"{r['model']}: mean agent episode return={r['mean_agent_episode_return']:.6f}; goals={r['completed_goals']:.0f}; goals/env-step={r['goals_per_joint_env_step']:.6f}。")
+        lines.append(f"{r['model']}: mean agent episode return={r['mean_agent_episode_return']:.6f}; goals={r['completed_goals']:.0f}; goals/env-step={r['goals_per_joint_env_step']:.6f}.")
     lines += ['', 'Training reward curves use16-window moving averages with raw points retained. Episode curves show unsmoothed returns over complete512-step episodes.',
         'Curves and evaluation use one training seed and do not establish quality equivalence or statistical significance.',
         'Asynchronous SF retains policy lag and additional in-flight batches; actual processing budgets are recorded in summary.actual_training.',

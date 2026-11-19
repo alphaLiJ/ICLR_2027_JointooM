@@ -130,7 +130,7 @@ def main():
             f"  Complete episode groups within budget: {s['full_episodes_within_budget']}; task-bank cycles: {s['task_bank_cycles']}.",'']
     lines += ['Fixed unseen-map evaluation: two mazes, eight environments each,128agents/env,512 steps; final and initial models share tasks/RNG, with no best-checkpoint selection.',
         'Evaluation uses the actual final checkpoints, which may contain the small deadline-overrun batches listed above.']
-    for r in evaluation:lines.append(f"{r['model']}: mean_agent_episode_return={r['mean_agent_episode_return']:.6f}；goals={r['completed_goals']:.0f}；goals/env-step={r['goals_per_joint_env_step']:.6f}。")
+    for r in evaluation:lines.append(f"{r['model']}: mean_agent_episode_return={r['mean_agent_episode_return']:.6f}; goals={r['completed_goals']:.0f}; goals/env-step={r['goals_per_joint_env_step']:.6f}.")
     lines += ['', 'Main curves stop at3600 seconds; reward curves show16-window means and raw points; episode curves are unsmoothed.',
         'Both sample-count and wall-clock axes are shown. These are single-seed measurements, without a claim of quality equivalence or statistical significance.',
         'Native asynchronous SF retains policy lag, different environment progress and in-flight samples. Collected samples and samples processed by the learner are recorded separately.',
